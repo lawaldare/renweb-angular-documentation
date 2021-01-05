@@ -1,0 +1,1586 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PaymentHandlerComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/shared/payment-handler/payment-handler.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-payment-handler</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./payment-handler.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./payment-handler.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#currency">currency</a>
+                            </li>
+                            <li>
+                                <a href="#isUserFirstPayment">isUserFirstPayment</a>
+                            </li>
+                            <li>
+                                <a href="#options">options</a>
+                            </li>
+                            <li>
+                                <a href="#paystackPaymentOption">paystackPaymentOption</a>
+                            </li>
+                            <li>
+                                <a href="#paystackPublicKey">paystackPublicKey</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ravePaymentOptions">ravePaymentOptions</a>
+                            </li>
+                            <li>
+                                <a href="#transRef">transRef</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkIfCardIsAdded">checkIfCardIsAdded</a>
+                            </li>
+                            <li>
+                                <a href="#getTransactionRef">getTransactionRef</a>
+                            </li>
+                            <li>
+                                <a href="#makePaymentInstantly">makePaymentInstantly</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnChanges">ngOnChanges</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#pay">pay</a>
+                            </li>
+                            <li>
+                                <a href="#paymentCallback">paymentCallback</a>
+                            </li>
+                            <li>
+                                <a href="#payWithPaystack">payWithPaystack</a>
+                            </li>
+                            <li>
+                                <a href="#populatePaymentInfo">populatePaymentInfo</a>
+                            </li>
+                            <li>
+                                <a href="#showPaymentPopUp">showPaymentPopUp</a>
+                            </li>
+                            <li>
+                                <a href="#tokenizeCard">tokenizeCard</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#account">account</a>
+                            </li>
+                            <li>
+                                <a href="#amount">amount</a>
+                            </li>
+                            <li>
+                                <a href="#billingType">billingType</a>
+                            </li>
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                <a href="#paymentType">paymentType</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#closed">closed</a>
+                            </li>
+                            <li>
+                                <a href="#failed">failed</a>
+                            </li>
+                            <li>
+                                <a href="#success">success</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(paymentService: <a href="../injectables/PaymentService.html">PaymentService</a>, toastr: ToastrService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>paymentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PaymentService.html" target="_self" >PaymentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="account"></a>
+                        <b>account</b>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amount"></a>
+                        <b>amount</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="billingType"></a>
+                        <b>billingType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;debitCard&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:30</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <b>client</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentType"></a>
+                        <b>paymentType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Investment&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="closed"></a>
+                        <b>closed</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:34</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="failed"></a>
+                        <b>failed</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:33</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="success"></a>
+                        <b>success</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:32</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfCardIsAdded"></a>
+                    <span class="name">
+                        <b>
+                            checkIfCardIsAdded
+                        </b>
+                        <a href="#checkIfCardIsAdded"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIfCardIsAdded()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTransactionRef"></a>
+                    <span class="name">
+                        <b>
+                            getTransactionRef
+                        </b>
+                        <a href="#getTransactionRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTransactionRef()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="makePaymentInstantly"></a>
+                    <span class="name">
+                        <b>
+                            makePaymentInstantly
+                        </b>
+                        <a href="#makePaymentInstantly"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>makePaymentInstantly()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
+                            ngOnChanges
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnChanges()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pay"></a>
+                    <span class="name">
+                        <b>
+                            pay
+                        </b>
+                        <a href="#pay"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pay()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paymentCallback"></a>
+                    <span class="name">
+                        <b>
+                            paymentCallback
+                        </b>
+                        <a href="#paymentCallback"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paymentCallback(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="payWithPaystack"></a>
+                    <span class="name">
+                        <b>
+                            payWithPaystack
+                        </b>
+                        <a href="#payWithPaystack"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>payWithPaystack()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="183"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:183</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="populatePaymentInfo"></a>
+                    <span class="name">
+                        <b>
+                            populatePaymentInfo
+                        </b>
+                        <a href="#populatePaymentInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>populatePaymentInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPaymentPopUp"></a>
+                    <span class="name">
+                        <b>
+                            showPaymentPopUp
+                        </b>
+                        <a href="#showPaymentPopUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showPaymentPopUp()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tokenizeCard"></a>
+                    <span class="name">
+                        <b>
+                            tokenizeCard
+                        </b>
+                        <a href="#tokenizeCard"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tokenizeCard(cardTokenPayload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cardTokenPayload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currency"></a>
+                        <span class="name">
+                            <b>
+                            currency</b>
+                            <a href="#currency"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:60</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isUserFirstPayment"></a>
+                        <span class="name">
+                            <b>
+                            isUserFirstPayment</b>
+                            <a href="#isUserFirstPayment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:58</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="options"></a>
+                        <span class="name">
+                            <b>
+                            options</b>
+                            <a href="#options"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>PaystackOptions</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paystackPaymentOption"></a>
+                        <span class="name">
+                            <b>
+                            paystackPaymentOption</b>
+                            <a href="#paystackPaymentOption"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        email: &quot;&quot;,
+        amount: 0,
+        ref: &quot;tran-ren-&quot;,
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paystackPublicKey"></a>
+                        <span class="name">
+                            <b>
+                            paystackPublicKey</b>
+                            <a href="#paystackPublicKey"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>environment.payment.paystack</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:59</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ravePaymentOptions"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ravePaymentOptions</b>
+                            <a href="#ravePaymentOptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>RaveOptions</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        PBFPubKey: environment.payment.rave,
+        customer_email: &quot;&quot;,
+        customer_firstname: &quot;&quot;,
+        customer_lastname: &quot;&quot;,
+        currency: &quot;NGN&quot;,
+        custom_description: &quot;Payment for &quot;,
+        amount: 0,
+        txref: &quot;tran-ren-&quot;,
+        meta: [
+            {
+                metaname: &quot;mambuId&quot;,
+                metavalue: &quot;0&quot;,
+            },
+        ],
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="transRef"></a>
+                        <span class="name">
+                            <b>
+                            transRef</b>
+                            <a href="#transRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/@page/shared/payment-handler/payment-handler.component.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+    Component,
+    OnInit,
+    EventEmitter,
+    Input,
+    Output,
+    ChangeDetectionStrategy,
+} from &quot;@angular/core&quot;;
+import { PaymentService } from &quot;src/app/@core/payment.service&quot;;
+import { GeneralService } from &quot;src/app/@core/general.service&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Client } from &quot;src/app/@model/client&quot;;
+import { environment } from &quot;src/environments/environment&quot;;
+import { RaveOptions } from &quot;angular-rave&quot;;
+import { PaystackOptions } from &#x27;angular4-paystack&#x27;;
+
+declare let PaystackPop: any;
+
+@Component({
+    selector: &quot;app-payment-handler&quot;,
+    templateUrl: &quot;./payment-handler.component.html&quot;,
+    styleUrls: [&quot;./payment-handler.component.scss&quot;],
+    changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class PaymentHandlerComponent implements OnInit {
+    @Input() client: Client;
+    @Input() account;
+    @Input() amount: number;
+    @Input() paymentType: string &#x3D; &quot;Investment&quot;;
+    @Input() billingType: string &#x3D; &quot;debitCard&quot;;
+
+    @Output() success: EventEmitter&lt;boolean&gt; &#x3D; new EventEmitter&lt;boolean&gt;();
+    @Output() failed: EventEmitter&lt;boolean&gt; &#x3D; new EventEmitter&lt;boolean&gt;();
+    @Output() closed: EventEmitter&lt;boolean&gt; &#x3D; new EventEmitter&lt;boolean&gt;();
+
+    public ravePaymentOptions: RaveOptions &#x3D; {
+        PBFPubKey: environment.payment.rave,
+        customer_email: &quot;&quot;,
+        customer_firstname: &quot;&quot;,
+        customer_lastname: &quot;&quot;,
+        currency: &quot;NGN&quot;,
+        custom_description: &quot;Payment for &quot;,
+        amount: 0,
+        txref: &quot;tran-ren-&quot;,
+        meta: [
+            {
+                metaname: &quot;mambuId&quot;,
+                metavalue: &quot;0&quot;,
+            },
+        ],
+    };
+
+    paystackPaymentOption &#x3D; {
+        email: &quot;&quot;,
+        amount: 0,
+        ref: &quot;tran-ren-&quot;,
+    };
+    isUserFirstPayment: boolean;
+    paystackPublicKey &#x3D; environment.payment.paystack;
+    currency: any;
+    transRef &#x3D; &quot;&quot;;
+
+    options: PaystackOptions
+
+    constructor(
+        private paymentService: PaymentService,
+        private toastr: ToastrService
+    ) { }
+
+    ngOnInit() {
+        this.populatePaymentInfo();
+
+    }
+
+    ngOnChanges() {
+        this.checkIfCardIsAdded();
+    }
+
+    populatePaymentInfo() {
+        if (this.ravePaymentOptions.customer_email &amp;&amp; this.account._id) {
+            this.checkIfCardIsAdded();
+            return;
+        }
+        this.ravePaymentOptions.customer_email &#x3D; this.client.email;
+        this.paystackPaymentOption.email &#x3D; this.client.email;
+        this.ravePaymentOptions.customer_firstname &#x3D; this.client.firstName;
+        this.ravePaymentOptions.customer_lastname &#x3D; this.client.lastName;
+        this.paystackPaymentOption.amount &#x3D; this.ravePaymentOptions.amount &#x3D; this.amount;
+        this.ravePaymentOptions.meta[0].metavalue &#x3D; this.account._id;
+        this.transRef &#x3D; this.getTransactionRef();
+        this.ravePaymentOptions.txref &#x3D; this.transRef;
+
+        // this.checkIfCardIsAdded();
+    }
+
+    checkIfCardIsAdded() {
+        if (this.ravePaymentOptions.customer_email &amp;&amp; this.account._id) {
+            this.isUserFirstPayment &#x3D; !this.client.cardDetails;
+            this.pay();
+        } else {
+            this.populatePaymentInfo();
+        }
+    }
+
+    pay() {
+        if (this.account &amp;&amp; this.ravePaymentOptions.PBFPubKey !&#x3D;&#x3D; &quot;&quot;) {
+            if (this.account._id) {
+                if (this.billingType &#x3D;&#x3D;&#x3D; &quot;debitCard&quot;) {
+                    this.showPaymentPopUp();
+                } else {
+                    //TODO: change back to make payment instantly a soon as the endpoint is working.
+                    // this.showPaymentPopUp();
+                    this.makePaymentInstantly();
+                }
+            }
+        }
+    }
+
+    showPaymentPopUp() {
+        document
+            .getElementById(&#x60;payWith${environment.selectedPaymentGateway}&#x60;)
+            .click();
+    }
+
+    paymentCallback(event) {
+        if (event.status || event.success) {
+            this.tokenizeCard({
+                transactionReference: this.transRef,
+                cardProcessor: environment.selectedPaymentGateway,
+                loanOrInvestmentId: this.account._id,
+                paymentType: this.paymentType,
+            });
+        } else {
+            this.failed.emit(true);
+        }
+    }
+
+    makePaymentInstantly() {
+        const payment &#x3D; {
+            loanOrInvestmentId: &quot;&quot;,
+            amount: 0,
+            paymentType: this.paymentType,
+            cardProcessor: environment.selectedPaymentGateway,
+        };
+        payment.loanOrInvestmentId &#x3D; this.account._id;
+        (payment.amount &#x3D; this.amount * 100), //amount in kobo;
+            this.paymentService.makePayment(payment).subscribe(
+                () &#x3D;&gt; {
+                    this.success.emit(true);
+                },
+                (error) &#x3D;&gt; {
+                    this.failed.emit(true);
+
+                }
+            );
+    }
+
+    tokenizeCard(cardTokenPayload) {
+        if (cardTokenPayload.loanOrInvestmentId &#x3D;&#x3D;&#x3D; &quot;tokenizeCard&quot;) {
+            delete cardTokenPayload.loanOrInvestmentId;
+        }
+        this.paymentService.saveCardToken(cardTokenPayload).subscribe(
+            (data) &#x3D;&gt; {
+                PaystackPop &#x3D; {};
+                this.success.emit(true);
+            },
+            (error) &#x3D;&gt; {
+                PaystackPop &#x3D; {};
+                this.failed.emit(true);
+            }
+        );
+    }
+
+    getTransactionRef() {
+        const ref &#x3D; &#x60;${new Date().getTime().toString(36)}-ref-${this.account._id
+            }-${new Date().toLocaleDateString().replace(/\//g, &quot;-&quot;) +
+            &quot;-&quot; +
+            new Date().toTimeString().split(&quot; &quot;)[0].replace(/\:/g, &quot;-&quot;)
+            }&#x60;;
+        return ref;
+    }
+
+    payWithPaystack() {
+        let key;
+        if (this.paymentType.toLowerCase() !&#x3D; &#x27;loan&#x27;) {
+            key &#x3D; environment.payment.paystack
+
+        } else {
+            key &#x3D; environment.payment.loanPaystack
+        }
+        const handler &#x3D; PaystackPop.setup({
+            key,
+            email: this.client.email,
+            amount: this.amount * 100, //amount in kobo
+            currency: &quot;NGN&quot;,
+            ref: this.transRef,
+            channels: [&quot;card&quot;],
+            metadata: {
+                custom_fields: [
+                    {
+                        paymentType: this.paymentType,
+                        clientId: this.client.clientEncodedkey,
+                        loanOrInvestmentId: this.account._id,
+                    },
+                ],
+            },
+            callback: (response) &#x3D;&gt; {
+                this.paymentCallback(response);
+            },
+            onClose: () &#x3D;&gt; {
+                this.closed.emit(true);
+            },
+        });
+        handler.openIframe();
+    }
+
+    // payWithPaystack() {
+    //     let key;
+    //     if (this.paymentType.toLowerCase() !&#x3D; &#x27;loan&#x27;) {
+    //         key &#x3D; environment.payment.paystack
+    //     } else {
+    //         key &#x3D; environment.payment.loanPaystack
+    //     }
+    //     this.options &#x3D; {
+    //         key,
+    //         email: this.client.email,
+    //         amount: this.amount * 100, //amount in kobo
+    //         currency: &quot;NGN&quot;,
+    //         ref: this.transRef,
+    //         channels: [&quot;card&quot;],
+    //         metadata: {
+    //             custom_fields: [
+    //                 {
+    //                     paymentType: this.paymentType,
+    //                     clientId: this.client.clientEncodedkey,
+    //                     loanOrInvestmentId: this.account._id,
+    //                 },
+    //             ],
+    //         },
+    //     }
+
+    // }
+
+    // paymentCancel() {
+    //     this.closed.emit(true)
+    // }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;button id&#x3D;&#x27;payWithFlutterwave&#x27; hidden angular-rave (callback)&#x3D;&quot;paymentCallback($event)&quot;
+    [raveOptions]&#x3D;&quot;ravePaymentOptions&quot;&gt;&lt;/button&gt;
+
+&lt;button hidden id&#x3D;&#x27;payWithPaystack&#x27; (click)&#x3D;&#x27;payWithPaystack()&#x27;&gt;&lt;/button&gt;
+
+
+&lt;!-- &lt;button angular4-paystack [paystackOptions]&#x3D;&quot;options&quot; (paymentInit)&#x3D;&quot;payWithPaystack()&quot; (close)&#x3D;&quot;paymentCancel()&quot;
+    (callback)&#x3D;&quot;paymentCallback($event)&quot;&gt;
+    Pay with Paystack
+&lt;/button&gt; --&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./payment-handler.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><button id=\'payWithFlutterwave\' hidden angular-rave (callback)="paymentCallback($event)"    [raveOptions]="ravePaymentOptions"></button><button hidden id=\'payWithPaystack\' (click)=\'payWithPaystack()\'></button><!-- <button angular4-paystack [paystackOptions]="options" (paymentInit)="payWithPaystack()" (close)="paymentCancel()"    (callback)="paymentCallback($event)">    Pay with Paystack</button> --></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PaymentHandlerComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PaymentHandlerComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

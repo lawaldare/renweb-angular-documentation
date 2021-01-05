@@ -1,0 +1,5201 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>LoanService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/@core/loan.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#RANDOM_NUMBER">RANDOM_NUMBER</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#stepNumber">stepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#stepNumber$">stepNumber$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#acceptFinalOffer">acceptFinalOffer</a>
+                            </li>
+                            <li>
+                                <a href="#addCompany">addCompany</a>
+                            </li>
+                            <li>
+                                <a href="#changeStepNumber">changeStepNumber</a>
+                            </li>
+                            <li>
+                                <a href="#clearFormerLoanDetail">clearFormerLoanDetail</a>
+                            </li>
+                            <li>
+                                <a href="#clearLoanPageDetails">clearLoanPageDetails</a>
+                            </li>
+                            <li>
+                                <a href="#confirmBankStreaming">confirmBankStreaming</a>
+                            </li>
+                            <li>
+                                <a href="#confirmMBS">confirmMBS</a>
+                            </li>
+                            <li>
+                                <a href="#createCompany">createCompany</a>
+                            </li>
+                            <li>
+                                <a href="#createLoan">createLoan</a>
+                            </li>
+                            <li>
+                                <a href="#deleteSocialMediaData">deleteSocialMediaData</a>
+                            </li>
+                            <li>
+                                <a href="#deleteTeamLists">deleteTeamLists</a>
+                            </li>
+                            <li>
+                                <a href="#emailStatusUpdate">emailStatusUpdate</a>
+                            </li>
+                            <li>
+                                <a href="#generateOfferLetter">generateOfferLetter</a>
+                            </li>
+                            <li>
+                                <a href="#getAccountDetailsLocally">getAccountDetailsLocally</a>
+                            </li>
+                            <li>
+                                <a href="#getAllSectors">getAllSectors</a>
+                            </li>
+                            <li>
+                                <a href="#getBalanceLeft">getBalanceLeft</a>
+                            </li>
+                            <li>
+                                <a href="#getBSBanks">getBSBanks</a>
+                            </li>
+                            <li>
+                                <a href="#getClientStatesAndLGAs">getClientStatesAndLGAs</a>
+                            </li>
+                            <li>
+                                <a href="#getCreditCheck">getCreditCheck</a>
+                            </li>
+                            <li>
+                                <a href="#getDebitCardList">getDebitCardList</a>
+                            </li>
+                            <li>
+                                <a href="#getDetailsFromLandingPage">getDetailsFromLandingPage</a>
+                            </li>
+                            <li>
+                                <a href="#getEmployerLGAsforSelectedState">getEmployerLGAsforSelectedState</a>
+                            </li>
+                            <li>
+                                <a href="#getEmployerStates">getEmployerStates</a>
+                            </li>
+                            <li>
+                                <a href="#getEntryFromOnboarding">getEntryFromOnboarding</a>
+                            </li>
+                            <li>
+                                <a href="#getFinalLoanGDSResponse">getFinalLoanGDSResponse</a>
+                            </li>
+                            <li>
+                                <a href="#getFormerLoanDetails">getFormerLoanDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getIndustry">getIndustry</a>
+                            </li>
+                            <li>
+                                <a href="#getInitialLoanGDSResponse">getInitialLoanGDSResponse</a>
+                            </li>
+                            <li>
+                                <a href="#getLoanDocsStatus">getLoanDocsStatus</a>
+                            </li>
+                            <li>
+                                <a href="#getLoanEncodedKey">getLoanEncodedKey</a>
+                            </li>
+                            <li>
+                                <a href="#getLoanID">getLoanID</a>
+                            </li>
+                            <li>
+                                <a href="#getLoanRepayment">getLoanRepayment</a>
+                            </li>
+                            <li>
+                                <a href="#getLoans">getLoans</a>
+                            </li>
+                            <li>
+                                <a href="#getMBSBanks">getMBSBanks</a>
+                            </li>
+                            <li>
+                                <a href="#getRepaymentVendor">getRepaymentVendor</a>
+                            </li>
+                            <li>
+                                <a href="#getSocialMediaData">getSocialMediaData</a>
+                            </li>
+                            <li>
+                                <a href="#getSupportedCompanies">getSupportedCompanies</a>
+                            </li>
+                            <li>
+                                <a href="#getSupportedLGAsforSelectedState">getSupportedLGAsforSelectedState</a>
+                            </li>
+                            <li>
+                                <a href="#getSupportedStates">getSupportedStates</a>
+                            </li>
+                            <li>
+                                <a href="#getTeamLists">getTeamLists</a>
+                            </li>
+                            <li>
+                                <a href="#initiateMBS">initiateMBS</a>
+                            </li>
+                            <li>
+                                <a href="#newFinalGDS">newFinalGDS</a>
+                            </li>
+                            <li>
+                                <a href="#newInitialGDS">newInitialGDS</a>
+                            </li>
+                            <li>
+                                <a href="#removeEntryFromOnboarding">removeEntryFromOnboarding</a>
+                            </li>
+                            <li>
+                                <a href="#removeLoanEncodedKey">removeLoanEncodedKey</a>
+                            </li>
+                            <li>
+                                <a href="#removeLoanID">removeLoanID</a>
+                            </li>
+                            <li>
+                                <a href="#requestCardStatus">requestCardStatus</a>
+                            </li>
+                            <li>
+                                <a href="#requestMandateActivationOTP">requestMandateActivationOTP</a>
+                            </li>
+                            <li>
+                                <a href="#saveAccountDetailsLocally">saveAccountDetailsLocally</a>
+                            </li>
+                            <li>
+                                <a href="#saveLoanClient">saveLoanClient</a>
+                            </li>
+                            <li>
+                                <a href="#saveLoanClientFromLoanPage">saveLoanClientFromLoanPage</a>
+                            </li>
+                            <li>
+                                <a href="#saveLoanDetailFromLoanPage">saveLoanDetailFromLoanPage</a>
+                            </li>
+                            <li>
+                                <a href="#saveLoanEncodedKey">saveLoanEncodedKey</a>
+                            </li>
+                            <li>
+                                <a href="#saveLoanID">saveLoanID</a>
+                            </li>
+                            <li>
+                                <a href="#savePresentLoanDetail">savePresentLoanDetail</a>
+                            </li>
+                            <li>
+                                <a href="#saveSocialMediaData">saveSocialMediaData</a>
+                            </li>
+                            <li>
+                                <a href="#saveTeamLists">saveTeamLists</a>
+                            </li>
+                            <li>
+                                <a href="#sendEmailService">sendEmailService</a>
+                            </li>
+                            <li>
+                                <a href="#sendInternetBankingDetail">sendInternetBankingDetail</a>
+                            </li>
+                            <li>
+                                <a href="#sendLoanDocsStatus">sendLoanDocsStatus</a>
+                            </li>
+                            <li>
+                                <a href="#sendOfferLetter">sendOfferLetter</a>
+                            </li>
+                            <li>
+                                <a href="#setEntryFromOnboarding">setEntryFromOnboarding</a>
+                            </li>
+                            <li>
+                                <a href="#storeMonoRecord">storeMonoRecord</a>
+                            </li>
+                            <li>
+                                <a href="#storeOkraRecord">storeOkraRecord</a>
+                            </li>
+                            <li>
+                                <a href="#updateAccount">updateAccount</a>
+                            </li>
+                            <li>
+                                <a href="#updateLoanData">updateLoanData</a>
+                            </li>
+                            <li>
+                                <a href="#validateMandateActivationOTP">validateMandateActivationOTP</a>
+                            </li>
+                            <li>
+                                <a href="#verifyID">verifyID</a>
+                            </li>
+                            <li>
+                                <a href="#zenoCapture">zenoCapture</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(httpClient: <a href="../classes/Client.html">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/@core/loan.service.ts:18</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Client.html" target="_self" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="acceptFinalOffer"></a>
+                    <span class="name">
+                        <b>
+                            acceptFinalOffer
+                        </b>
+                        <a href="#acceptFinalOffer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>acceptFinalOffer(loanId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/@core/loan.service.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addCompany"></a>
+                    <span class="name">
+                        <b>
+                            addCompany
+                        </b>
+                        <a href="#addCompany"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addCompany(newCompanyId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/@core/loan.service.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>newCompanyId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeStepNumber"></a>
+                    <span class="name">
+                        <b>
+                            changeStepNumber
+                        </b>
+                        <a href="#changeStepNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeStepNumber(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="16"
+                            class="link-to-prism">src/app/@core/loan.service.ts:16</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>value</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearFormerLoanDetail"></a>
+                    <span class="name">
+                        <b>
+                            clearFormerLoanDetail
+                        </b>
+                        <a href="#clearFormerLoanDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearFormerLoanDetail()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="216"
+                            class="link-to-prism">src/app/@core/loan.service.ts:216</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Clears the former loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearLoanPageDetails"></a>
+                    <span class="name">
+                        <b>
+                            clearLoanPageDetails
+                        </b>
+                        <a href="#clearLoanPageDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearLoanPageDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="224"
+                            class="link-to-prism">src/app/@core/loan.service.ts:224</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Clears the former loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmBankStreaming"></a>
+                    <span class="name">
+                        <b>
+                            confirmBankStreaming
+                        </b>
+                        <a href="#confirmBankStreaming"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>confirmBankStreaming(bankStreamingData: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="518"
+                            class="link-to-prism">src/app/@core/loan.service.ts:518</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankStreamingData</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirmMBS"></a>
+                    <span class="name">
+                        <b>
+                            confirmMBS
+                        </b>
+                        <a href="#confirmMBS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>confirmMBS(bsData: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="506"
+                            class="link-to-prism">src/app/@core/loan.service.ts:506</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Completes the Bank streaming process for the User</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bsData</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createCompany"></a>
+                    <span class="name">
+                        <b>
+                            createCompany
+                        </b>
+                        <a href="#createCompany"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createCompany(company)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/app/@core/loan.service.ts:287</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Creates a company</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>company</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createLoan"></a>
+                    <span class="name">
+                        <b>
+                            createLoan
+                        </b>
+                        <a href="#createLoan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createLoan(loanDetail)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="35"
+                            class="link-to-prism">src/app/@core/loan.service.ts:35</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Create a Loan application on Mambu</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanDetail</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteSocialMediaData"></a>
+                    <span class="name">
+                        <b>
+                            deleteSocialMediaData
+                        </b>
+                        <a href="#deleteSocialMediaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteSocialMediaData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/@core/loan.service.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteTeamLists"></a>
+                    <span class="name">
+                        <b>
+                            deleteTeamLists
+                        </b>
+                        <a href="#deleteTeamLists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteTeamLists()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/@core/loan.service.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="emailStatusUpdate"></a>
+                    <span class="name">
+                        <b>
+                            emailStatusUpdate
+                        </b>
+                        <a href="#emailStatusUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>emailStatusUpdate(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/app/@core/loan.service.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateOfferLetter"></a>
+                    <span class="name">
+                        <b>
+                            generateOfferLetter
+                        </b>
+                        <a href="#generateOfferLetter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateOfferLetter(loanID)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="184"
+                            class="link-to-prism">src/app/@core/loan.service.ts:184</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanID</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAccountDetailsLocally"></a>
+                    <span class="name">
+                        <b>
+                            getAccountDetailsLocally
+                        </b>
+                        <a href="#getAccountDetailsLocally"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAccountDetailsLocally()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/@core/loan.service.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save present loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAllSectors"></a>
+                    <span class="name">
+                        <b>
+                            getAllSectors
+                        </b>
+                        <a href="#getAllSectors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAllSectors()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="395"
+                            class="link-to-prism">src/app/@core/loan.service.ts:395</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns a list of Sectors</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBalanceLeft"></a>
+                    <span class="name">
+                        <b>
+                            getBalanceLeft
+                        </b>
+                        <a href="#getBalanceLeft"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBalanceLeft(repayments)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="529"
+                            class="link-to-prism">src/app/@core/loan.service.ts:529</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>repayments</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBSBanks"></a>
+                    <span class="name">
+                        <b>
+                            getBSBanks
+                        </b>
+                        <a href="#getBSBanks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBSBanks()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="246"
+                            class="link-to-prism">src/app/@core/loan.service.ts:246</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets a list of banks supported by bank streaming (Zenno0)</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getClientStatesAndLGAs"></a>
+                    <span class="name">
+                        <b>
+                            getClientStatesAndLGAs
+                        </b>
+                        <a href="#getClientStatesAndLGAs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getClientStatesAndLGAs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="352"
+                            class="link-to-prism">src/app/@core/loan.service.ts:352</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCreditCheck"></a>
+                    <span class="name">
+                        <b>
+                            getCreditCheck
+                        </b>
+                        <a href="#getCreditCheck"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCreditCheck(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="382"
+                            class="link-to-prism">src/app/@core/loan.service.ts:382</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDebitCardList"></a>
+                    <span class="name">
+                        <b>
+                            getDebitCardList
+                        </b>
+                        <a href="#getDebitCardList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDebitCardList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="458"
+                            class="link-to-prism">src/app/@core/loan.service.ts:458</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDetailsFromLandingPage"></a>
+                    <span class="name">
+                        <b>
+                            getDetailsFromLandingPage
+                        </b>
+                        <a href="#getDetailsFromLandingPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDetailsFromLandingPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/app/@core/loan.service.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets an ongoing loan details from</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ loan: any; client: any; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEmployerLGAsforSelectedState"></a>
+                    <span class="name">
+                        <b>
+                            getEmployerLGAsforSelectedState
+                        </b>
+                        <a href="#getEmployerLGAsforSelectedState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEmployerLGAsforSelectedState(stateCode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="416"
+                            class="link-to-prism">src/app/@core/loan.service.ts:416</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stateCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEmployerStates"></a>
+                    <span class="name">
+                        <b>
+                            getEmployerStates
+                        </b>
+                        <a href="#getEmployerStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEmployerStates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="268"
+                            class="link-to-prism">src/app/@core/loan.service.ts:268</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEntryFromOnboarding"></a>
+                    <span class="name">
+                        <b>
+                            getEntryFromOnboarding
+                        </b>
+                        <a href="#getEntryFromOnboarding"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getEntryFromOnboarding()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/@core/loan.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFinalLoanGDSResponse"></a>
+                    <span class="name">
+                        <b>
+                            getFinalLoanGDSResponse
+                        </b>
+                        <a href="#getFinalLoanGDSResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFinalLoanGDSResponse(loanId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="360"
+                            class="link-to-prism">src/app/@core/loan.service.ts:360</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Final Decisioning</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>id of the loan being currently processed</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFormerLoanDetails"></a>
+                    <span class="name">
+                        <b>
+                            getFormerLoanDetails
+                        </b>
+                        <a href="#getFormerLoanDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFormerLoanDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/@core/loan.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets an ongoing loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ loan: any; client: any; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getIndustry"></a>
+                    <span class="name">
+                        <b>
+                            getIndustry
+                        </b>
+                        <a href="#getIndustry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getIndustry(sector)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="402"
+                            class="link-to-prism">src/app/@core/loan.service.ts:402</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns a list of industries in a sector</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sector</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInitialLoanGDSResponse"></a>
+                    <span class="name">
+                        <b>
+                            getInitialLoanGDSResponse
+                        </b>
+                        <a href="#getInitialLoanGDSResponse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInitialLoanGDSResponse(loanDetails)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="310"
+                            class="link-to-prism">src/app/@core/loan.service.ts:310</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Runs Fastrack</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoanDocsStatus"></a>
+                    <span class="name">
+                        <b>
+                            getLoanDocsStatus
+                        </b>
+                        <a href="#getLoanDocsStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoanDocsStatus(loanID)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">src/app/@core/loan.service.ts:208</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanID</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoanEncodedKey"></a>
+                    <span class="name">
+                        <b>
+                            getLoanEncodedKey
+                        </b>
+                        <a href="#getLoanEncodedKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoanEncodedKey()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/@core/loan.service.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoanID"></a>
+                    <span class="name">
+                        <b>
+                            getLoanID
+                        </b>
+                        <a href="#getLoanID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoanID()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/app/@core/loan.service.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoanRepayment"></a>
+                    <span class="name">
+                        <b>
+                            getLoanRepayment
+                        </b>
+                        <a href="#getLoanRepayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoanRepayment(loanId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="50"
+                            class="link-to-prism">src/app/@core/loan.service.ts:50</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Repayments for a particular loan</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>loanId to get repayments for</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLoans"></a>
+                    <span class="name">
+                        <b>
+                            getLoans
+                        </b>
+                        <a href="#getLoans"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLoans(clientId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="26"
+                            class="link-to-prism">src/app/@core/loan.service.ts:26</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get the User&#39;s Loan</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>clientId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMBSBanks"></a>
+                    <span class="name">
+                        <b>
+                            getMBSBanks
+                        </b>
+                        <a href="#getMBSBanks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMBSBanks()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/app/@core/loan.service.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get a list on banks suported by bank streaming</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRepaymentVendor"></a>
+                    <span class="name">
+                        <b>
+                            getRepaymentVendor
+                        </b>
+                        <a href="#getRepaymentVendor"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRepaymentVendor(loanId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="422"
+                            class="link-to-prism">src/app/@core/loan.service.ts:422</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSocialMediaData"></a>
+                    <span class="name">
+                        <b>
+                            getSocialMediaData
+                        </b>
+                        <a href="#getSocialMediaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSocialMediaData()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/@core/loan.service.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSupportedCompanies"></a>
+                    <span class="name">
+                        <b>
+                            getSupportedCompanies
+                        </b>
+                        <a href="#getSupportedCompanies"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSupportedCompanies(company: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="278"
+                            class="link-to-prism">src/app/@core/loan.service.ts:278</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns a list of Companies Supported by RenMoney</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>company</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSupportedLGAsforSelectedState"></a>
+                    <span class="name">
+                        <b>
+                            getSupportedLGAsforSelectedState
+                        </b>
+                        <a href="#getSupportedLGAsforSelectedState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSupportedLGAsforSelectedState(stateCode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="409"
+                            class="link-to-prism">src/app/@core/loan.service.ts:409</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns a list of LGAs Supported in a state by RenMoney</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stateCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSupportedStates"></a>
+                    <span class="name">
+                        <b>
+                            getSupportedStates
+                        </b>
+                        <a href="#getSupportedStates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSupportedStates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/app/@core/loan.service.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns a list of States Supported by RenMoney</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTeamLists"></a>
+                    <span class="name">
+                        <b>
+                            getTeamLists
+                        </b>
+                        <a href="#getTeamLists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTeamLists()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/@core/loan.service.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initiateMBS"></a>
+                    <span class="name">
+                        <b>
+                            initiateMBS
+                        </b>
+                        <a href="#initiateMBS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initiateMBS(loan_id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="492"
+                            class="link-to-prism">src/app/@core/loan.service.ts:492</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initiates the Bank streaming process for the User</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loan_id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>id of loan that should initiate Bank streaming</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newFinalGDS"></a>
+                    <span class="name">
+                        <b>
+                            newFinalGDS
+                        </b>
+                        <a href="#newFinalGDS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newFinalGDS(loanId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="557"
+                            class="link-to-prism">src/app/@core/loan.service.ts:557</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newInitialGDS"></a>
+                    <span class="name">
+                        <b>
+                            newInitialGDS
+                        </b>
+                        <a href="#newInitialGDS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newInitialGDS(loanId, employmentStatus)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="553"
+                            class="link-to-prism">src/app/@core/loan.service.ts:553</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>employmentStatus</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeEntryFromOnboarding"></a>
+                    <span class="name">
+                        <b>
+                            removeEntryFromOnboarding
+                        </b>
+                        <a href="#removeEntryFromOnboarding"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeEntryFromOnboarding()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/app/@core/loan.service.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeLoanEncodedKey"></a>
+                    <span class="name">
+                        <b>
+                            removeLoanEncodedKey
+                        </b>
+                        <a href="#removeLoanEncodedKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeLoanEncodedKey()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/@core/loan.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeLoanID"></a>
+                    <span class="name">
+                        <b>
+                            removeLoanID
+                        </b>
+                        <a href="#removeLoanID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeLoanID()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/@core/loan.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestCardStatus"></a>
+                    <span class="name">
+                        <b>
+                            requestCardStatus
+                        </b>
+                        <a href="#requestCardStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestCardStatus(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="449"
+                            class="link-to-prism">src/app/@core/loan.service.ts:449</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requestMandateActivationOTP"></a>
+                    <span class="name">
+                        <b>
+                            requestMandateActivationOTP
+                        </b>
+                        <a href="#requestMandateActivationOTP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>requestMandateActivationOTP(loanId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="431"
+                            class="link-to-prism">src/app/@core/loan.service.ts:431</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveAccountDetailsLocally"></a>
+                    <span class="name">
+                        <b>
+                            saveAccountDetailsLocally
+                        </b>
+                        <a href="#saveAccountDetailsLocally"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveAccountDetailsLocally(details)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/app/@core/loan.service.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save present loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>details</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLoanClient"></a>
+                    <span class="name">
+                        <b>
+                            saveLoanClient
+                        </b>
+                        <a href="#saveLoanClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveLoanClient(client)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/@core/loan.service.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save client data gathered during loan creation</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>present Loan CLient</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLoanClientFromLoanPage"></a>
+                    <span class="name">
+                        <b>
+                            saveLoanClientFromLoanPage
+                        </b>
+                        <a href="#saveLoanClientFromLoanPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveLoanClientFromLoanPage(client)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="138"
+                            class="link-to-prism">src/app/@core/loan.service.ts:138</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save client data gathered during loan creation from loan onboard Page</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>present Loan CLient</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLoanDetailFromLoanPage"></a>
+                    <span class="name">
+                        <b>
+                            saveLoanDetailFromLoanPage
+                        </b>
+                        <a href="#saveLoanDetailFromLoanPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveLoanDetailFromLoanPage(loan)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/@core/loan.service.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save present loan detail from loan onboard Page</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loan</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>presently filled loan</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLoanEncodedKey"></a>
+                    <span class="name">
+                        <b>
+                            saveLoanEncodedKey
+                        </b>
+                        <a href="#saveLoanEncodedKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveLoanEncodedKey(key)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/@core/loan.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveLoanID"></a>
+                    <span class="name">
+                        <b>
+                            saveLoanID
+                        </b>
+                        <a href="#saveLoanID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveLoanID(key)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/@core/loan.service.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>key</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="savePresentLoanDetail"></a>
+                    <span class="name">
+                        <b>
+                            savePresentLoanDetail
+                        </b>
+                        <a href="#savePresentLoanDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>savePresentLoanDetail(loan)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/@core/loan.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save present loan detail</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loan</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>presently filled loan</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveSocialMediaData"></a>
+                    <span class="name">
+                        <b>
+                            saveSocialMediaData
+                        </b>
+                        <a href="#saveSocialMediaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveSocialMediaData(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="162"
+                            class="link-to-prism">src/app/@core/loan.service.ts:162</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveTeamLists"></a>
+                    <span class="name">
+                        <b>
+                            saveTeamLists
+                        </b>
+                        <a href="#saveTeamLists"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveTeamLists(team)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/@core/loan.service.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>team</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendEmailService"></a>
+                    <span class="name">
+                        <b>
+                            sendEmailService
+                        </b>
+                        <a href="#sendEmailService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendEmailService(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/app/@core/loan.service.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendInternetBankingDetail"></a>
+                    <span class="name">
+                        <b>
+                            sendInternetBankingDetail
+                        </b>
+                        <a href="#sendInternetBankingDetail"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendInternetBankingDetail(internetBankingInfo)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="322"
+                            class="link-to-prism">src/app/@core/loan.service.ts:322</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>internetBankingInfo</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendLoanDocsStatus"></a>
+                    <span class="name">
+                        <b>
+                            sendLoanDocsStatus
+                        </b>
+                        <a href="#sendLoanDocsStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendLoanDocsStatus(loanData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">src/app/@core/loan.service.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendOfferLetter"></a>
+                    <span class="name">
+                        <b>
+                            sendOfferLetter
+                        </b>
+                        <a href="#sendOfferLetter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendOfferLetter(loanId, clientId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="376"
+                            class="link-to-prism">src/app/@core/loan.service.ts:376</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>clientId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setEntryFromOnboarding"></a>
+                    <span class="name">
+                        <b>
+                            setEntryFromOnboarding
+                        </b>
+                        <a href="#setEntryFromOnboarding"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setEntryFromOnboarding(mode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/@core/loan.service.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storeMonoRecord"></a>
+                    <span class="name">
+                        <b>
+                            storeMonoRecord
+                        </b>
+                        <a href="#storeMonoRecord"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>storeMonoRecord(bankDetails)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="330"
+                            class="link-to-prism">src/app/@core/loan.service.ts:330</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storeOkraRecord"></a>
+                    <span class="name">
+                        <b>
+                            storeOkraRecord
+                        </b>
+                        <a href="#storeOkraRecord"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>storeOkraRecord(bankDetails)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="326"
+                            class="link-to-prism">src/app/@core/loan.service.ts:326</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateAccount"></a>
+                    <span class="name">
+                        <b>
+                            updateAccount
+                        </b>
+                        <a href="#updateAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateAccount(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">src/app/@core/loan.service.ts:343</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateLoanData"></a>
+                    <span class="name">
+                        <b>
+                            updateLoanData
+                        </b>
+                        <a href="#updateLoanData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateLoanData(loanId, payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="347"
+                            class="link-to-prism">src/app/@core/loan.service.ts:347</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loanId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="validateMandateActivationOTP"></a>
+                    <span class="name">
+                        <b>
+                            validateMandateActivationOTP
+                        </b>
+                        <a href="#validateMandateActivationOTP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>validateMandateActivationOTP(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="440"
+                            class="link-to-prism">src/app/@core/loan.service.ts:440</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="verifyID"></a>
+                    <span class="name">
+                        <b>
+                            verifyID
+                        </b>
+                        <a href="#verifyID"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>verifyID(verifyData: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="471"
+                            class="link-to-prism">src/app/@core/loan.service.ts:471</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Verifies the Users id against cleint data</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>verifyData</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>object to verify</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zenoCapture"></a>
+                    <span class="name">
+                        <b>
+                            zenoCapture
+                        </b>
+                        <a href="#zenoCapture"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>zenoCapture(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="334"
+                            class="link-to-prism">src/app/@core/loan.service.ts:334</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="RANDOM_NUMBER"></a>
+                        <span class="name">
+                            <b>
+                            RANDOM_NUMBER</b>
+                            <a href="#RANDOM_NUMBER"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;1234345332&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/@core/loan.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            stepNumber</b>
+                            <a href="#stepNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;number&gt;(0)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/app/@core/loan.service.ts:13</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="stepNumber$"></a>
+                        <span class="name">
+                            <b>
+                            stepNumber$</b>
+                            <a href="#stepNumber$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this.stepNumber.asObservable()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/@core/loan.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
+import { HttpClient, HttpHeaders } from &quot;@angular/common/http&quot;;
+import { environment } from &quot;src/environments/environment&quot;;
+import { GeneralAPIResponse } from &quot;../@model/responses/general-api-response&quot;;
+import { BehaviorSubject, Observable } from &quot;rxjs&quot;;
+
+
+@Injectable({ providedIn: &quot;root&quot; })
+export class LoanService {
+
+    RANDOM_NUMBER &#x3D; &#x27;1234345332&#x27;;
+
+    private stepNumber &#x3D; new BehaviorSubject&lt;number&gt;(0);
+    stepNumber$ &#x3D; this.stepNumber.asObservable();
+
+    changeStepNumber(value: number): void {
+        this.stepNumber.next(value);
+    }
+
+
+    constructor(private httpClient: HttpClient) { }
+
+    /**
+     * Get the User&#x27;s Loan
+     */
+    getLoans(clientId): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}loans/${clientId}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Create a Loan application on Mambu
+     */
+    createLoan(loanDetail) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;sourceapp&quot;: environment.mbs2sourceAppID
+            })
+        };
+        return this.httpClient.post(
+            &#x60;${environment.mambuMiddlewareBaseURL}fraud-check&#x60;, loanDetail, httpOptions
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Get Repayments for a particular loan
+     * @param loanId loanId to get repayments for
+     */
+    getLoanRepayment(loanId): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}loans/${loanId}/repayments&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Save client data gathered during loan creation
+     * @param client present Loan CLient
+     */
+    saveLoanClient(client) {
+        localStorage.setItem(&#x27;ren_lc&#x27;, JSON.stringify(client));
+    }
+
+    saveLoanEncodedKey(key) {
+        localStorage.setItem(&#x27;LEK&#x27;, key);
+    }
+
+    getLoanEncodedKey() {
+        return localStorage.getItem(&#x27;LEK&#x27;);
+    }
+
+    removeLoanEncodedKey() {
+        localStorage.removeItem(&#x27;LEK&#x27;);
+    }
+
+    saveLoanID(key) {
+        localStorage.setItem(&#x27;l_id&#x27;, key);
+    }
+
+    getLoanID() {
+        return localStorage.getItem(&#x27;l_id&#x27;);
+    }
+
+    removeLoanID() {
+        localStorage.removeItem(&#x27;l_id&#x27;);
+    }
+
+    setEntryFromOnboarding(mode) {
+        localStorage.setItem(&#x27;entry&#x27;, mode);
+    }
+
+    getEntryFromOnboarding() {
+        return localStorage.getItem(&#x27;entry&#x27;);
+    }
+
+    removeEntryFromOnboarding() {
+        localStorage.removeItem(&#x27;entry&#x27;);
+    }
+
+    /**
+    * Save present loan detail
+    * @param loan presently filled loan
+    */
+    savePresentLoanDetail(loan) {
+        localStorage.setItem(&#x27;ren_pl&#x27;, JSON.stringify(loan));
+    }
+
+    /**
+   * Save present loan detail
+   * @param loan presently filled loan
+   */
+    saveAccountDetailsLocally(details) {
+        localStorage.setItem(&#x27;act_de&#x27;, JSON.stringify(details));
+    }
+
+    /**
+       * Save present loan detail
+       * @param loan presently filled loan
+       */
+    getAccountDetailsLocally() {
+        return JSON.parse(localStorage.getItem(&#x27;act_de&#x27;));
+    }
+
+    /**
+    * Gets an ongoing loan detail
+    */
+    getFormerLoanDetails() {
+        return {
+            loan: JSON.parse(localStorage.getItem(&#x27;ren_pl&#x27;)),
+            client: JSON.parse(localStorage.getItem(&#x27;ren_lc&#x27;))
+        }
+    }
+
+    /**
+     * Save client data gathered during loan creation from loan onboard Page
+     * @param client present Loan CLient
+     */
+    saveLoanClientFromLoanPage(client) {
+        localStorage.setItem(&#x27;ren_lcd&#x27;, JSON.stringify(client));
+    }
+
+    /**
+     * Save present loan detail from loan onboard Page
+     * @param loan presently filled loan
+     */
+    saveLoanDetailFromLoanPage(loan) {
+        localStorage.setItem(&#x27;ren_pld&#x27;, JSON.stringify(loan));
+    }
+
+    saveTeamLists(team) {
+        localStorage.setItem(&#x27;tm&#x27;, JSON.stringify(team));
+    }
+
+    getTeamLists() {
+        return JSON.parse(localStorage.getItem(&#x27;tm&#x27;));
+    }
+
+    deleteTeamLists() {
+        localStorage.removeItem(&#x27;tm&#x27;);
+    }
+
+    saveSocialMediaData(data) {
+        localStorage.setItem(&#x27;smd&#x27;, JSON.stringify(data));
+    }
+
+    getSocialMediaData() {
+        return JSON.parse(localStorage.getItem(&#x27;smd&#x27;));
+    }
+
+    deleteSocialMediaData() {
+        localStorage.removeItem(&#x27;smd&#x27;);
+    }
+
+
+    emailStatusUpdate(data) {
+        return this.httpClient.post(&#x60;${environment.emailBaseURL}alerts/api/v1/email/status/update&#x60;, data);
+    }
+
+    sendEmailService(data) {
+        return this.httpClient.post(&#x60;${environment.emailBaseURL}alerts/api/v1/email/send&#x60;, data);
+    }
+
+
+    generateOfferLetter(loanID) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;X-Requested-With&quot;: &quot;XMLHttpRequest&quot;,
+                &quot;RENMONEY-API-KEY&quot;: environment.renmoneyAPIKey
+            })
+        };
+        return this.httpClient.get(&#x60;${environment.offerLetter}${loanID}/${this.RANDOM_NUMBER}/json&#x60;, httpOptions);
+    }
+
+    /**
+    * Gets an ongoing loan details from
+    */
+    getDetailsFromLandingPage() {
+        return {
+            loan: JSON.parse(localStorage.getItem(&#x27;ren_pld&#x27;)),
+            client: JSON.parse(localStorage.getItem(&#x27;ren_lcd&#x27;))
+        }
+    }
+
+    sendLoanDocsStatus(loanData) {
+        return this.httpClient.post(&#x60;${environment.investmentBaseURL}upload/status&#x60;, loanData);
+    }
+
+    getLoanDocsStatus(loanID) {
+        return this.httpClient.get(&#x60;${environment.investmentBaseURL}upload/status/${loanID}&#x60;);
+    }
+
+
+    /**
+     * Clears the former loan detail
+     */
+    clearFormerLoanDetail() {
+        localStorage.removeItem(&#x27;ren_pl&#x27;);
+        localStorage.removeItem(&#x27;ren_lc&#x27;);
+    }
+
+    /**
+     * Clears the former loan detail
+     */
+    clearLoanPageDetails() {
+        localStorage.removeItem(&#x27;ren_pld&#x27;);
+        localStorage.removeItem(&#x27;ren_lcd&#x27;);
+    }
+
+    /**
+     * Get a list on banks suported by bank streaming
+     */
+    getMBSBanks() {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.get(&#x60;${environment.mbsBaseURL}renmbs/mbs/api/all/v1&#x60;, httpOptions);
+    }
+
+    /**
+     * Gets a list of banks supported by bank streaming (Zenno0)
+     */
+    getBSBanks() {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.get(&#x60;${environment.mbsBaseURL}renmbs/api/v1/bs/banks&#x60;, httpOptions);
+    }
+
+
+    /**
+     * Returns a list of States Supported by RenMoney
+     */
+    getSupportedStates() {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}state/sub&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;{ name: string, code: string }[]&gt;&gt;;
+    }
+
+
+    getEmployerStates() {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}state/employer&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;{ name: string, code: string }[]&gt;&gt;;
+    }
+
+
+    /**
+      * Returns a list of Companies Supported by RenMoney
+      */
+    getSupportedCompanies(company: string) {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}companies/${company}&#x60;)
+    }
+
+    /**
+     * Creates a company
+     */
+
+    createCompany(company) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                &quot;sourceapp&quot;: environment.companySourceAppID
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mambuMiddlewareBaseURL}company&#x60;, company, httpOptions);
+    }
+
+    addCompany(newCompanyId) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;sourceapp&quot;: environment.companySourceAppID
+            })
+        };
+        return this.httpClient.get(&#x60;${environment.mambuMiddlewareBaseURL}company/${newCompanyId}&#x60;, httpOptions);
+    }
+
+    /**
+     * Runs Fastrack
+     * @param loanId id of the loan being currently processed
+     */
+    getInitialLoanGDSResponse(loanDetails) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.decisionBaseURL}api/gds/initial/v1&#x60;, loanDetails, httpOptions);
+    }
+
+
+    sendInternetBankingDetail(internetBankingInfo) {
+        return this.httpClient.post(&#x60;${environment.rencoreBaseURL}internet-banking&#x60;, internetBankingInfo);
+    }
+
+    storeOkraRecord(bankDetails) {
+        return this.httpClient.post(environment.storeOkraRecord, bankDetails);
+    }
+
+    storeMonoRecord(bankDetails) {
+        return this.httpClient.post(environment.storeMonoRecord, bankDetails);
+    }
+
+    zenoCapture(payload) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;RENMONEY-API-KEY&quot;: environment.zenoCaptureRenmoneyKey
+            })
+        };
+        return this.httpClient.post(environment.zenoCapture, payload, httpOptions);
+    }
+
+    updateAccount(payload) {
+        return this.httpClient.patch(&#x60;${environment.apiNewBaseURL}custom-information&#x60;, payload);
+    }
+
+    updateLoanData(loanId, payload) {
+        return this.httpClient.patch(&#x60;${environment.apiNewBaseURL}loans/${loanId}&#x60;, payload);
+    }
+
+
+    getClientStatesAndLGAs() {
+        return this.httpClient.get(&#x60;${environment.apiNewBaseURL}address/states-lgas&#x60;);
+    }
+
+    /**
+     * Final Decisioning
+     * @param loanId id of the loan being currently processed
+     */
+    getFinalLoanGDSResponse(loanId) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+
+        return this.httpClient.post(&#x60;${environment.decisionBaseURL}api/gds/final/v1&#x60;, { loanId: loanId }, httpOptions);
+    }
+
+    acceptFinalOffer(loanId) {
+        return this.httpClient.post(&#x60;${environment.investmentBaseURL}acceptFinalOffer&#x60;, { loanId: loanId })
+    }
+
+    sendOfferLetter(loanId, clientId) {
+        return this.httpClient.post(&#x60;${environment.rencoreBaseURL}offer-letter/${loanId}/${clientId}&#x60;, {})
+    }
+
+
+
+    getCreditCheck(payload) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                Authorization: environment.creditCheckAuth
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.emailBaseURL}middleware/api/v1/credit/check&#x60;, payload, httpOptions);
+    }
+
+
+    /**
+     * Returns a list of Sectors
+     */
+    getAllSectors() {
+        return this.httpClient.get(&#x60;${environment.investmentBaseURL}sector/all&#x60;)
+    }
+
+    /**
+     * Returns a list of industries in a sector
+     */
+    getIndustry(sector) {
+        return this.httpClient.get(&#x60;${environment.investmentBaseURL}industries/${sector}&#x60;)
+    }
+
+    /**
+     * Returns a list of LGAs Supported in a state by RenMoney
+     */
+    getSupportedLGAsforSelectedState(stateCode) {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}state/sub/${stateCode}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;{ name: string }[]&gt;&gt;;
+    }
+
+
+    getEmployerLGAsforSelectedState(stateCode) {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}state/employer/${stateCode}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;{ name: string }[]&gt;&gt;;
+    }
+
+    getRepaymentVendor(loanId: string) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                sourceAppId: environment.unifiedAppSourceAppID,
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.unifiedAppBaseURL}repaymentVendor&#x60;, { loan_id: loanId }, httpOptions);
+    }
+
+    requestMandateActivationOTP(loanId: string) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;RENMONEY-API-KEY&quot;: environment.renmoneyAPIKey
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mandateActivation}requestOTP&#x60;, { loan_id: loanId }, httpOptions);
+    }
+
+    validateMandateActivationOTP(payload) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;RENMONEY-API-KEY&quot;: environment.renmoneyAPIKey
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mandateActivation}validateOTP&#x60;, payload, httpOptions);
+    }
+
+    requestCardStatus(payload) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                sourceAppId: environment.unifiedAppSourceAppID,
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.unifiedAppBaseURL}requestCardstatus&#x60;, payload, httpOptions);
+    }
+
+    getDebitCardList() {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                sourceAppId: environment.unifiedAppSourceAppID,
+            })
+        };
+        return this.httpClient.get(&#x60;${environment.unifiedAppBaseURL}cardtype/list&#x60;, httpOptions);
+    }
+
+    /**
+     * Verifies the Users id against cleint data
+     * @param verifyData object to verify
+     */
+    verifyID(verifyData: {
+        idNumber: string,
+        phoneNumber: string,
+        country: string,
+        clientId: string,
+        idType: string,
+        firstName: string,
+        lastName: string
+    }) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                sourceAppID: environment.smileIDSourceAppID
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mb2BaseURL}renidentity/api/v1/verify&#x60;, verifyData, httpOptions);
+    }
+
+    /**
+     * Initiates the Bank streaming process for the User
+     * @param loan_id id of loan that should initiate Bank streaming
+     */
+    initiateMBS(loan_id: string) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbsSourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mbsBaseURL}renmbs/mbs/api/form/vi&#x60;, { loan_id }, httpOptions);
+    }
+
+    /**
+     * Completes the Bank streaming process for the User
+     */
+    confirmMBS(bsData: { loan_id: string, ticket_number: string, password: string }) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                //&quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mbsBaseURL}renmbs/mbs/cs/api/confirm/vi
+        &#x60;, bsData, httpOptions);
+    }
+
+    confirmBankStreaming(bankStreamingData: { loanId: string, clientId: string, bankCode: string, password: string, userName: string }): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                // &quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+                Authorization: &#x60;Basic ${btoa(&#x60;${environment.gdsUsername}:${environment.gdsPassword}&#x60;)}&#x60;
+            })
+        };
+        return this.httpClient.post(&#x60;${environment.mbsBaseURL}renmbs/api/v1/bs/process&#x60;, bankStreamingData, httpOptions) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getBalanceLeft(repayments) {
+        let balance &#x3D; 0;
+
+        repayments.map((repayment) &#x3D;&gt; {
+            let dues &#x3D;
+                parseFloat(repayment.feesDue) +
+                parseFloat(repayment.interestDue) +
+                parseFloat(repayment.penaltyDue) +
+                parseFloat(repayment.principalDue);
+            let paid &#x3D;
+                parseFloat(repayment.feesPaid) +
+                parseFloat(repayment.interestPaid) +
+                parseFloat(repayment.penaltyPaid) +
+                parseFloat(repayment.principalPaid);
+
+            repayment.state &#x3D; repayment.state.replace(&quot;_&quot;, &quot; &quot;);
+            repayment.total &#x3D; dues - paid;
+
+            balance +&#x3D; dues - paid;
+        });
+
+        return balance;
+    }
+
+    newInitialGDS(loanId, employmentStatus) {
+        return this.httpClient.get(&#x60;${environment.investmentBaseURL}initial/${loanId}/${employmentStatus}&#x60;)
+    }
+
+    newFinalGDS(loanId) {
+        return this.httpClient.get(&#x60;${environment.investmentBaseURL}final/${loanId}&#x60;)
+    }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'LoanService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

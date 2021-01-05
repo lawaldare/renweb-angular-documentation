@@ -1,0 +1,946 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TargetSavingsWithdrawComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-target-savings-withdraw</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../../../invest/plan-name/plan-name.component.scss,<br>../../../single-view/withdraw/withdraw.component.scss,<br>./target-savings-withdraw.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./target-savings-withdraw.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#renflexAccount">renflexAccount</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#fundWithEverything">fundWithEverything</a>
+                            </li>
+                            <li>
+                                <a href="#getRenmoneyAccount">getRenmoneyAccount</a>
+                            </li>
+                            <li>
+                                <a href="#goToNextPage">goToNextPage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveNuban">retrieveNuban</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#investment">investment</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#done">done</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(investmentService: <a href="../injectables/InvestmentService.html">InvestmentService</a>, toastr: ToastrService, clientService: <a href="../injectables/ClientService.html">ClientService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>investmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InvestmentService.html" target="_self" >InvestmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="investment"></a>
+                        <b>investment</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InvestmentInterface.html" target="_self" >InvestmentInterface</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:18</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="done"></a>
+                        <b>done</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;number&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fundWithEverything"></a>
+                    <span class="name">
+                        <b>
+                            fundWithEverything
+                        </b>
+                        <a href="#fundWithEverything"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>fundWithEverything()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRenmoneyAccount"></a>
+                    <span class="name">
+                        <b>
+                            getRenmoneyAccount
+                        </b>
+                        <a href="#getRenmoneyAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRenmoneyAccount(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToNextPage"></a>
+                    <span class="name">
+                        <b>
+                            goToNextPage
+                        </b>
+                        <a href="#goToNextPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToNextPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveNuban"></a>
+                    <span class="name">
+                        <b>
+                            retrieveNuban
+                        </b>
+                        <a href="#retrieveNuban"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retrieveNuban()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <span class="name">
+                            <b>
+                            client</b>
+                            <a href="#client"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="renflexAccount"></a>
+                        <span class="name">
+                            <b>
+                            renflexAccount</b>
+                            <a href="#renflexAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/@page/create/target-savings/target-savings-withdraw/target-savings-withdraw.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { ToastrService } from &#x27;ngx-toastr&#x27;;
+import { ClientService } from &#x27;src/app/@core/client.service&#x27;;
+import { InvestmentService } from &#x27;src/app/@core/investment.service&#x27;;
+import { Client } from &#x27;src/app/@model/client&#x27;;
+import { InvestmentInterface } from &#x27;src/app/@model/interfaces&#x27;;
+
+@Component({
+    selector: &#x27;app-target-savings-withdraw&#x27;,
+    templateUrl: &#x27;./target-savings-withdraw.component.html&#x27;,
+    styleUrls: [&#x27;../../../invest/plan-name/plan-name.component.scss&#x27;, &#x27;../../../single-view/withdraw/withdraw.component.scss&#x27;, &#x27;./target-savings-withdraw.component.scss&#x27;]
+})
+export class TargetSavingsWithdrawComponent implements OnInit {
+
+    loading: boolean &#x3D; false;
+    renflexAccount: any;
+    client: Client;
+    @Input() investment: InvestmentInterface;
+    @Output() done: EventEmitter&lt;number&gt; &#x3D; new EventEmitter&lt;number&gt;();
+
+
+
+    constructor(private investmentService: InvestmentService, private toastr: ToastrService, private clientService: ClientService) { }
+
+    ngOnInit(): void {
+
+        this.client &#x3D; this.clientService.getClientLocally();
+        // this.investment &#x3D; this.investmentService.getSmartGoalInvestmentLocally();
+        if (!this.client.nuban) {
+            this.retrieveNuban();
+        } else {
+            this.getRenmoneyAccount(this.client.nuban);
+        }
+    }
+
+
+    goToNextPage() {
+        this.done.emit(1);
+    }
+
+
+    retrieveNuban() {
+        this.clientService.getClientNuban(this.client.clientEncodedkey)
+            .subscribe((data) &#x3D;&gt; {
+                this.client.nuban &#x3D; data.data.nuban;
+                this.getRenmoneyAccount(this.client.nuban);
+            }, () &#x3D;&gt; {
+                this.toastr.error(&quot;Couldn&#x27;t retrieve your pocket account&quot;);
+            })
+    }
+
+
+    getRenmoneyAccount(id) {
+        this.loading &#x3D; true;
+        this.investmentService.getSingleInvestment(id).subscribe(
+            (data) &#x3D;&gt; {
+                this.renflexAccount &#x3D; data.data.clientDeposit;
+                this.loading &#x3D; false;
+            },
+            (error) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.toastr.error(&quot;Couldn&#x27;t retrieve your pocket account&quot;);
+            }
+        );
+    }
+
+
+    fundWithEverything() {
+        let payload: any &#x3D; {};
+        payload.debitAccountId &#x3D; this.renflexAccount.id;
+        payload.creditAccountId &#x3D; this.investment._id;
+        payload.minorAmount &#x3D; +this.investment.contributionAmount * 100;
+        payload.narration &#x3D; &#x60;Funded ${this.investment.planName} from regular savings&#x60;;
+        this.loading &#x3D; true;
+        this.investmentService.intrabankTransfer(payload).subscribe(
+            (data) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.investment.paymentMade &#x3D; true;
+                this.done.emit(2);
+            },
+            (error) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.toastr.error(error.error.message);
+            }
+        );
+    }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-5&quot;&gt;
+        &lt;app-page-description title&#x3D;&quot;How much do you want to withdraw?&quot;&gt;
+        &lt;/app-page-description&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-lg-7&quot;&gt;
+        &lt;div class&#x3D;&quot;card&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;div class&#x3D;&quot;partial pointer d-flex justify-content-between align-items-center&quot; (click)&#x3D;&quot;goToNextPage()&quot;&gt;
+                    &lt;p class&#x3D;&quot;left-text weight-normal font-14&quot;&gt;Enter amount&lt;/p&gt;
+                    &lt;!-- &lt;p class&#x3D;&quot;right-text weight-bold font-12 text-right&quot;&gt;enter amount&lt;/p&gt; --&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;full mt-3 pointer d-flex justify-content-between align-items-center&quot;
+                    (click)&#x3D;&quot;fundWithEverything()&quot;&gt;
+                    &lt;p class&#x3D;&quot;left-text weight-normal font-14&quot;&gt;Pay {{ investment.contributionAmount | currency:&#x27;₦&#x27;}}&lt;/p&gt;
+                    &lt;p class&#x3D;&quot;amount-text weight-bold font-12 text-right&quot; *ngIf&#x3D;&quot;renflexAccount&quot;&gt;Balance:
+                        &lt;span
+                            class&#x3D;&quot;weight-bold font-14 text-right&quot;&gt;{{renflexAccount.availableBalance | currency:&#x27;₦&#x27; || &#x27;xx&#x27; }}&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;app-loader [loading]&#x3D;&quot;loading&quot;&gt;&lt;/app-loader&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../../../invest/plan-name/plan-name.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.card {
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 36px 32px rgba(0, 0, 0, 0.0238443),
+        0px 100px 141px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 100%;
+    .card-body {
+        padding: 2.7rem 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 587px) {
+    .card-body {
+        padding: 2.7rem 1.2rem 1.5rem !important;
+    }
+}
+</code></pre>
+                <p class="comment">
+                    <code>../../../single-view/withdraw/withdraw.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">p {
+    margin-bottom: 0 !important;
+}
+
+.card {
+    padding: 15px;
+}
+
+.partial {
+    border: 1px solid #cbd5e0;
+    border-radius: 2px;
+    padding: 8px 16px;
+
+    .left-text {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--color-gray-800);
+    }
+
+    .right-text {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--color-text-dark-grey);
+        text-transform: capitalize;
+    }
+}
+
+.full {
+    border: 1px solid #cbd5e0;
+    border-radius: 2px;
+    padding: 8px 16px;
+
+    .left-text {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--color-gray-800);
+    }
+
+    .amount-text {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--color-text-primary);
+
+        span {
+            line-height: 24px;
+            color: #318c5b;
+        }
+    }
+}
+</code></pre>
+                <p class="comment">
+                    <code>./target-savings-withdraw.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">    <div class="col-lg-5">        <app-page-description title="How much do you want to withdraw?">        </app-page-description>    </div>    <div class="col-lg-7">        <div class="card">            <div class="card-body">                <div class="partial pointer d-flex justify-content-between align-items-center" (click)="goToNextPage()">                    <p class="left-text weight-normal font-14">Enter amount</p>                    <!-- <p class="right-text weight-bold font-12 text-right">enter amount</p> -->                </div>                <div class="full mt-3 pointer d-flex justify-content-between align-items-center"                    (click)="fundWithEverything()">                    <p class="left-text weight-normal font-14">Pay {{ investment.contributionAmount | currency:\'₦\'}}</p>                    <p class="amount-text weight-bold font-12 text-right" *ngIf="renflexAccount">Balance:                        <span                            class="weight-bold font-14 text-right">{{renflexAccount.availableBalance | currency:\'₦\' || \'xx\' }}</span>                    </p>                </div>            </div>        </div>        <app-loader [loading]="loading"></app-loader>    </div></div></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TargetSavingsWithdrawComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TargetSavingsWithdrawComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

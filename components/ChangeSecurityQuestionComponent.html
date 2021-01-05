@@ -1,0 +1,929 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ChangeSecurityQuestionComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/shared/change-security-question/change-security-question.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-change-security-question</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./change-security-question.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./change-security-question.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#clientService">clientService</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#dialogOption">dialogOption</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#modalRef">modalRef</a>
+                            </li>
+                            <li>
+                                <a href="#securityQuestions">securityQuestions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toastr">toastr</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeSecurityQuestion">changeSecurityQuestion</a>
+                            </li>
+                            <li>
+                                <a href="#getConfigDetails">getConfigDetails</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(clientService: <a href="../injectables/ClientService.html">ClientService</a>, toastr: ToastrService, modalRef: BsModalRef, dashboardService: <a href="../injectables/DashboardService.html">DashboardService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dashboardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DashboardService.html" target="_self" >DashboardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeSecurityQuestion"></a>
+                    <span class="name">
+                        <b>
+                            changeSecurityQuestion
+                        </b>
+                        <a href="#changeSecurityQuestion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeSecurityQuestion(form: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="48"
+                            class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:48</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>form</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getConfigDetails"></a>
+                    <span class="name">
+                        <b>
+                            getConfigDetails
+                        </b>
+                        <a href="#getConfigDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getConfigDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="38"
+                            class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:38</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <span class="name">
+                            <b>
+                            client</b>
+                            <a href="#client"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clientService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            clientService</b>
+                            <a href="#clientService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialogOption"></a>
+                        <span class="name">
+                            <b>
+                            dialogOption</b>
+                            <a href="#dialogOption"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new DialogModalButton()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id</b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&quot;changeSecurityQuestion&quot;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            modalRef</b>
+                            <a href="#modalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="securityQuestions"></a>
+                        <span class="name">
+                            <b>
+                            securityQuestions</b>
+                            <a href="#securityQuestions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toastr"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            toastr</b>
+                            <a href="#toastr"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>ToastrService</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/@page/shared/change-security-question/change-security-question.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DashboardService } from &#x27;./../../../@core/dashboard.service&#x27;;
+import { Component, OnInit } from &quot;@angular/core&quot;;
+import { ClientService } from &quot;src/app/@core/client.service&quot;;
+import { DialogModalButton, Client } from &quot;src/app/@model/client&quot;;
+import { BsModalRef } from &quot;ngx-bootstrap/modal&quot;;
+import { NgForm } from &quot;@angular/forms&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+
+@Component({
+    selector: &quot;app-change-security-question&quot;,
+    templateUrl: &quot;./change-security-question.component.html&quot;,
+    styleUrls: [&quot;./change-security-question.component.scss&quot;],
+})
+export class ChangeSecurityQuestionComponent implements OnInit {
+    id: string &#x3D; &quot;changeSecurityQuestion&quot;;
+    client: Client &#x3D; {};
+    loading: boolean &#x3D; false;
+    config: any;
+    dialogOption &#x3D; new DialogModalButton();
+    securityQuestions: string[];
+    // securityQuestions &#x3D; [
+    //     &quot;What is your favorite food?&quot;,
+    //     &quot;What is the name of your first phone?&quot;,
+    //     &quot;What is the name of your first pet?&quot;,
+    //     &quot;What city were you born in?&quot;,
+    //     &quot;What is your mother’s maiden name?&quot;,
+    //     &quot;What is your father&#x27;s middle name?&quot;,
+    //     &quot;What was your first car?&quot;,
+    // ];
+
+    constructor(
+        public clientService: ClientService,
+        public toastr: ToastrService,
+        public modalRef: BsModalRef,
+        private dashboardService: DashboardService
+    ) { }
+
+    ngOnInit(): void {
+        this.client &#x3D; this.clientService.getClientLocally();
+        this.getConfigDetails();
+    }
+
+    getConfigDetails() {
+        this.config &#x3D; this.dashboardService.getConfigLocally();
+        this.securityQuestions &#x3D; this.config.securityQuestions;
+    }
+
+    changeSecurityQuestion(form: NgForm) {
+        this.loading &#x3D; true;
+
+        this.clientService.changeSecurityQuestion(form.value).subscribe(
+            (data) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                form.resetForm();
+                this.dialogOption &#x3D; Object.assign(this.dialogOption, {
+                    isConfirmed: true,
+                    id: this.id,
+                });
+                this.modalRef.hide();
+                location.reload();
+                this.toastr.success(&quot;Security question updated successfully.&quot;);
+            },
+            (error) &#x3D;&gt; {
+                this.dialogOption &#x3D; Object.assign(this.dialogOption, {
+                    isConfirmed: false,
+                    id: this.id,
+                });
+                this.loading &#x3D; false;
+                this.toastr.error(error.error.message);
+            }
+        );
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;modal__container px-sm-5 py-3 px-4&quot;&gt;
+    &lt;div class&#x3D;&quot;modal__header pt-3 border-bottom&quot;&gt;
+        &lt;div class&#x3D;&quot;text-center&quot;&gt;
+            &lt;h4&gt;Security Question&lt;/h4&gt;
+            &lt;p class&#x3D;&quot;text-muted&quot;&gt;Change your security question to a new one&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;modal-body py-3 px-0&quot;&gt;
+        &lt;form #securityQuestionForm&#x3D;&#x27;ngForm&#x27; class&#x3D;&quot;form&quot; (ngSubmit)&#x3D;&#x27;changeSecurityQuestion(securityQuestionForm)&#x27;&gt;
+
+            &lt;div class&#x3D;&quot;form-group flex-column text-left&quot;&gt;
+                &lt;label for&#x3D;&quot;securityQuestion&quot;&gt;
+                    &lt;small&gt;Security Question&lt;/small&gt;
+                &lt;/label&gt;
+                &lt;select name&#x3D;&quot;securityQuestion&quot; id&#x3D;&quot;securityQuestion&quot; class&#x3D;&quot;form-control&quot; required
+                    [(ngModel)]&#x3D;&quot;client.securityQuestion&quot;&gt;
+                    &lt;option value&#x3D;&quot;&quot;&gt;Select a security question&lt;/option&gt;
+                    &lt;option *ngFor&#x3D;&quot;let securityQuestion of securityQuestions&quot; [value]&#x3D;&quot;securityQuestion&quot;&gt;
+                        {{securityQuestion}}
+                    &lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group flex-column text-left&quot;&gt;
+                &lt;label for&#x3D;&quot;securityAnswer&quot;&gt;
+                    &lt;small&gt;Security Answer&lt;/small&gt;
+                &lt;/label&gt;
+                &lt;input id&#x3D;&quot;securityAnswer&quot; required type&#x3D;&quot;text&quot; [(ngModel)]&#x3D;&#x27;client.securityAnswer&#x27;
+                    name&#x3D;&quot;securityAnswer&quot; class&#x3D;&quot;form-control&quot;&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-block bg-ren-primary&quot;
+                    [disabled]&#x3D;&quot;securityQuestionForm.invalid&quot;&gt;Save&lt;/button&gt;
+            &lt;/div&gt;
+
+            &lt;div class&#x3D;&quot;form-group&quot;&gt;
+                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-block bg-ren-secondary&quot; (click)&#x3D;&quot;modalRef.hide()&quot;&gt;Cancel&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;app-loader [loading]&#x3D;&quot;loading&quot;&gt;&lt;/app-loader&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./change-security-question.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="modal__container px-sm-5 py-3 px-4">    <div class="modal__header pt-3 border-bottom">        <div class="text-center">            <h4>Security Question</h4>            <p class="text-muted">Change your security question to a new one</p>        </div>    </div>    <div class="modal-body py-3 px-0">        <form #securityQuestionForm=\'ngForm\' class="form" (ngSubmit)=\'changeSecurityQuestion(securityQuestionForm)\'>            <div class="form-group flex-column text-left">                <label for="securityQuestion">                    <small>Security Question</small>                </label>                <select name="securityQuestion" id="securityQuestion" class="form-control" required                    [(ngModel)]="client.securityQuestion">                    <option value="">Select a security question</option>                    <option *ngFor="let securityQuestion of securityQuestions" [value]="securityQuestion">                        {{securityQuestion}}                    </option>                </select>            </div>            <div class="form-group flex-column text-left">                <label for="securityAnswer">                    <small>Security Answer</small>                </label>                <input id="securityAnswer" required type="text" [(ngModel)]=\'client.securityAnswer\'                    name="securityAnswer" class="form-control">            </div>            <div class="form-group">                <button type="submit" class="btn btn-block bg-ren-primary"                    [disabled]="securityQuestionForm.invalid">Save</button>            </div>            <div class="form-group">                <button type="button" class="btn btn-block bg-ren-secondary" (click)="modalRef.hide()">Cancel</button>            </div>        </form>    </div></div><app-loader [loading]="loading"></app-loader></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ChangeSecurityQuestionComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ChangeSecurityQuestionComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

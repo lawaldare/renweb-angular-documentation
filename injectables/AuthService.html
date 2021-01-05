@@ -1,0 +1,1568 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>AuthService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/@core/auth.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_presentStateSource">_presentStateSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#state$">state$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeState">changeState</a>
+                            </li>
+                            <li>
+                                <a href="#checkIfClientsExist">checkIfClientsExist</a>
+                            </li>
+                            <li>
+                                <a href="#completeRegistration">completeRegistration</a>
+                            </li>
+                            <li>
+                                <a href="#completeUnlock">completeUnlock</a>
+                            </li>
+                            <li>
+                                <a href="#generateClientOTP">generateClientOTP</a>
+                            </li>
+                            <li>
+                                <a href="#getUserToken">getUserToken</a>
+                            </li>
+                            <li>
+                                <a href="#initializeResetPassword">initializeResetPassword</a>
+                            </li>
+                            <li>
+                                <a href="#initializeUnlock">initializeUnlock</a>
+                            </li>
+                            <li>
+                                <a href="#login">login</a>
+                            </li>
+                            <li>
+                                <a href="#logOut">logOut</a>
+                            </li>
+                            <li>
+                                <a href="#registerNewClient">registerNewClient</a>
+                            </li>
+                            <li>
+                                <a href="#registersReturningUsers">registersReturningUsers</a>
+                            </li>
+                            <li>
+                                <a href="#resendToken">resendToken</a>
+                            </li>
+                            <li>
+                                <a href="#resetPassword">resetPassword</a>
+                            </li>
+                            <li>
+                                <a href="#setUserToken">setUserToken</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(httpClient: <a href="../classes/Client.html">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/@core/auth.service.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Client.html" target="_self" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeState"></a>
+                    <span class="name">
+                        <b>
+                            changeState
+                        </b>
+                        <a href="#changeState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeState(loadingState: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="164"
+                            class="link-to-prism">src/app/@core/auth.service.ts:164</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This is responsible for the state change in the auth component</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>loadingState</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Boolean that determines if something prime is being loaded</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfClientsExist"></a>
+                    <span class="name">
+                        <b>
+                            checkIfClientsExist
+                        </b>
+                        <a href="#checkIfClientsExist"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIfClientsExist(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/@core/auth.service.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="completeRegistration"></a>
+                    <span class="name">
+                        <b>
+                            completeRegistration
+                        </b>
+                        <a href="#completeRegistration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>completeRegistration(resetCred: <a href="../classes/ResetModel.html">ResetModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="125"
+                            class="link-to-prism">src/app/@core/auth.service.ts:125</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Completes users registration process</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resetCred</td>
+                                    <td>
+                                                <code><a href="../classes/ResetModel.html" target="_self" >ResetModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the needed reset credential</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="completeUnlock"></a>
+                    <span class="name">
+                        <b>
+                            completeUnlock
+                        </b>
+                        <a href="#completeUnlock"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>completeUnlock(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="103"
+                            class="link-to-prism">src/app/@core/auth.service.ts:103</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Completes the unlock password process</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateClientOTP"></a>
+                    <span class="name">
+                        <b>
+                            generateClientOTP
+                        </b>
+                        <a href="#generateClientOTP"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateClientOTP(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="44"
+                            class="link-to-prism">src/app/@core/auth.service.ts:44</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Generate Client OTP</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>client&#39;s email and the service the otp was generated for</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUserToken"></a>
+                    <span class="name">
+                        <b>
+                            getUserToken
+                        </b>
+                        <a href="#getUserToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUserToken()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/@core/auth.service.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the Users token from the browser</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeResetPassword"></a>
+                    <span class="name">
+                        <b>
+                            initializeResetPassword
+                        </b>
+                        <a href="#initializeResetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeResetPassword(resetCred: <a href="../classes/ResetModel.html">ResetModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/@core/auth.service.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes a reset password more like a forgot password endpoint</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resetCred</td>
+                                    <td>
+                                                <code><a href="../classes/ResetModel.html" target="_self" >ResetModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the needed reset credential</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeUnlock"></a>
+                    <span class="name">
+                        <b>
+                            initializeUnlock
+                        </b>
+                        <a href="#initializeUnlock"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeUnlock(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/@core/auth.service.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Initializes a unlock account process</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="login"></a>
+                    <span class="name">
+                        <b>
+                            login
+                        </b>
+                        <a href="#login"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>login(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/app/@core/auth.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logins in client to the application</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the client&#39;s data</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/AuthResponse.html" target="_self" >Observable&lt;AuthResponse&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="logOut"></a>
+                    <span class="name">
+                        <b>
+                            logOut
+                        </b>
+                        <a href="#logOut"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>logOut()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/@core/auth.service.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Logs the user out of the application</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registerNewClient"></a>
+                    <span class="name">
+                        <b>
+                            registerNewClient
+                        </b>
+                        <a href="#registerNewClient"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registerNewClient(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="55"
+                            class="link-to-prism">src/app/@core/auth.service.ts:55</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Registers a client to the platform - this clients is one that we have his/her BVN details already</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the client&#39;s data</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="registersReturningUsers"></a>
+                    <span class="name">
+                        <b>
+                            registersReturningUsers
+                        </b>
+                        <a href="#registersReturningUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>registersReturningUsers(client: <a href="../classes/Client.html">Client</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/app/@core/auth.service.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Registers a new client to the platform this clients is one that we do not have his/her BVN details</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>client</td>
+                                    <td>
+                                                <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the client&#39;s data</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resendToken"></a>
+                    <span class="name">
+                        <b>
+                            resendToken
+                        </b>
+                        <a href="#resendToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resendToken(resetCred: <a href="../classes/ResetModel.html">ResetModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/@core/auth.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Resends otp to a user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resetCred</td>
+                                    <td>
+                                                <code><a href="../classes/ResetModel.html" target="_self" >ResetModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the needed reset credential</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetPassword"></a>
+                    <span class="name">
+                        <b>
+                            resetPassword
+                        </b>
+                        <a href="#resetPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>resetPassword(resetCred: <a href="../classes/ResetModel.html">ResetModel</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/@core/auth.service.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>resets the client&#39;s password</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>resetCred</td>
+                                    <td>
+                                                <code><a href="../classes/ResetModel.html" target="_self" >ResetModel</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>the needed reset credential</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setUserToken"></a>
+                    <span class="name">
+                        <b>
+                            setUserToken
+                        </b>
+                        <a href="#setUserToken"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setUserToken(token: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="145"
+                            class="link-to-prism">src/app/@core/auth.service.ts:145</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Sets the User token receive from the API after a successful login</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>token</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>token gotten from API</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_presentStateSource"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _presentStateSource</b>
+                            <a href="#_presentStateSource"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new BehaviorSubject&lt;any&gt;(false)</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="11" class="link-to-prism">src/app/@core/auth.service.ts:11</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="state$"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            state$</b>
+                            <a href="#state$"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>this._presentStateSource.asObservable() as Observable&lt;any&gt;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/app/@core/auth.service.ts:12</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &quot;@angular/core&quot;;
+import { HttpClient } from &quot;@angular/common/http&quot;;
+import { environment } from &quot;src/environments/environment&quot;;
+import { Client, ResetModel } from &quot;../@model/client&quot;;
+import { Observable, BehaviorSubject } from &quot;rxjs&quot;;
+import { AuthResponse } from &quot;../@model/responses/auth-api-response&quot;;
+import { GeneralAPIResponse } from &quot;../@model/responses/general-api-response&quot;;
+
+@Injectable({ providedIn: &quot;root&quot; })
+export class AuthService {
+    private _presentStateSource &#x3D; new BehaviorSubject&lt;any&gt;(false);
+    public state$ &#x3D; this._presentStateSource.asObservable() as Observable&lt;any&gt;;
+
+    constructor(private httpClient: HttpClient) { }
+
+    /**
+     * Logins in client to the application
+     * @param client the client&#x27;s data
+     */
+    login(client: Client): Observable&lt;AuthResponse&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}login&#x60;,
+            client
+        ) as Observable&lt;AuthResponse&gt;;
+    }
+
+    /**
+     * Registers a new client to the platform this clients is one that we do not have his/her BVN details
+     * @param client the client&#x27;s data
+     */
+    registersReturningUsers(
+        client: Client
+    ): Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}register&#x60;,
+            client
+        ) as Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;;
+    }
+
+    /**
+     * Generate Client OTP
+     * @param client client&#x27;s email and the service the otp was generated for
+     */
+    generateClientOTP(client: Client): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}generateClientOTP&#x60;,
+            client
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Registers a client to the platform - this clients is one that we have his/her BVN details already
+     * @param client the client&#x27;s data
+     */
+    registerNewClient(client: Client): Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}ntb_register&#x60;,
+            client
+        ) as Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;;
+    }
+
+    /**
+     * Initializes a reset password more like a forgot password endpoint
+     * @param resetCred the needed reset credential
+     */
+    initializeResetPassword(
+        resetCred: ResetModel
+    ): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}passwordResetInitiate&#x60;,
+            resetCred
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * resets the client&#x27;s password
+     * @param resetCred the needed reset credential
+     */
+    resetPassword(
+        resetCred: ResetModel
+    ): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}passwordResetComplete&#x60;,
+            resetCred
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Initializes a unlock account process
+     * @param client
+     */
+    initializeUnlock(client: Client): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}unblockClientInitiate&#x60;,
+            client
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Completes the unlock password process
+     * @param client
+     */
+    completeUnlock(client: Client): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}unblockClientComplete&#x60;,
+            client
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    /**
+     * Resends otp to a user
+     * @param resetCred  the needed reset credential
+     */
+    resendToken(resetCred: ResetModel) {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}generateClientOTP&#x60;,
+            resetCred
+        );
+    }
+
+    /**
+     * Completes users registration process
+     * @param resetCred  the needed reset credential
+     */
+    completeRegistration(
+        resetCred: ResetModel
+    ): Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}completeRegistration&#x60;,
+            resetCred
+        ) as Observable&lt;GeneralAPIResponse&lt;Client&gt;&gt;;
+    }
+
+    /**
+     * Gets the Users token from the browser
+     */
+    getUserToken(): string {
+        return localStorage.getItem(&quot;renmu_t&quot;);
+    }
+
+    /**
+     * Sets the User token receive from the API after a successful login
+     * @param token token gotten from API
+     */
+    setUserToken(token: string): void {
+        localStorage.setItem(&quot;renmu_t&quot;, token);
+    }
+
+    /**
+     * Logs the user out of the application
+     */
+    logOut() {
+        localStorage.removeItem(&#x27;renmu_t&#x27;);
+        localStorage.removeItem(&#x27;ren_c&#x27;);
+        localStorage.removeItem(&#x27;acctp_c&#x27;);
+        localStorage.removeItem(&#x27;tm&#x27;);
+        localStorage.removeItem(&#x27;entry&#x27;);
+    }
+
+    /**
+     * This is responsible for the state change in the auth component
+     * @param loadingState Boolean that determines if something prime is being loaded
+     */
+    changeState(loadingState: boolean) {
+        this._presentStateSource.next(loadingState);
+    }
+
+    checkIfClientsExist(payload) {
+        return this.httpClient.post(&#x60;${environment.apiBaseURLSudo}clientExist&#x60;, payload);
+    }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AuthService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

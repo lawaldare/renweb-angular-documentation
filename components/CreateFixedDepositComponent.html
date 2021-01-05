@@ -1,0 +1,1599 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CreateFixedDepositComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-create-fixed-deposit</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../create.component.scss,<br>./create-fixed-deposit.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-fixed-deposit.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#clientService">clientService</a>
+                            </li>
+                            <li>
+                                <a href="#dialogOption">dialogOption</a>
+                            </li>
+                            <li>
+                                <a href="#investment">investment</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#locationRef">locationRef</a>
+                            </li>
+                            <li>
+                                <a href="#modalRef">modalRef</a>
+                            </li>
+                            <li>
+                                <a href="#state">state</a>
+                            </li>
+                            <li>
+                                <a href="#states">states</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#afterPayment">afterPayment</a>
+                            </li>
+                            <li>
+                                <a href="#bvnValidated">bvnValidated</a>
+                            </li>
+                            <li>
+                                <a href="#checkForClosedModal">checkForClosedModal</a>
+                            </li>
+                            <li>
+                                <a href="#checkForStateChange">checkForStateChange</a>
+                            </li>
+                            <li>
+                                <a href="#decrementState">decrementState</a>
+                            </li>
+                            <li>
+                                <a href="#depositCompleted">depositCompleted</a>
+                            </li>
+                            <li>
+                                <a href="#goToNextState">goToNextState</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#incrementState">incrementState</a>
+                            </li>
+                            <li>
+                                <a href="#initiatePaymentOption">initiatePaymentOption</a>
+                            </li>
+                            <li>
+                                <a href="#namePlanDone">namePlanDone</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#paymentDone">paymentDone</a>
+                            </li>
+                            <li>
+                                <a href="#pepDone">pepDone</a>
+                            </li>
+                            <li>
+                                <a href="#planApproved">planApproved</a>
+                            </li>
+                            <li>
+                                <a href="#switchPayment">switchPayment</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(locationRef: <a href="https://angular.io/api/common/Location" target="_blank">Location</a>, clientService: <a href="../injectables/ClientService.html">ClientService</a>, modalService: BsModalService, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, route: <a href="https://angular.io/api/router/ActivatedRoute" target="_blank">ActivatedRoute</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>locationRef</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/ActivatedRoute" target="_blank" >ActivatedRoute</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="afterPayment"></a>
+                    <span class="name">
+                        <b>
+                            afterPayment
+                        </b>
+                        <a href="#afterPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>afterPayment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="bvnValidated"></a>
+                    <span class="name">
+                        <b>
+                            bvnValidated
+                        </b>
+                        <a href="#bvnValidated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>bvnValidated()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForClosedModal"></a>
+                    <span class="name">
+                        <b>
+                            checkForClosedModal
+                        </b>
+                        <a href="#checkForClosedModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForClosedModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForStateChange"></a>
+                    <span class="name">
+                        <b>
+                            checkForStateChange
+                        </b>
+                        <a href="#checkForStateChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForStateChange()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="decrementState"></a>
+                    <span class="name">
+                        <b>
+                            decrementState
+                        </b>
+                        <a href="#decrementState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>decrementState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="depositCompleted"></a>
+                    <span class="name">
+                        <b>
+                            depositCompleted
+                        </b>
+                        <a href="#depositCompleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>depositCompleted(calculatorValues: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank">Object</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>calculatorValues</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="goToNextState"></a>
+                    <span class="name">
+                        <b>
+                            goToNextState
+                        </b>
+                        <a href="#goToNextState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>goToNextState(state)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>state</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="incrementState"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            incrementState
+                        </b>
+                        <a href="#incrementState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>incrementState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initiatePaymentOption"></a>
+                    <span class="name">
+                        <b>
+                            initiatePaymentOption
+                        </b>
+                        <a href="#initiatePaymentOption"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initiatePaymentOption(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="namePlanDone"></a>
+                    <span class="name">
+                        <b>
+                            namePlanDone
+                        </b>
+                        <a href="#namePlanDone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>namePlanDone(planName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>planName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paymentDone"></a>
+                    <span class="name">
+                        <b>
+                            paymentDone
+                        </b>
+                        <a href="#paymentDone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paymentDone()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pepDone"></a>
+                    <span class="name">
+                        <b>
+                            pepDone
+                        </b>
+                        <a href="#pepDone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>pepDone()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="planApproved"></a>
+                    <span class="name">
+                        <b>
+                            planApproved
+                        </b>
+                        <a href="#planApproved"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>planApproved()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="switchPayment"></a>
+                    <span class="name">
+                        <b>
+                            switchPayment
+                        </b>
+                        <a href="#switchPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>switchPayment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <span class="name">
+                            <b>
+                            client</b>
+                            <a href="#client"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="clientService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            clientService</b>
+                            <a href="#clientService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dialogOption"></a>
+                        <span class="name">
+                            <b>
+                            dialogOption</b>
+                            <a href="#dialogOption"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new DialogModalButton()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:26</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="investment"></a>
+                        <span class="name">
+                            <b>
+                            investment</b>
+                            <a href="#investment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/InvestmentInterface.html" target="_self" >InvestmentInterface</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        planType: &quot;fixedDeposit&quot;,
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:21</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="locationRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            locationRef</b>
+                            <a href="#locationRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://angular.io/api/common/Location" target="_blank" >Location</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalRef"></a>
+                        <span class="name">
+                            <b>
+                            modalRef</b>
+                            <a href="#modalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:25</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="state"></a>
+                        <span class="name">
+                            <b>
+                            state</b>
+                            <a href="#state"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="states"></a>
+                        <span class="name">
+                            <b>
+                            states</b>
+                            <a href="#states"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{
+        planName: 0,
+        depositCalculator: 1,
+        planReview: 2,
+        bvn: 3,
+        planFund: 4,
+        bankTransfer: 5,
+        pep: 6,
+    }</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/@page/create/fixed-deposit/create-fixed-deposit.component.ts:27</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &quot;@angular/core&quot;;
+import { Location } from &quot;@angular/common&quot;;
+import { DialogModalButton, Client } from &quot;../../../@model/client&quot;;
+import { DialogBoxComponent } from &quot;../../shared/dialog-box/dialog-box.component&quot;;
+import { InvestmentInterface } from &quot;../../../@model/interfaces&quot;;
+import { BsModalRef, BsModalService } from &quot;ngx-bootstrap/modal&quot;;
+import { ClientService } from &quot;../../../@core/client.service&quot;;
+import { appRoutes } from &quot;src/app/@config/routes&quot;;
+import { Router, ActivatedRoute } from &quot;@angular/router&quot;;
+
+@Component({
+    selector: &quot;app-create-fixed-deposit&quot;,
+    templateUrl: &quot;./create-fixed-deposit.component.html&quot;,
+    styleUrls: [
+        &quot;../create.component.scss&quot;,
+        &quot;./create-fixed-deposit.component.scss&quot;,
+    ],
+})
+export class CreateFixedDepositComponent implements OnInit {
+    state &#x3D; 0;
+    investment: InvestmentInterface &#x3D; {
+        planType: &quot;fixedDeposit&quot;,
+    };
+    client: Client;
+    modalRef: BsModalRef;
+    dialogOption &#x3D; new DialogModalButton();
+    states &#x3D; {
+        planName: 0,
+        depositCalculator: 1,
+        planReview: 2,
+        bvn: 3,
+        planFund: 4,
+        bankTransfer: 5,
+        pep: 6,
+    };
+
+    constructor(
+        public locationRef: Location,
+        public clientService: ClientService,
+        private modalService: BsModalService,
+        private router: Router,
+        private route: ActivatedRoute
+    ) { }
+
+    ngOnInit() {
+        this.checkForClosedModal();
+        this.client &#x3D; this.clientService.getClientLocally();
+        this.checkForStateChange();
+        this.goToNextState(0);
+    }
+
+    checkForStateChange() {
+        this.route.queryParamMap.subscribe(paramData &#x3D;&gt; {
+            // increment state value
+            this.state &#x3D; +paramData.get(&#x27;state&#x27;);
+        })
+    }
+
+    namePlanDone(planName: string) {
+        this.investment &#x3D; { ...this.investment, planName };
+        this.incrementState();
+    }
+
+    depositCompleted(calculatorValues: Object) {
+        this.investment &#x3D; { ...this.investment, ...calculatorValues };
+        this.incrementState();
+    }
+
+    planApproved() {
+        this.modalRef &#x3D; this.modalService.show(DialogBoxComponent, {
+            backdrop: &quot;static&quot;,
+            initialState: {
+                type: &quot;confirm&quot;,
+                header: &quot;Accept Terms &amp; Conditions&quot;,
+                body: &#x60;I accept that ₦${this.investment.amount.toLocaleString()} in my ${this.investment.planName
+                    } Fixed Deposit plan should be locked for ${this.investment.tenor
+                    } months. Untimely withdrawal will attract 30% penalty on the interest earned till date.&#x60;,
+                confirmText: &quot;Continue&quot;,
+                cancelText: &quot;Cancel&quot;,
+                dialogOption: this.dialogOption,
+            },
+        });
+    }
+
+    bvnValidated() {
+        this.incrementState();
+    }
+
+    paymentDone() {
+        let paymentOption &#x3D; this.investment.paymentOption;
+
+        if (this.investment.paymentMade) {
+            this.modalRef &#x3D; this.modalService.show(DialogBoxComponent, {
+                backdrop: &quot;static&quot;,
+                initialState: {
+                    type: &quot;info&quot;,
+                    id: &quot;payment&quot;,
+                    header: &quot;Awesome!&quot;,
+                    body: &#x60;You have successfully funded your plan.&#x60;,
+                    confirmText: &quot;Done&quot;,
+                    dialogOption: this.dialogOption,
+                },
+            });
+        }
+
+        if (!this.investment.paymentMade) {
+            if (paymentOption &#x3D;&#x3D; &quot;bankTransfer&quot;) {
+                this.goToNextState(this.states.bankTransfer);
+            }
+        }
+    }
+
+    checkForClosedModal() {
+        this.modalService.onHide.subscribe(() &#x3D;&gt; {
+            if (
+                this.dialogOption.isConfirmed &amp;&amp;
+                this.dialogOption.id &#x3D;&#x3D;&#x3D; &quot;payment&quot;
+            ) {
+                debugger;
+                this.afterPayment();
+            } else if (this.dialogOption.isConfirmed) {
+                this.clientService.getClientLocally().bvnValidated
+                    ? (this.goToNextState(this.state + 2))
+                    : this.incrementState();
+            }
+            this.dialogOption.isConfirmed &#x3D; false;
+        });
+    }
+
+    afterPayment() {
+        if (!this.client.pepvalidated) {
+            return (
+                this.goToNextState(this.states.pep)
+            );
+        }
+
+        return this.router.navigate([appRoutes.dashboard], {
+            queryParams: { reload: true },
+        });
+    }
+
+    goToNextState(state) {
+        this.router.navigate([appRoutes.createFixedDeposit], { queryParams: { state: state } });
+    }
+
+    pepDone() {
+        this.router.navigate([appRoutes.dashboard]);
+    }
+
+    private incrementState() {
+        this.goToNextState(this.state + 1);
+    }
+
+    decrementState() {
+        if (this.state &gt; 0) {
+            this.goToNextState(this.state - 1);
+        }
+        else this.router.navigate([appRoutes.viewFixedDeposits])
+    }
+
+    initiatePaymentOption(data) {
+        if (data.selectedOption &#x3D;&#x3D; &quot;bankTransfer&quot;) {
+            this.goToNextState(this.states.pep);
+        }
+    }
+
+    switchPayment() {
+        this.goToNextState(this.states.planFund);
+
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;app-sub-page pageTitle&#x3D;&quot;Fixed Deposit&quot; [tabType]&#x3D;&quot;state &lt; 3  ? &#x27;backButton&#x27; : &#x27;&#x27;&quot;
+    (backButtonAction)&#x3D;&quot;decrementState()&quot;&gt;
+    &lt;ng-container&gt;
+
+        &lt;app-plan-name [hidden]&#x3D;&quot;state!&#x3D;&#x3D; states.planName&quot;
+            copy&#x3D;&#x27;Give this plan a creative name. e.g. Rainy Day, Dangote 20xx&#x27; (done)&#x3D;&#x27;namePlanDone($event)&#x27;&gt;
+        &lt;/app-plan-name&gt;
+
+        &lt;app-deposit-calculator *ngIf&#x3D;&quot;state&#x3D;&#x3D;&#x3D;states.depositCalculator &quot; (done)&#x3D;&#x27;depositCompleted($event)&#x27;
+            copy&#x3D;&#x27;Tell us how much you will like to deposit and for how long?&#x27;&gt;&lt;/app-deposit-calculator&gt;
+
+        &lt;app-plan-review [hidden]&#x3D;&quot;state!&#x3D;&#x3D; states.planReview&quot; (done)&#x3D;&#x27;planApproved()&#x27; [investment]&#x3D;&#x27;investment&#x27;&gt;
+        &lt;/app-plan-review&gt;
+
+        &lt;app-input-bvn [hidden]&#x3D;&quot;state!&#x3D;&#x3D; states.bvn&quot; (done)&#x3D;&#x27;bvnValidated()&#x27;&gt;&lt;/app-input-bvn&gt;
+
+        &lt;app-plan-fund [investment]&#x3D;&quot;investment&quot; (done)&#x3D;&#x27;paymentDone()&#x27; [isItSmartGoal]&#x3D;&quot;false&quot;
+            *ngIf&#x3D;&quot;state&#x3D;&#x3D;&#x3D; states.planFund&quot; [availableOptions]&#x3D;&quot;[&#x27;debitCard&#x27;, &#x27;renflex&#x27;]&quot; [showNotification]&#x3D;&quot;false&quot;&gt;
+        &lt;/app-plan-fund&gt;
+
+        &lt;app-bank-transfer *ngIf&#x3D;&quot;state&#x3D;&#x3D;&#x3D; states.bankTransfer&quot; (back)&#x3D;&quot;switchPayment()&quot; (done)&#x3D;&#x27;paymentDone()&#x27;
+            [investment]&#x3D;&quot;investment&quot;&gt;
+        &lt;/app-bank-transfer&gt;
+
+        &lt;app-pep-component (done)&#x3D;&#x27;pepDone()&#x27; [hidden]&#x3D;&#x27;state !&#x3D;&#x3D; states.pep&#x27;&gt;&lt;/app-pep-component&gt;
+
+    &lt;/ng-container&gt;
+
+&lt;/app-sub-page&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../create.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <p class="comment">
+                    <code>./create-fixed-deposit.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><app-sub-page pageTitle="Fixed Deposit" [tabType]="state < 3  ? \'backButton\' : \'\'"    (backButtonAction)="decrementState()">    <ng-container>        <app-plan-name [hidden]="state!== states.planName"            copy=\'Give this plan a creative name. e.g. Rainy Day, Dangote 20xx\' (done)=\'namePlanDone($event)\'>        </app-plan-name>        <app-deposit-calculator *ngIf="state===states.depositCalculator " (done)=\'depositCompleted($event)\'            copy=\'Tell us how much you will like to deposit and for how long?\'></app-deposit-calculator>        <app-plan-review [hidden]="state!== states.planReview" (done)=\'planApproved()\' [investment]=\'investment\'>        </app-plan-review>        <app-input-bvn [hidden]="state!== states.bvn" (done)=\'bvnValidated()\'></app-input-bvn>        <app-plan-fund [investment]="investment" (done)=\'paymentDone()\' [isItSmartGoal]="false"            *ngIf="state=== states.planFund" [availableOptions]="[\'debitCard\', \'renflex\']" [showNotification]="false">        </app-plan-fund>        <app-bank-transfer *ngIf="state=== states.bankTransfer" (back)="switchPayment()" (done)=\'paymentDone()\'            [investment]="investment">        </app-bank-transfer>        <app-pep-component (done)=\'pepDone()\' [hidden]=\'state !== states.pep\'></app-pep-component>    </ng-container></app-sub-page></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CreateFixedDepositComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateFixedDepositComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

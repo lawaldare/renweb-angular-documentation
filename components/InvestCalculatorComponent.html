@@ -1,0 +1,3154 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>InvestCalculatorComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-deposit-calculator</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../../../@page/page/page.component.scss,<br>../invest/invest.shared.scss,<br>../../../calculator/investment-calculator/investment-calculator.component.scss,<br>../plan-review/plan-review.component.scss,<br>./invest-calculator.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./invest-calculator.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#amount">amount</a>
+                            </li>
+                            <li>
+                                <a href="#amountCurrency">amountCurrency</a>
+                            </li>
+                            <li>
+                                <a href="#bsModalRef">bsModalRef</a>
+                            </li>
+                            <li>
+                                <a href="#calcValues">calcValues</a>
+                            </li>
+                            <li>
+                                <a href="#config">config</a>
+                            </li>
+                            <li>
+                                <a href="#firstLoad">firstLoad</a>
+                            </li>
+                            <li>
+                                <a href="#interest">interest</a>
+                            </li>
+                            <li>
+                                <a href="#interestRatesArr">interestRatesArr</a>
+                            </li>
+                            <li>
+                                <a href="#maturityDate">maturityDate</a>
+                            </li>
+                            <li>
+                                <a href="#maxAmount">maxAmount</a>
+                            </li>
+                            <li>
+                                <a href="#MILLISECOND_IN_A_DAY">MILLISECOND_IN_A_DAY</a>
+                            </li>
+                            <li>
+                                <a href="#minAmount">minAmount</a>
+                            </li>
+                            <li>
+                                <a href="#monthlyInterest">monthlyInterest</a>
+                            </li>
+                            <li>
+                                <a href="#rates">rates</a>
+                            </li>
+                            <li>
+                                <a href="#scrolledPercentage">scrolledPercentage</a>
+                            </li>
+                            <li>
+                                <a href="#selectedIndex">selectedIndex</a>
+                            </li>
+                            <li>
+                                <a href="#tenor">tenor</a>
+                            </li>
+                            <li>
+                                <a href="#timeOut">timeOut</a>
+                            </li>
+                            <li>
+                                <a href="#totalAmountToBePaid">totalAmountToBePaid</a>
+                            </li>
+                            <li>
+                                <a href="#width">width</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateTotalRepayment">calculateTotalRepayment</a>
+                            </li>
+                            <li>
+                                <a href="#checkIfAmountIsValid">checkIfAmountIsValid</a>
+                            </li>
+                            <li>
+                                <a href="#clearSelectedBoxes">clearSelectedBoxes</a>
+                            </li>
+                            <li>
+                                <a href="#currencyToNumber">currencyToNumber</a>
+                            </li>
+                            <li>
+                                <a href="#getCalcValues">getCalcValues</a>
+                            </li>
+                            <li>
+                                <a href="#getConfigDetails">getConfigDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getInterestConfigRates">getInterestConfigRates</a>
+                            </li>
+                            <li>
+                                <a href="#getInterestRates">getInterestRates</a>
+                            </li>
+                            <li>
+                                <a href="#getInvestmentRates">getInvestmentRates</a>
+                            </li>
+                            <li>
+                                <a href="#investNow">investNow</a>
+                            </li>
+                            <li>
+                                <a href="#isNumberKey">isNumberKey</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#numberChecks">numberChecks</a>
+                            </li>
+                            <li>
+                                <a href="#numberToCurrencyFormat">numberToCurrencyFormat</a>
+                            </li>
+                            <li>
+                                <a href="#selectTenure">selectTenure</a>
+                            </li>
+                            <li>
+                                <a href="#showCurrency">showCurrency</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#amount">amount</a>
+                            </li>
+                            <li>
+                                <a href="#copy">copy</a>
+                            </li>
+                            <li>
+                                <a href="#isPartialWithdrawal">isPartialWithdrawal</a>
+                            </li>
+                            <li>
+                                <a href="#showCopy">showCopy</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#done">done</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(toastr: ToastrService, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, investmentService: <a href="../injectables/InvestmentService.html">InvestmentService</a>, dashboardService: <a href="../injectables/DashboardService.html">DashboardService</a>, modalService: BsModalService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>investmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InvestmentService.html" target="_self" >InvestmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dashboardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DashboardService.html" target="_self" >DashboardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amount"></a>
+                        <b>amount</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:30</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="copy"></a>
+                        <b>copy</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isPartialWithdrawal"></a>
+                        <b>isPartialWithdrawal</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showCopy"></a>
+                        <b>showCopy</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="done"></a>
+                        <b>done</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InvestmentInterface.html" target="_self" >EventEmitter&lt;InvestmentInterface&gt;</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateTotalRepayment"></a>
+                    <span class="name">
+                        <b>
+                            calculateTotalRepayment
+                        </b>
+                        <a href="#calculateTotalRepayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateTotalRepayment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfAmountIsValid"></a>
+                    <span class="name">
+                        <b>
+                            checkIfAmountIsValid
+                        </b>
+                        <a href="#checkIfAmountIsValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIfAmountIsValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearSelectedBoxes"></a>
+                    <span class="name">
+                        <b>
+                            clearSelectedBoxes
+                        </b>
+                        <a href="#clearSelectedBoxes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearSelectedBoxes()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currencyToNumber"></a>
+                    <span class="name">
+                        <b>
+                            currencyToNumber
+                        </b>
+                        <a href="#currencyToNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>currencyToNumber(amount)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="159"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:159</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCalcValues"></a>
+                    <span class="name">
+                        <b>
+                            getCalcValues
+                        </b>
+                        <a href="#getCalcValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCalcValues()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getConfigDetails"></a>
+                    <span class="name">
+                        <b>
+                            getConfigDetails
+                        </b>
+                        <a href="#getConfigDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getConfigDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:287</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInterestConfigRates"></a>
+                    <span class="name">
+                        <b>
+                            getInterestConfigRates
+                        </b>
+                        <a href="#getInterestConfigRates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInterestConfigRates(bounds, rates)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bounds</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rates</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInterestRates"></a>
+                    <span class="name">
+                        <b>
+                            getInterestRates
+                        </b>
+                        <a href="#getInterestRates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInterestRates(amount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, deleteInterestRate)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="126"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:126</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>deleteInterestRate</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInvestmentRates"></a>
+                    <span class="name">
+                        <b>
+                            getInvestmentRates
+                        </b>
+                        <a href="#getInvestmentRates"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInvestmentRates()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Investment all investment amount ranges and corresponding rates</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="investNow"></a>
+                    <span class="name">
+                        <b>
+                            investNow
+                        </b>
+                        <a href="#investNow"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>investNow(amount, tenure, interest, amountToBeEarned)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="208"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:208</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>tenure</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>interest</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>amountToBeEarned</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNumberKey"></a>
+                    <span class="name">
+                        <b>
+                            isNumberKey
+                        </b>
+                        <a href="#isNumberKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNumberKey(evt)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="195"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:195</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>evt</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberChecks"></a>
+                    <span class="name">
+                        <b>
+                            numberChecks
+                        </b>
+                        <a href="#numberChecks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>numberChecks(amount)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:120</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberToCurrencyFormat"></a>
+                    <span class="name">
+                        <b>
+                            numberToCurrencyFormat
+                        </b>
+                        <a href="#numberToCurrencyFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>numberToCurrencyFormat(amount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectTenure"></a>
+                    <span class="name">
+                        <b>
+                            selectTenure
+                        </b>
+                        <a href="#selectTenure"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectTenure(durationInDays, index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>durationInDays</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>index</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showCurrency"></a>
+                    <span class="name">
+                        <b>
+                            showCurrency
+                        </b>
+                        <a href="#showCurrency"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showCurrency()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amount"></a>
+                        <span class="name">
+                            <b>
+                            amount</b>
+                            <a href="#amount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amountCurrency"></a>
+                        <span class="name">
+                            <b>
+                            amountCurrency</b>
+                            <a href="#amountCurrency"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRef"></a>
+                        <span class="name">
+                            <b>
+                            bsModalRef</b>
+                            <a href="#bsModalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="calcValues"></a>
+                        <span class="name">
+                            <b>
+                            calcValues</b>
+                            <a href="#calcValues"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="config"></a>
+                        <span class="name">
+                            <b>
+                            config</b>
+                            <a href="#config"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="firstLoad"></a>
+                        <span class="name">
+                            <b>
+                            firstLoad</b>
+                            <a href="#firstLoad"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interest"></a>
+                        <span class="name">
+                            <b>
+                            interest</b>
+                            <a href="#interest"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="interestRatesArr"></a>
+                        <span class="name">
+                            <b>
+                            interestRatesArr</b>
+                            <a href="#interestRatesArr"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maturityDate"></a>
+                        <span class="name">
+                            <b>
+                            maturityDate</b>
+                            <a href="#maturityDate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maxAmount"></a>
+                        <span class="name">
+                            <b>
+                            maxAmount</b>
+                            <a href="#maxAmount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>10000000</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="MILLISECOND_IN_A_DAY"></a>
+                        <span class="name">
+                            <b>
+                            MILLISECOND_IN_A_DAY</b>
+                            <a href="#MILLISECOND_IN_A_DAY"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>86400000</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minAmount"></a>
+                        <span class="name">
+                            <b>
+                            minAmount</b>
+                            <a href="#minAmount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>10000</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="monthlyInterest"></a>
+                        <span class="name">
+                            <b>
+                            monthlyInterest</b>
+                            <a href="#monthlyInterest"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rates"></a>
+                        <span class="name">
+                            <b>
+                            rates</b>
+                            <a href="#rates"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scrolledPercentage"></a>
+                        <span class="name">
+                            <b>
+                            scrolledPercentage</b>
+                            <a href="#scrolledPercentage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>0</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedIndex"></a>
+                        <span class="name">
+                            <b>
+                            selectedIndex</b>
+                            <a href="#selectedIndex"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tenor"></a>
+                        <span class="name">
+                            <b>
+                            tenor</b>
+                            <a href="#tenor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeOut"></a>
+                        <span class="name">
+                            <b>
+                            timeOut</b>
+                            <a href="#timeOut"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="totalAmountToBePaid"></a>
+                        <span class="name">
+                            <b>
+                            totalAmountToBePaid</b>
+                            <a href="#totalAmountToBePaid"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="width"></a>
+                        <span class="name">
+                            <b>
+                            width</b>
+                            <a href="#width"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/@page/invest/invest-inapp-calculator/invest-calculator.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { DashboardService } from &#x27;src/app/@core/dashboard.service&#x27;;
+import { Component, OnInit, Output, EventEmitter, Input } from &quot;@angular/core&quot;;
+import { appRoutes } from &quot;src/app/@config/routes&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { InvestmentService } from &quot;src/app/@core/investment.service&quot;;
+import { InvestmentInterface } from &quot;src/app/@model/interfaces&quot;;
+import { BsModalRef, BsModalService } from &quot;ngx-bootstrap/modal&quot;;
+import { DialogBoxComponent } from &#x27;../../shared/dialog-box/dialog-box.component&#x27;;
+
+
+@Component({
+    selector: &quot;app-deposit-calculator&quot;,
+    templateUrl: &quot;./invest-calculator.component.html&quot;,
+    styleUrls: [
+        &quot;../../../@page/page/page.component.scss&quot;,
+        &quot;../invest/invest.shared.scss&quot;,
+        &quot;../../../calculator/investment-calculator/investment-calculator.component.scss&quot;,
+        &quot;../plan-review/plan-review.component.scss&quot;,
+        &quot;./invest-calculator.component.scss&quot;,
+    ],
+})
+export class InvestCalculatorComponent implements OnInit {
+    @Output() done: EventEmitter&lt;InvestmentInterface&gt; &#x3D; new EventEmitter&lt;
+        InvestmentInterface
+    &gt;();
+    @Input() copy: string;
+    @Input() showCopy &#x3D; true;
+    @Input() isPartialWithdrawal: boolean &#x3D; false;
+    @Input(&quot;amount&quot;) amountToBeInvested: number;
+
+    amount: number;
+    maxAmount &#x3D; 10000000;
+    minAmount &#x3D; 10000;
+    timeOut: any;
+    scrolledPercentage &#x3D; 0;
+
+    bsModalRef: BsModalRef;
+
+
+    amountCurrency: string;
+    monthlyInterest: number;
+    totalAmountToBePaid: number;
+    tenor: number;
+    config: any;
+
+    interestRatesArr: any;
+    rates: any[];
+    MILLISECOND_IN_A_DAY &#x3D; 86400000;
+    maturityDate: number;
+    interest: number;
+    selectedIndex: number;
+    calcValues: { amount: any; tenure: any; amountToBeEarned: any };
+    firstLoad: boolean &#x3D; true;
+    width: number;
+
+    constructor(
+        private toastr: ToastrService,
+        private router: Router,
+        private investmentService: InvestmentService,
+        private dashboardService: DashboardService,
+        private modalService: BsModalService
+    ) { }
+
+    ngOnInit() {
+        this.getConfigDetails();
+        this.width &#x3D; 100 / Object.keys(this.interestRatesArr[0].rates).length;
+        if (this.isPartialWithdrawal) {
+            this.amount &#x3D; +this.amountToBeInvested;
+        } else {
+            this.amount &#x3D; 20000;
+        }
+        this.getCalcValues();
+
+        this.amountCurrency &#x3D; this.numberToCurrencyFormat(this.amount);
+    }
+
+    getCalcValues() {
+        this.calcValues &#x3D; this.investmentService.getCalcValues();
+        if (this.calcValues &amp;&amp; !this.isPartialWithdrawal) {
+            this.amount &#x3D; this.calcValues.amount;
+            this.selectedIndex &#x3D; Math.abs(
+                (this.calcValues.tenure * 30 - 360) / 90
+            );
+            this.interest &#x3D;
+                (this.calcValues.amountToBeEarned - this.amount) / 0.9;
+            setTimeout(() &#x3D;&gt; {
+                this.selectTenure(360 - this.calcValues.tenure * 90);
+                this.monthlyInterest &#x3D; this.rates[this.selectedIndex] / 12;
+            }, 1000);
+            this.getInterestRates(this.amount, true);
+        } else {
+            this.getInterestRates(this.amount);
+        }
+    }
+
+    selectTenure(durationInDays, index?: number) {
+        if (index !&#x3D;&#x3D; undefined) {
+            this.selectedIndex &#x3D; index;
+            this.monthlyInterest &#x3D; this.rates[this.selectedIndex] / 12;
+            this.interest &#x3D;
+                ((this.monthlyInterest / 100) * this.amount * durationInDays) /
+                30;
+        }
+
+        this.maturityDate &#x3D;
+            new Date().getTime() + durationInDays * this.MILLISECOND_IN_A_DAY;
+        const tenureBoxes &#x3D; document.querySelectorAll(&quot;.tenure-box&quot;);
+        this.clearSelectedBoxes();
+        tenureBoxes[this.selectedIndex].classList.add(&quot;selected&quot;);
+    }
+
+    clearSelectedBoxes() {
+        const tenureBoxes &#x3D; document.querySelectorAll(&quot;.tenure-box&quot;);
+        tenureBoxes.forEach((tenureBox) &#x3D;&gt; {
+            tenureBox.classList.replace(&quot;selected&quot;, &quot;-&quot;);
+        });
+    }
+
+    numberChecks(amount) {
+        this.getInterestRates(amount);
+        this.clearSelectedBoxes();
+        this.firstLoad &#x3D; false;
+    }
+
+    getInterestRates(amount: number, deleteInterestRate &#x3D; false) {
+        delete this.monthlyInterest;
+        delete this.maturityDate;
+        if (!deleteInterestRate) {
+            delete this.interest;
+            delete this.selectedIndex;
+        }
+
+        this.interestRatesArr.forEach((rateObj) &#x3D;&gt; {
+            if (amount &gt;&#x3D; rateObj.min &amp;&amp; amount &lt;&#x3D; rateObj.max) {
+                this.rates &#x3D; Object.values(rateObj.rates).sort(
+                    (a, b) &#x3D;&gt; +b - +a
+                );
+            }
+        });
+
+        if (this.rates &amp;&amp; this.selectedIndex) this.monthlyInterest &#x3D; this.rates[this.selectedIndex] / 12;
+    }
+
+    /**
+     * Get Investment all investment amount ranges and corresponding rates
+     */
+    getInvestmentRates() {
+        // TODO: find out API structure for calculator
+    }
+
+    numberToCurrencyFormat(amount: number): string {
+        if (!amount) {
+            return &quot;&quot;;
+        }
+        return &#x60;₦${amount.toFixed().replace(/(\d)(?&#x3D;(\d{3})+(?!\d))/g, &quot;$1,&quot;)}&#x60;;
+    }
+
+    currencyToNumber(amount): number {
+        if (typeof amount !&#x3D;&#x3D; &quot;string&quot;) {
+            amount &#x3D; amount.toString();
+        }
+        return +amount.replace(/,|_/g, &quot;&quot;).replace(&quot;₦&quot;, &quot;&quot;);
+    }
+
+    calculateTotalRepayment() { }
+
+    checkIfAmountIsValid() {
+        clearTimeout(this.timeOut);
+        this.amount &#x3D; this.currencyToNumber(this.amountCurrency);
+        this.amountCurrency &#x3D; this.numberToCurrencyFormat(this.amount);
+        const amount &#x3D; this.amount;
+
+        this.timeOut &#x3D; setTimeout(() &#x3D;&gt; {
+            if (amount &lt; this.minAmount) {
+                this.amount &#x3D; this.minAmount;
+                this.amountCurrency &#x3D; this.numberToCurrencyFormat(this.amount);
+                this.toastr.warning(
+                    &quot;The minimum amount you can invest is &quot; +
+                    this.minAmount
+                );
+            }
+            if (amount &gt; this.maxAmount) {
+                this.amount &#x3D; this.maxAmount;
+                this.amountCurrency &#x3D; this.numberToCurrencyFormat(this.amount);
+                this.toastr.warning(
+                    &quot;The maximum amount you can invest is &quot; +
+                    this.maxAmount
+                );
+            }
+            this.calculateTotalRepayment();
+        }, 1650);
+    }
+
+    isNumberKey(evt) {
+        const charCode &#x3D; evt.which ? evt.which : evt.keyCode;
+        if (charCode &gt; 31 &amp;&amp; (charCode &lt; 48 || charCode &gt; 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    showCurrency() {
+        this.amount &#x3D; this.currencyToNumber(this.amountCurrency);
+        this.amountCurrency &#x3D; this.numberToCurrencyFormat(this.amount);
+    }
+
+    investNow(amount, tenure, interest, amountToBeEarned) {
+        if (amount &lt; this.minAmount) {
+            this.bsModalRef &#x3D; this.modalService.show(DialogBoxComponent, {
+                backdrop: &quot;static&quot;,
+                initialState: {
+                    type: &quot;info&quot;,
+                    header: &quot;Notice&quot;,
+                    body: &#x60;The minimum amount you can invest is ₦${this.minAmount}&#x60;,
+                    confirmText: &quot;Yes&quot;,
+                    cancelText: &quot;No&quot;,
+                },
+            });
+        } else if (amount &gt; this.maxAmount) {
+            this.bsModalRef &#x3D; this.modalService.show(DialogBoxComponent, {
+                backdrop: &quot;static&quot;,
+                initialState: {
+                    type: &quot;info&quot;,
+                    header: &quot;Notice&quot;,
+                    body: &#x60;The maximum amount you can invest is ₦${this.maxAmount}&#x60;,
+                    confirmText: &quot;Yes&quot;,
+                    cancelText: &quot;No&quot;,
+                },
+            });
+        } else {
+            if (amount &amp;&amp; tenure) {
+                this.investmentService.saveCalcValues({
+                    amount,
+                    tenure,
+                    interest,
+                    amountToBeEarned,
+                });
+            }
+
+            let withholdingTax &#x3D; (interest * 0.1).toFixed(2);
+
+            this.done.emit({
+                amount,
+                withholdingTaxPercentage: 10,
+                withholdingTax,
+                tenor: tenure,
+                interestRate: this.monthlyInterest * 12,
+                totalPayOut: amountToBeEarned,
+                startDate: new Date(),
+            });
+        }
+
+
+    }
+
+    getInterestConfigRates(bounds, rates) {
+        let outputArray &#x3D; [];
+        for (let i &#x3D; 0; i &lt; bounds.length; i++) {
+            let obj &#x3D; {};
+            if (i &#x3D;&#x3D;&#x3D; 0) {
+                obj[&#x27;min&#x27;] &#x3D; this.config.fixedInvestmentMinimum;
+            } else {
+                obj[&#x27;min&#x27;] &#x3D; bounds[i - 1];
+            }
+            obj[&#x27;max&#x27;] &#x3D; bounds[i] - 1;
+            obj[&#x27;rates&#x27;] &#x3D; {};
+
+            for (let r &#x3D; 0; r &lt; rates.length; r++) {
+                let temp &#x3D; {};
+                if (r &#x3D;&#x3D;&#x3D; rates.length - 1) {
+                    temp[+rates[r][&#x27;numberOfMonths&#x27;] * 30 + 5] &#x3D; rates[r][&#x60;bound${i + 1}&#x60;];
+                    Object.assign(obj[&#x27;rates&#x27;], temp);
+                } else {
+                    temp[+rates[r][&#x27;numberOfMonths&#x27;] * 30] &#x3D; rates[r][&#x60;bound${i + 1}&#x60;];
+                    Object.assign(obj[&#x27;rates&#x27;], temp);
+                }
+
+            }
+            outputArray.push(obj);
+        }
+
+        this.interestRatesArr &#x3D; outputArray;
+    }
+
+
+    getConfigDetails() {
+        this.config &#x3D; this.dashboardService.getConfigLocally();
+        this.getInterestConfigRates(this.config[&#x27;fixedInvestmentBounds&#x27;], this.config[&#x27;fixedInvestmentRates&#x27;]);
+    }
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;showCopy&quot; class&#x3D;&quot;col-lg-5&quot;&gt;
+        &lt;app-page-description [title]&#x3D;&quot;isPartialWithdrawal? &#x27;Deposit Calculator&#x27;: &#x27;How much do you want to deposit?&#x27;&quot;
+            [description]&#x3D;&quot;copy&quot;&gt;
+        &lt;/app-page-description&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;{{showCopy ?&#x27;col-lg-7&#x27;: &#x27;&#x27;}}&quot;&gt;
+        &lt;div class&#x3D;&quot;{{showCopy ?&#x27;card&#x27;: &#x27;&#x27;}}&quot;&gt;
+            &lt;div
+                class&#x3D;&quot;card-body {{!showCopy || (investmentCalculator.valid &amp;&amp; rates[selectedIndex]) ?&#x27;details-full&#x27;: &#x27;&#x27;}}&quot;&gt;
+
+
+                &lt;form #investmentCalculator&#x3D;&#x27;ngForm&#x27; class&#x3D;&quot;px-4 pb-4 {{showCopy ?&#x27;&#x27;: &#x27;w-450&#x27;}}&quot;&gt;
+                    &lt;ng-container *ngIf&#x3D;&#x27;!isPartialWithdrawal else notCreateFixedDeposit&#x27; class&#x3D;&quot;&quot;&gt;
+                        &lt;div class&#x3D;&quot;d-flex justify-content-between align-items-center&quot;&gt;
+                            &lt;p class&#x3D;&quot;text-dark-grey m-0 font-14 pt-3 pb-1&quot;&gt;How much do you want to deposit?&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;amount&quot; name&#x3D;&quot;amount&quot; required [(ngModel)]&#x3D;&#x27;amountCurrency&#x27; required
+                            class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&#x27;isNumberKey($event)&#x27;
+                            (ngModelChange)&#x3D;&#x27;showCurrency(); numberChecks(currencyToNumber(amountCurrency))&#x27;&gt;
+
+                        &lt;hr&gt;
+                    &lt;/ng-container&gt;
+
+                    &lt;!-- Tenure Boxes start --&gt;
+
+                    &lt;div class&#x3D;&quot;d-flex justify-content-between&quot;&gt;
+                        &lt;p class&#x3D;&quot;text-dark-grey m-0 font-14&quot;&gt;For how long?&lt;/p&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class&#x3D;&quot;d-flex flex-wrap justify-content-between pt-2&quot;&gt;
+                        &lt;div *ngFor&#x3D;&quot;let rate of rates; let i &#x3D; index&quot; (click)&#x3D;&#x27;selectTenure(360 - (i * 90), i)&#x27;
+                            [style.width]&#x3D;&#x27;&quot;calc(&quot;+width+&quot;% - 10px)&quot;&#x27; class&#x3D;&quot;tenure-box text-center&quot;&gt;
+                            &lt;div class&#x3D;&quot; p-2&quot;&gt;
+                                &lt;h1 class&#x3D;&quot;mb-0 weight-bolder&quot;&gt;
+                                    {{ (360 - i * 90) / 30 }}
+                                &lt;/h1&gt;
+                                &lt;span class&#x3D;&quot;font-14&quot;&gt;Months&lt;/span&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class&#x3D;&quot;interest py-1&quot;&gt;
+                                &lt;b&gt;
+                                    &lt;span class&#x3D;&quot; font-16 mr-1&quot;&gt;{{ rate }}%&lt;/span&gt;
+                                    &lt;span class&#x3D;&quot;font-12&quot;&gt;PA&lt;/span&gt;
+                                &lt;/b&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+
+                    &lt;/div&gt;
+
+                    &lt;!-- Tenure boxes end --&gt;
+
+
+                    &lt;ng-container *ngIf&#x3D;&#x27;!showCopy || (investmentCalculator.valid &amp;&amp; rates[selectedIndex])&#x27;
+                        (click)&#x3D;&#x27;investNow(amount, (360 - (selectedIndex * 90))/30, monthlyInterest * 12, amount + interest*0.9)&#x27;
+                        class&#x3D;&quot;&quot;&gt;
+                        &lt;!-- Investment Information Start --&gt;
+                        &lt;div class&#x3D;&quot;content p-0 mt-4&quot;&gt;
+                            &lt;div class&#x3D;&quot;content-row&quot;&gt;
+                                &lt;p class&#x3D;&quot;left&quot;&gt;Withholding tax(10%)
+                                    &lt;svg&gt;
+                                        &lt;use href&#x3D;&quot;assets/images/sprite.svg#info-circle&quot;&gt;&lt;/use&gt;
+                                    &lt;/svg&gt;
+                                &lt;/p&gt;
+                                &lt;p class&#x3D;&quot;right&quot;&gt;-{{ interest ? (interest*0.1 | currency:&#x27;₦&#x27;) : &#x27;--&#x27; }}&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;content-row&quot;&gt;
+                                &lt;p class&#x3D;&quot;left&quot;&gt;Maturity date&lt;/p&gt;
+                                &lt;p class&#x3D;&quot;right&quot;&gt;{{ maturityDate ?  (maturityDate| date: &quot;mediumDate&quot;) : &#x27;--&#x27;}}&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;content-row&quot;&gt;
+                                &lt;p class&#x3D;&quot;left&quot;&gt;Total payout&lt;/p&gt;
+                                &lt;p class&#x3D;&quot;right&quot;&gt;&lt;b
+                                        class&#x3D;&quot;text-black&quot;&gt;{{ interest ? ( (amount + interest*0.9) | currency:&#x27;₦&#x27;) : &#x27;--&#x27;}}&lt;/b&gt;
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- Investment Information End --&gt;
+
+                        &lt;div (click)&#x3D;&#x27;investNow(amount, (360 - (selectedIndex * 90))/30,interest, amount + interest*0.9)&#x27;
+                            class&#x3D;&quot;btn bg-ren-primary w-100 mt-4&quot;&gt;
+                            {{ isPartialWithdrawal? &#x27;Continue&#x27;: &#x27;Create plan&#x27;}}
+                        &lt;/div&gt;
+                    &lt;/ng-container&gt;
+
+
+                &lt;/form&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- &lt;div class&#x3D;&quot;investment-summary p-3&quot;&gt;
+        &lt;h5 class&#x3D;&quot;font-15 weight-bold mb-0 pt-2&quot;&gt;Potential value of investment&lt;/h5&gt;
+        &lt;h2 class&#x3D;&quot; weight-bold amount-received font-40 mb-0&quot;&gt;
+            {{ interest ? &#x27;₦&#x27;+numberToCurrencyFormat(amount + interest*0.9) : &#x27;---&#x27;}}
+        &lt;/h2&gt;
+        &lt;p class&#x3D;&quot;text-primary font-14&quot;&gt;
+            This assumes {{(monthlyInterest * 12) || &#x27;-&#x27;}}% p.a and you save ₦{{amountCurrency}} only once between your
+            start and maturity dates.
+        &lt;/p&gt;
+    &lt;/div&gt; --&gt;
+&lt;/div&gt;
+
+&lt;ng-template #notCreateFixedDeposit&gt;
+    &lt;div class&#x3D;&quot;content px-0  pb-4&quot;&gt;
+        &lt;div class&#x3D;&quot;content-row&quot;&gt;
+            &lt;p id&#x3D;&quot;balance&quot; class&#x3D;&quot;left&quot;&gt;
+                &lt;svg viewBox&#x3D;&quot;0 0 25 25&quot;&gt;
+                    &lt;use href&#x3D;&quot;assets/images/sprite.svg#investment&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                Available Balance
+            &lt;/p&gt;
+            &lt;p class&#x3D;&quot;right text-dark-grey weight-bold&quot;&gt;
+                {{amount| currency : &#x27;₦&#x27;}}
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/ng-template&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../../../@page/page/page.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">header {
+    height: 64px;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+    img.logo {
+        width: 178px;
+    }
+    #log-out {
+        color: var(--color-text-alt);
+    }
+
+    .header-menu {
+        width: 150px;
+    }
+
+    svg {
+        height: 26px;
+        width: 26px;
+    }
+}
+
+
+
+.mobile-side-box {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    // left: 0;
+    background: rgba(23, 27, 30, 0.9);
+    transition: all .4s;
+    display: flex;
+
+    .transparent {
+        width: 20%;
+        height: 100%;
+        opacity: 0;
+    }
+
+    .right-side {
+        background:#f7fafc;
+        width: 80%;
+
+        .top-box {
+            width:100%;
+            height: 150px;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .fa-times {
+                color: #718096;
+            }
+
+            svg {
+                height: 26px;
+                width: 26px;
+            }
+        }
+
+        img.logo {
+            width: 178px;
+        }
+
+        .menus {
+            padding-left: 40px;
+            height: calc(100vh - 150px);
+
+            svg {
+                height: 26px;
+                width: 26px;
+                margin-right: 15px;
+            }
+
+
+        }
+    }
+
+}
+
+.logout-box {
+    position: absolute;
+    bottom: 70px;
+
+    span {
+        color: #4A5568;
+    }
+}
+
+.left-svg {
+    position: relative;
+    top: 3px
+}
+
+.navbar-on-mobile {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shift-right {
+    padding-left: 30px;
+}
+
+#page {
+    width: 100%;
+    min-height: calc(100vh - 64px);
+
+}
+
+#sidebar {
+    min-width: 260px;
+    background: var(--color-bg);
+    box-shadow: 0px 0px 1px var(--color-text-secondary);
+    min-height: calc(100vh - 64px);
+    padding-top: 24px;
+}
+
+.mobile-side-bar {
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1);
+    display: none;
+    height: 64px;
+}
+
+.page {
+    width: 100%;
+}
+
+.inner-page {
+    padding: 0.7rem 2rem;
+    max-width: 950px;
+}
+
+.empty-state .info-box {
+    min-width: 240px;
+    width: 40%;
+    max-width: 720px;
+}
+
+.empty-state .info-box {
+    img {
+        // width: 100%;
+        // max-width: 500px;
+        height: 35vh;
+    }
+    h5 {
+        width: 100%;
+        max-width: 400px;
+    }
+    min-width: 1024px;
+    width: 100%;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.hide-on-mobile {
+    display: flex;
+}
+@media (max-width: 769px) {
+    #sidebar {
+        display: none;
+    }
+
+    .shift-right {
+        padding-left: 20px;
+    }
+    .empty-state .info-box {
+        min-width: 769px;
+    }
+    .navbar {
+        display: none;
+    }
+
+    .navbar-on-mobile {
+        display: block;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .mobile-side-bar {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        background:white;
+        box-shadow: 0px 4.1667px 12.5001px rgba(186, 199, 213, 0.5);
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .show-on-mobile {
+        display: flex;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    header {
+        img.logo {
+            width: 140px;
+        }
+    }
+    .empty-state .info-box {
+        min-width: unset;
+
+        img {
+            width: 250px;
+            height: 20vh;
+        }
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 0.7rem;
+    }
+
+    .inner-page {
+        padding: 0.5rem 1rem;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #page {
+
+        min-height: calc(100% - 128px);
+        padding-bottom: 70px;
+
+    }
+
+    .show-on-mobile {
+        display: flex;
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .logout-box {
+        bottom: 20px;
+    }
+
+}
+</code></pre>
+                <p class="comment">
+                    <code>../invest/invest.shared.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.title{
+    line-height: 23px;
+    font-weight: bold;
+}
+
+p{
+    line-height: 1.38;
+}
+
+.text-dark-grey{
+    color: #4A5568;
+}</code></pre>
+                <p class="comment">
+                    <code>../../../calculator/investment-calculator/investment-calculator.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">a {
+    color: var(--color-text-dark-grey);
+    text-decoration: none;
+    &amp;:hover,
+    &amp;.active {
+        color: var(--color-primary);
+    }
+}
+
+header {
+    height: 87px;
+    box-shadow: none;
+    
+    img.logo {
+        width: 180px;
+    }
+    button{
+        margin-right: 8px;
+        margin-left: 8px;
+        padding: 10px 24px;
+        border-radius: 100px;
+        -webkit-transition: opacity 200ms ease;
+        transition: opacity 200ms ease;
+        line-height: 24px;
+        font-weight: 500;
+        text-decoration: none;
+        &amp;:first-of-type{
+             background-color: #f2f4f8;
+        }
+    }
+    .header-menu{
+        width: auto;
+    }
+}
+
+.shift-right{
+    padding-left: 15px;
+}
+
+button.btn.bg-light-blue {
+    color: #2c5282;
+    font-weight: 500;
+    background-color: #ebf8ff;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05), 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 40%;
+    &amp;.larger {
+        width: 55%;
+    }
+}
+
+.form-control {
+    padding: 10px 14px;
+}
+
+.tenure-box {
+    border-radius: 6px;
+    border: 1px solid #ced6d9;
+    color: #5f738c;
+    width: calc(25% - 10px);
+    padding-top: 0.8rem;
+    -webkit-transition: 0.5s;
+    transition: background-color 0.5s;
+    &amp;:hover,
+    &amp;.selected {
+        h2,
+        h1,
+        .p-2 span {
+            color: var(--color-primary);
+        }
+        color: var(--color-gray-500);
+        background-color: #ecf4f8;
+        border: 1px solid #005d82;
+
+        .interest {
+            color: white;
+            background-color: var(--color-primary);
+        }
+    }
+    h1,
+    h2 {
+        line-height: 0.7;
+    }
+    .interest {
+        border-radius: 0px 0px 6px 6px;
+        background: var(--color-bg);
+        border-top: 1px solid #ced6d9;
+        -webkit-transition: 0.5s;
+        transition: background-color 0.5s;
+    }
+}
+
+.amount-received {
+    color: #2c5282;
+}
+
+.box {
+    width: 100vw;
+    max-width: 1024px;
+}
+
+p &gt; b {
+    color: #2c5282;
+}
+
+.center-menu {
+    width: 450px;
+    padding-left: 48px;
+}
+
+hr {
+    border-top: 2px solid #f5f7f9;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.w-55 {
+    max-width: 55%;
+}
+
+.information-box {
+    font-size: 14px;
+    svg#calc-info {
+        width: 65px;
+        height: 88px;
+        margin-right: 10px;
+    }
+}
+
+svg#tax-info {
+    height: 16px;
+    width: 16px;
+}
+
+.info {
+    color: rgba(0, 0, 0, 0.3);
+    a {
+        color: #3d89d0;
+    }
+}
+
+form label small,
+.light-grey-text {
+    color: #5f738c;
+}
+
+.input-group {
+    input.form-control {
+        background: #f1f4f8 !important;
+        border: 1px solid #abbcd5 !important;
+        border-right: none !important;
+        font-size: 28px;
+    }
+    .input-group-text {
+        background: #f1f4f8;
+        color: #949faf;
+        border: 1px solid #abbcd5;
+        font-size: 18px;
+    }
+}
+
+.invest-btn {
+    padding: 1.5rem 1rem;
+    font-size: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+@media (max-width: 1024px) {
+    .w-55 {
+        max-width: 100%;
+    }
+
+    .info {
+        max-width: 100%;
+    }
+    .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+}
+
+@media (max-width: 450px) {
+    .tenure-box {
+        min-width: 75px;
+        width: calc(50% - 20px);
+        margin-bottom: 10px;
+    }
+}
+
+
+
+</code></pre>
+                <p class="comment">
+                    <code>../plan-review/plan-review.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.content {
+    padding: 8px 44px;
+
+    animation: fade-in 0.5s linear;
+
+    .content-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 9px;
+        padding-top: 11px;
+        border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .left {
+            font-weight: normal;
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: #718096;
+            text-transform: capitalize;
+        }
+
+        .right {
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            text-transform: capitalize;
+            text-align: right;
+            letter-spacing: 0.15px;
+            color: var(--color-gray-800);
+            max-width: 200px;
+        }
+    }
+}
+
+svg {
+    width: 12px;
+    height: 12px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</code></pre>
+                <p class="comment">
+                    <code>./invest-calculator.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.input-group {
+    input.form-control {
+        border-left: none !important;
+        border-right: 1px solid #abbcd5 !important;
+        font-size: 28px;
+    }
+}
+
+.w-450{
+    width: 450px;
+}
+
+p &gt; b,
+.amount-received {
+    color: #227393;
+}
+
+p#balance{
+   color: #4A5568;
+   fill: #4A5568;
+   svg{
+       height: 18px;
+       width: 18px;
+   }
+}
+
+.card {
+    border: 1px solid #E2E8F0;
+    box-shadow: 0px 36px 32px rgba(0, 0, 0, 0.0238443), 0px 100px 141px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 100%;
+    .card-body{
+        transition: max-height 0.3s ease-in-out;
+        max-height: 460px;
+        will-change: max-height;
+    }
+    
+    .card-body.details-full{
+        max-height: 100%
+    }
+}
+
+.investment-summary {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    width: 320px;
+    height: fit-content;
+}
+
+@media (max-width: 769px){
+    hr {
+        display: block;
+    }
+   
+}
+
+@media (max-width: 470px){
+    
+    .w-450{
+        width: auto;
+    }
+}
+
+@media (max-width: 470px){
+    .w-450 {
+        width: auto;
+    }
+}
+
+
+
+@media (max-width: 1213px) {
+    .investment-summary {
+        margin-top: 40px;
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">    <div *ngIf="showCopy" class="col-lg-5">        <app-page-description [title]="isPartialWithdrawal? \'Deposit Calculator\': \'How much do you want to deposit?\'"            [description]="copy">        </app-page-description>    </div>    <div class="{{showCopy ?\'col-lg-7\': \'\'}}">        <div class="{{showCopy ?\'card\': \'\'}}">            <div                class="card-body {{!showCopy || (investmentCalculator.valid && rates[selectedIndex]) ?\'details-full\': \'\'}}">                <form #investmentCalculator=\'ngForm\' class="px-4 pb-4 {{showCopy ?\'\': \'w-450\'}}">                    <ng-container *ngIf=\'!isPartialWithdrawal else notCreateFixedDeposit\' class="">                        <div class="d-flex justify-content-between align-items-center">                            <p class="text-dark-grey m-0 font-14 pt-3 pb-1">How much do you want to deposit?</p>                        </div>                        <input type="text" id="amount" name="amount" required [(ngModel)]=\'amountCurrency\' required                            class="form-control" (keypress)=\'isNumberKey($event)\'                            (ngModelChange)=\'showCurrency(); numberChecks(currencyToNumber(amountCurrency))\'>                        <hr>                    </ng-container>                    <!-- Tenure Boxes start -->                    <div class="d-flex justify-content-between">                        <p class="text-dark-grey m-0 font-14">For how long?</p>                    </div>                    <div class="d-flex flex-wrap justify-content-between pt-2">                        <div *ngFor="let rate of rates; let i = index" (click)=\'selectTenure(360 - (i * 90), i)\'                            [style.width]=\'"calc("+width+"% - 10px)"\' class="tenure-box text-center">                            <div class=" p-2">                                <h1 class="mb-0 weight-bolder">                                    {{ (360 - i * 90) / 30 }}                                </h1>                                <span class="font-14">Months</span>                            </div>                            <div class="interest py-1">                                <b>                                    <span class=" font-16 mr-1">{{ rate }}%</span>                                    <span class="font-12">PA</span>                                </b>                            </div>                        </div>                    </div>                    <!-- Tenure boxes end -->                    <ng-container *ngIf=\'!showCopy || (investmentCalculator.valid && rates[selectedIndex])\'                        (click)=\'investNow(amount, (360 - (selectedIndex * 90))/30, monthlyInterest * 12, amount + interest*0.9)\'                        class="">                        <!-- Investment Information Start -->                        <div class="content p-0 mt-4">                            <div class="content-row">                                <p class="left">Withholding tax(10%)                                    <svg>                                        <use href="assets/images/sprite.svg#info-circle"></use>                                    </svg>                                </p>                                <p class="right">-{{ interest ? (interest*0.1 | currency:\'₦\') : \'--\' }}</p>                            </div>                            <div class="content-row">                                <p class="left">Maturity date</p>                                <p class="right">{{ maturityDate ?  (maturityDate| date: "mediumDate") : \'--\'}}</p>                            </div>                            <div class="content-row">                                <p class="left">Total payout</p>                                <p class="right"><b                                        class="text-black">{{ interest ? ( (amount + interest*0.9) | currency:\'₦\') : \'--\'}}</b>                                </p>                            </div>                        </div>                        <!-- Investment Information End -->                        <div (click)=\'investNow(amount, (360 - (selectedIndex * 90))/30,interest, amount + interest*0.9)\'                            class="btn bg-ren-primary w-100 mt-4">                            {{ isPartialWithdrawal? \'Continue\': \'Create plan\'}}                        </div>                    </ng-container>                </form>            </div>        </div>    </div>    <!-- <div class="investment-summary p-3">        <h5 class="font-15 weight-bold mb-0 pt-2">Potential value of investment</h5>        <h2 class=" weight-bold amount-received font-40 mb-0">            {{ interest ? \'₦\'+numberToCurrencyFormat(amount + interest*0.9) : \'---\'}}        </h2>        <p class="text-primary font-14">            This assumes {{(monthlyInterest * 12) || \'-\'}}% p.a and you save ₦{{amountCurrency}} only once between your            start and maturity dates.        </p>    </div> --></div><ng-template #notCreateFixedDeposit>    <div class="content px-0  pb-4">        <div class="content-row">            <p id="balance" class="left">                <svg viewBox="0 0 25 25">                    <use href="assets/images/sprite.svg#investment"></use>                </svg>                Available Balance            </p>            <p class="right text-dark-grey weight-bold">                {{amount| currency : \'₦\'}}            </p>        </div>    </div></ng-template></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InvestCalculatorComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InvestCalculatorComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

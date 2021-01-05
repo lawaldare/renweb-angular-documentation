@@ -1,0 +1,2766 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>PlanFundComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/invest/plan-fund/plan-fund.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-plan-fund</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>../../withdraw/withdraw.component.scss,<br>../../single-view/partial-withdrawal/partial-withdrawal.component.scss,<br>../plan-name/plan-name.component.scss,<br>./plan-fund.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./plan-fund.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#amountToTransfer">amountToTransfer</a>
+                            </li>
+                            <li>
+                                <a href="#amountToTransferDub">amountToTransferDub</a>
+                            </li>
+                            <li>
+                                <a href="#availableBalance">availableBalance</a>
+                            </li>
+                            <li>
+                                <a href="#cardDetails">cardDetails</a>
+                            </li>
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#generalService">generalService</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#loadingP">loadingP</a>
+                            </li>
+                            <li>
+                                <a href="#modalRef">modalRef</a>
+                            </li>
+                            <li>
+                                <a href="#paymentOption">paymentOption</a>
+                            </li>
+                            <li>
+                                <a href="#paymentOptions">paymentOptions</a>
+                            </li>
+                            <li>
+                                <a href="#renflexAccount">renflexAccount</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPaymentOption">selectedPaymentOption</a>
+                            </li>
+                            <li>
+                                <a href="#tempAmountToTransfer">tempAmountToTransfer</a>
+                            </li>
+                            <li>
+                                <a href="#timeOut">timeOut</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateRemainingBalance">calculateRemainingBalance</a>
+                            </li>
+                            <li>
+                                <a href="#checkForRegularSavings">checkForRegularSavings</a>
+                            </li>
+                            <li>
+                                <a href="#checkIfAmountIsValid">checkIfAmountIsValid</a>
+                            </li>
+                            <li>
+                                <a href="#checkingForClosedModal">checkingForClosedModal</a>
+                            </li>
+                            <li>
+                                <a href="#createFixedDeposit">createFixedDeposit</a>
+                            </li>
+                            <li>
+                                <a href="#createTargetSavings">createTargetSavings</a>
+                            </li>
+                            <li>
+                                <a href="#currencyToNumber">currencyToNumber</a>
+                            </li>
+                            <li>
+                                <a href="#getSingleInvestment">getSingleInvestment</a>
+                            </li>
+                            <li>
+                                <a href="#isNumberKey">isNumberKey</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#numberToCurrencyFormat">numberToCurrencyFormat</a>
+                            </li>
+                            <li>
+                                <a href="#optionSelected">optionSelected</a>
+                            </li>
+                            <li>
+                                <a href="#paymentFailed">paymentFailed</a>
+                            </li>
+                            <li>
+                                <a href="#paymentModalClosed">paymentModalClosed</a>
+                            </li>
+                            <li>
+                                <a href="#paymentSuccess">paymentSuccess</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveNuban">retrieveNuban</a>
+                            </li>
+                            <li>
+                                <a href="#showDialog">showDialog</a>
+                            </li>
+                            <li>
+                                <a href="#transfer">transfer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#availableOptions">availableOptions</a>
+                            </li>
+                            <li>
+                                <a href="#description">description</a>
+                            </li>
+                            <li>
+                                <a href="#investment">investment</a>
+                            </li>
+                            <li>
+                                <a href="#isItSmartGoal">isItSmartGoal</a>
+                            </li>
+                            <li>
+                                <a href="#pageTitle">pageTitle</a>
+                            </li>
+                            <li>
+                                <a href="#paymentType">paymentType</a>
+                            </li>
+                            <li>
+                                <a href="#showNotification">showNotification</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#done">done</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(generalService: <a href="../injectables/GeneralService.html">GeneralService</a>, clientService: <a href="../injectables/ClientService.html">ClientService</a>, toastr: ToastrService, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, investmentService: <a href="../injectables/InvestmentService.html">InvestmentService</a>, modalService: BsModalService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:104</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>generalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GeneralService.html" target="_self" >GeneralService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>investmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InvestmentService.html" target="_self" >InvestmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalService</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="availableOptions"></a>
+                        <b>availableOptions</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[&quot;debitCard&quot;, &quot;bankTransfer&quot;, &quot;renflex&quot;]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:52</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="description"></a>
+                        <b>description</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;Select a preferred payment method&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:50</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="investment"></a>
+                        <b>investment</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/InvestmentInterface.html" target="_self" >InvestmentInterface</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{ paymentOption: &#x27;&#x27; }</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:45</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isItSmartGoal"></a>
+                        <b>isItSmartGoal</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:47</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="pageTitle"></a>
+                        <b>pageTitle</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&quot;How will you like to fund your plan?&quot;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:49</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentType"></a>
+                        <b>paymentType</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;Investment&#x27;</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:46</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showNotification"></a>
+                        <b>showNotification</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:48</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="done"></a>
+                        <b>done</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:51</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateRemainingBalance"></a>
+                    <span class="name">
+                        <b>
+                            calculateRemainingBalance
+                        </b>
+                        <a href="#calculateRemainingBalance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateRemainingBalance(num)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="364"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:364</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>num</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForRegularSavings"></a>
+                    <span class="name">
+                        <b>
+                            checkForRegularSavings
+                        </b>
+                        <a href="#checkForRegularSavings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForRegularSavings(data: <a href="../classes/Investment.html">Investment</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+                                    <td>
+                                                <code><a href="../classes/Investment.html" target="_self" >Investment</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIfAmountIsValid"></a>
+                    <span class="name">
+                        <b>
+                            checkIfAmountIsValid
+                        </b>
+                        <a href="#checkIfAmountIsValid"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIfAmountIsValid()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="395"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:395</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkingForClosedModal"></a>
+                    <span class="name">
+                        <b>
+                            checkingForClosedModal
+                        </b>
+                        <a href="#checkingForClosedModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkingForClosedModal()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="422"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:422</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createFixedDeposit"></a>
+                    <span class="name">
+                        <b>
+                            createFixedDeposit
+                        </b>
+                        <a href="#createFixedDeposit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createFixedDeposit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="322"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:322</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createTargetSavings"></a>
+                    <span class="name">
+                        <b>
+                            createTargetSavings
+                        </b>
+                        <a href="#createTargetSavings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createTargetSavings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="341"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:341</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currencyToNumber"></a>
+                    <span class="name">
+                        <b>
+                            currencyToNumber
+                        </b>
+                        <a href="#currencyToNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>currencyToNumber(amount)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="388"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:388</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSingleInvestment"></a>
+                    <span class="name">
+                        <b>
+                            getSingleInvestment
+                        </b>
+                        <a href="#getSingleInvestment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSingleInvestment(id)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="174"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:174</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Get Renflex account</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Nuban number which is also Regular savings ID</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isNumberKey"></a>
+                    <span class="name">
+                        <b>
+                            isNumberKey
+                        </b>
+                        <a href="#isNumberKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isNumberKey(evt)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="373"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:373</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>evt</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterViewInit"></a>
+                    <span class="name">
+                        <b>
+                            ngAfterViewInit
+                        </b>
+                        <a href="#ngAfterViewInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="260"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:260</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Renflex specific functionality End</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberToCurrencyFormat"></a>
+                    <span class="name">
+                        <b>
+                            numberToCurrencyFormat
+                        </b>
+                        <a href="#numberToCurrencyFormat"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>numberToCurrencyFormat(amount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="381"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:381</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>amount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="optionSelected"></a>
+                    <span class="name">
+                        <b>
+                            optionSelected
+                        </b>
+                        <a href="#optionSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>optionSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="297"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:297</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paymentFailed"></a>
+                    <span class="name">
+                        <b>
+                            paymentFailed
+                        </b>
+                        <a href="#paymentFailed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paymentFailed()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="317"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:317</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paymentModalClosed"></a>
+                    <span class="name">
+                        <b>
+                            paymentModalClosed
+                        </b>
+                        <a href="#paymentModalClosed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paymentModalClosed()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="293"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:293</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="paymentSuccess"></a>
+                    <span class="name">
+                        <b>
+                            paymentSuccess
+                        </b>
+                        <a href="#paymentSuccess"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>paymentSuccess()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="280"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:280</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="retrieveNuban"></a>
+                    <span class="name">
+                        <b>
+                            retrieveNuban
+                        </b>
+                        <a href="#retrieveNuban"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>retrieveNuban()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDialog"></a>
+                    <span class="name">
+                        <b>
+                            showDialog
+                        </b>
+                        <a href="#showDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="148"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:148</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="transfer"></a>
+                    <span class="name">
+                        <b>
+                            transfer
+                        </b>
+                        <a href="#transfer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>transfer()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="224"
+                            class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:224</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amountToTransfer"></a>
+                        <span class="name">
+                            <b>
+                            amountToTransfer</b>
+                            <a href="#amountToTransfer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="amountToTransferDub"></a>
+                        <span class="name">
+                            <b>
+                            amountToTransferDub</b>
+                            <a href="#amountToTransferDub"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="availableBalance"></a>
+                        <span class="name">
+                            <b>
+                            availableBalance</b>
+                            <a href="#availableBalance"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="cardDetails"></a>
+                        <span class="name">
+                            <b>
+                            cardDetails</b>
+                            <a href="#cardDetails"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>literal type</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:56</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <span class="name">
+                            <b>
+                            client</b>
+                            <a href="#client"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="generalService"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            generalService</b>
+                            <a href="#generalService"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../injectables/GeneralService.html" target="_self" >GeneralService</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:107</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:100</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadingP"></a>
+                        <span class="name">
+                            <b>
+                            loadingP</b>
+                            <a href="#loadingP"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:101</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modalRef"></a>
+                        <span class="name">
+                            <b>
+                            modalRef</b>
+                            <a href="#modalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentOption"></a>
+                        <span class="name">
+                            <b>
+                            paymentOption</b>
+                            <a href="#paymentOption"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:99</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="paymentOptions"></a>
+                        <span class="name">
+                            <b>
+                            paymentOptions</b>
+                            <a href="#paymentOptions"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+        {
+            type: &quot;debitCard&quot;,
+            hidden: false,
+            left: {
+                title: &quot;Debit Card&quot;,
+                icon: &quot;payment-card&quot;,
+                svgWidth: 16,
+                svgHeight: 16,
+                svgViewBox: &quot;0 -2 21 21&quot;,
+            },
+        },
+        {
+            type: &quot;bankTransfer&quot;,
+            hidden: true,
+            left: {
+                title: &quot;Bank Transfer&quot;,
+                icon: &quot;payment-bank&quot;,
+                svgWidth: 18,
+                svgHeight: 18,
+                svgViewBox: &quot;0 0 22 22&quot;,
+            },
+        },
+        {
+            type: &quot;renflex&quot;,
+            hidden: true,
+            left: {
+                title: &quot;Renmoney Account&quot;,
+                icon: &quot;renflex&quot;,
+                svgWidth: 18,
+                svgHeight: 18,
+                svgViewBox: &quot;0 0 18 18&quot;,
+            },
+            right: {
+                title: &quot;Balance&quot;,
+                description: {
+                    default: 0,
+                    value: new CurrencyPipe(&quot;en-US&quot;).transform(0, &quot;₦&quot;),
+                },
+            },
+        },
+    ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:57</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="renflexAccount"></a>
+                        <span class="name">
+                            <b>
+                            renflexAccount</b>
+                            <a href="#renflexAccount"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:104</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedPaymentOption"></a>
+                        <span class="name">
+                            <b>
+                            selectedPaymentOption</b>
+                            <a href="#selectedPaymentOption"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>{}</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:54</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="tempAmountToTransfer"></a>
+                        <span class="name">
+                            <b>
+                            tempAmountToTransfer</b>
+                            <a href="#tempAmountToTransfer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeOut"></a>
+                        <span class="name">
+                            <b>
+                            timeOut</b>
+                            <a href="#timeOut"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/@page/invest/plan-fund/plan-fund.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {
+    Component,
+    OnInit,
+    Input,
+    AfterViewInit,
+    Output,
+    EventEmitter,
+    ChangeDetectionStrategy,
+    TemplateRef,
+} from &quot;@angular/core&quot;;
+import { CurrencyPipe } from &quot;@angular/common&quot;;
+import { Client } from &quot;src/app/@model/client&quot;;
+import { ClientService } from &quot;src/app/@core/client.service&quot;;
+import { InvestmentInterface } from &quot;src/app/@model/interfaces&quot;;
+import { GeneralService } from &quot;src/app/@core/general.service&quot;;
+import { InvestmentService } from &quot;src/app/@core/investment.service&quot;;
+import { ToastrService } from &quot;ngx-toastr&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { Investment } from &#x27;src/app/@model/investment&#x27;;
+import { BsModalService, BsModalRef } from &#x27;ngx-bootstrap/modal&#x27;;
+import { DialogBoxComponent } from &#x27;../../shared/dialog-box/dialog-box.component&#x27;;
+
+@Component({
+    selector: &quot;app-plan-fund&quot;,
+    templateUrl: &quot;./plan-fund.component.html&quot;,
+    styleUrls: [&#x27;../../withdraw/withdraw.component.scss&#x27;,
+        &quot;../../single-view/partial-withdrawal/partial-withdrawal.component.scss&quot;,
+        &quot;../plan-name/plan-name.component.scss&quot;,
+        &quot;./plan-fund.component.scss&quot;,
+    ],
+})
+export class PlanFundComponent implements OnInit, AfterViewInit {
+
+    amountToTransfer: string;
+    availableBalance: number;
+    modalRef: BsModalRef;
+    tempAmountToTransfer: number;
+    amountToTransferDub: number;
+    timeOut: any;
+
+
+
+
+
+    @Input() investment: InvestmentInterface &#x3D; { paymentOption: &#x27;&#x27; };
+    @Input() paymentType &#x3D; &#x27;Investment&#x27;
+    @Input() isItSmartGoal: boolean;
+    @Input() showNotification: boolean;
+    @Input() pageTitle: string &#x3D; &quot;How will you like to fund your plan?&quot;;
+    @Input() description: string &#x3D; &quot;Select a preferred payment method&quot;;
+    @Output() done: EventEmitter&lt;boolean&gt; &#x3D; new EventEmitter&lt;boolean&gt;();
+    @Input() availableOptions &#x3D; [&quot;debitCard&quot;, &quot;bankTransfer&quot;, &quot;renflex&quot;];
+
+    selectedPaymentOption: any &#x3D; {};
+    client: Client &#x3D; {};
+    cardDetails: { last4: string; bank: string; cardType: string; bin: string };
+    paymentOptions &#x3D; [
+        {
+            type: &quot;debitCard&quot;,
+            hidden: false,
+            left: {
+                title: &quot;Debit Card&quot;,
+                icon: &quot;payment-card&quot;,
+                svgWidth: 16,
+                svgHeight: 16,
+                svgViewBox: &quot;0 -2 21 21&quot;,
+            },
+        },
+        {
+            type: &quot;bankTransfer&quot;,
+            hidden: true,
+            left: {
+                title: &quot;Bank Transfer&quot;,
+                icon: &quot;payment-bank&quot;,
+                svgWidth: 18,
+                svgHeight: 18,
+                svgViewBox: &quot;0 0 22 22&quot;,
+            },
+        },
+        {
+            type: &quot;renflex&quot;,
+            hidden: true,
+            left: {
+                title: &quot;Renmoney Account&quot;,
+                icon: &quot;renflex&quot;,
+                svgWidth: 18,
+                svgHeight: 18,
+                svgViewBox: &quot;0 0 18 18&quot;,
+            },
+            right: {
+                title: &quot;Balance&quot;,
+                description: {
+                    default: 0,
+                    value: new CurrencyPipe(&quot;en-US&quot;).transform(0, &quot;₦&quot;),
+                },
+            },
+        },
+    ];
+    paymentOption: any &#x3D; {};
+    loading: boolean &#x3D; true;
+    loadingP: boolean &#x3D; false;
+
+
+    renflexAccount: any;
+
+    constructor(
+        public generalService: GeneralService,
+        private clientService: ClientService,
+        private toastr: ToastrService,
+        private router: Router,
+        private investmentService: InvestmentService,
+        private modalService: BsModalService,
+    ) { }
+
+    ngOnInit(): void {
+        this.paymentOptions &#x3D; this.paymentOptions
+            .filter((option) &#x3D;&gt; this.availableOptions.includes(option.type))
+            .map((option) &#x3D;&gt; ({ ...option, hidden: false }));
+
+        this.client &#x3D; this.clientService.getClientLocally();
+
+        this.cardDetails &#x3D; this.client.cardDetails;
+        if (this.cardDetails) {
+            this.cardDetails.cardType &#x3D; this.cardDetails.cardType.split(&quot; &quot;)[0];
+        }
+
+        if (this.investment) {
+            if (this.investment._id) {
+                this.loading &#x3D; false;
+            }
+
+            this.selectedPaymentOption.type &#x3D; this.investment.paymentOption;
+        }
+
+        if (this.availableOptions.includes(&quot;renflex&quot;)) {
+            if (!this.client.nuban) {
+                this.retrieveNuban();
+            } else {
+                this.getSingleInvestment(this.client.nuban);
+            }
+        }
+
+        if (this.showNotification) {
+            this.showDialog();
+        }
+    }
+
+    showDialog() {
+        this.modalRef &#x3D; this.modalService.show(DialogBoxComponent, {
+            backdrop: &quot;static&quot;,
+            initialState: {
+                type: &quot;confirm&quot;,
+                header: &quot;Notice&quot;,
+                body: &quot;We will never share your card information with anyone. The ₦10 payment is to verify that your card can be charged&quot;,
+                confirmText: &quot;Okay&quot;,
+            },
+        });
+    }
+
+    retrieveNuban() {
+        this.clientService.getClientNuban(this.client.clientEncodedkey)
+            .subscribe((data) &#x3D;&gt; {
+                this.client.nuban &#x3D; data.data.nuban;
+                this.getSingleInvestment(this.client.nuban);
+            }, () &#x3D;&gt; {
+                this.toastr.error(&quot;Couldn&#x27;t retrieve your pocket account&quot;);
+            })
+    }
+
+    /**
+     * Get Renflex account
+     * @param id Nuban number which is also Regular savings ID
+     */
+    getSingleInvestment(id) {
+
+        this.loading &#x3D; true;
+        this.investmentService.getSingleInvestment(id).subscribe(
+            (data) &#x3D;&gt; {
+                this.checkForRegularSavings(data.data.clientDeposit);
+
+                this.loading &#x3D; false;
+            },
+            (error) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.toastr.error(&quot;Couldn&#x27;t retrieve your pocket account&quot;);
+            }
+        );
+    }
+
+    checkForRegularSavings(data: Investment) {
+        this.renflexAccount &#x3D; data
+        let renflexOptionIndex &#x3D; this.paymentOptions.findIndex(
+            (item) &#x3D;&gt; item.type &#x3D;&#x3D; &quot;renflex&quot;
+        );
+
+        if (this.renflexAccount &amp;&amp; renflexOptionIndex !&#x3D; -1) {
+            this.paymentOptions[
+                renflexOptionIndex
+            ].right.description.value &#x3D; new CurrencyPipe(&quot;en-US&quot;).transform(
+                this.renflexAccount.availableBalance || 0,
+                &quot;₦&quot;
+            );
+            // this.availableBalance &#x3D; this.renflexAccount.availableBalance;
+
+            if (this.isItSmartGoal) {
+                if (+this.investment.contributionAmount &lt;&#x3D; this.renflexAccount.availableBalance) {
+                    return (this.paymentOptions[renflexOptionIndex].hidden &#x3D; false);
+                } else {
+                    return (this.paymentOptions[renflexOptionIndex].hidden &#x3D; true);
+                }
+            } else {
+                if (this.investment.amount &lt;&#x3D; this.renflexAccount.availableBalance) {
+                    return (this.paymentOptions[renflexOptionIndex].hidden &#x3D; false);
+                } else {
+                    return (this.paymentOptions[renflexOptionIndex].hidden &#x3D; true);
+                }
+            }
+
+
+
+        }
+    }
+
+    transfer() {
+        // console.log(this.tempAmountToTransfer);
+        if (this.isItSmartGoal) {
+            this.done.emit(false);
+        } else {
+            let payload: any &#x3D; {};
+            payload.debitAccountId &#x3D; this.renflexAccount.id;
+            payload.creditAccountId &#x3D; this.investment._id;
+            // payload.minorAmount &#x3D; +this.tempAmountToTransfer * 100;
+            payload.minorAmount &#x3D; this.investment.amount * 100;
+            payload.narration &#x3D; &#x60;Funded ${this.investment.planName} from regular savings&#x60;;
+            // this.loadingP &#x3D; true;
+            this.loading &#x3D; true;
+            this.investmentService.intrabankTransfer(payload).subscribe(
+                (data) &#x3D;&gt; {
+                    this.loading &#x3D; false;
+                    this.investment.paymentMade &#x3D; true;
+                    // this.modalRef.hide();
+                    this.done.emit(true);
+                },
+                (error) &#x3D;&gt; {
+                    this.loading &#x3D; false;
+                    // this.toastr.error(&#x60;There is a problem transferring funds to your ${this.investment.planName} account&#x60;)
+                    this.toastr.error(error.error.message);
+                }
+            );
+
+        }
+
+    }
+
+    /**
+     * Renflex specific functionality End
+     */
+
+
+    ngAfterViewInit() {
+        if (!this.investment._id) {
+            this.loading &#x3D; true;
+            switch (this.investment.planType) {
+                case &quot;fixedDeposit&quot;:
+                    this.createFixedDeposit();
+                    break;
+                case &quot;targetSavings&quot;:
+                    this.createTargetSavings();
+                    break;
+                case &#x27;loan&#x27;:
+                    this.loading &#x3D; false;
+                    break;
+
+                default:
+                    break;
+            }
+        }
+    }
+
+    paymentSuccess() {
+        this.loading &#x3D; false;
+        this.client.mambuStatus &#x3D; &quot;OnMambu&quot;;
+        this.clientService.saveClientLocally(this.client);
+        if (this.investment) {
+            this.investmentService.deleteCalcValues();
+            if (this.investment) {
+                this.investment.paymentMade &#x3D; true;
+            }
+        }
+        this.done.emit(true);
+    }
+
+    paymentModalClosed() {
+        this.loading &#x3D; false;
+    }
+
+    optionSelected() {
+        this.loading &#x3D; true;
+        let paymentOption &#x3D; this.selectedPaymentOption.type;
+        if (paymentOption &#x3D;&#x3D; &quot;debitCard&quot; || paymentOption &#x3D;&#x3D; &quot;recurrent&quot;) {
+            this.investment.paymentOption &#x3D; null;
+            setTimeout(() &#x3D;&gt; {
+                this.investment.paymentOption &#x3D; paymentOption;
+            }, 100);
+        } else if (paymentOption &#x3D;&#x3D; &quot;bankTransfer&quot;) {
+            this.investment.paymentOption &#x3D; paymentOption;
+            this.loading &#x3D; false;
+            this.done.emit(true);
+        } else {
+            // this.modalRef &#x3D; this.modalService.show(fullWithdrawalPassword);
+            this.transfer();
+            // this.loading &#x3D; false;
+            this.loading &#x3D; true;
+        }
+    }
+
+    paymentFailed() {
+        this.loading &#x3D; false;
+        this.toastr.error(&quot;Payment not successful&quot;);
+    }
+
+    createFixedDeposit() {
+        let inv: any &#x3D; this.investment;
+        inv.tenor &#x3D; inv.tenor * 30;
+        delete inv.totalPayOut;
+        this.investmentService.createInvestment(inv).subscribe(
+            (data: any) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.investment._id &#x3D; data.data.encodedKey;
+
+            },
+            () &#x3D;&gt; {
+                this.loading &#x3D; true;
+                this.toastr.error(
+                    &quot;Error while creating investment, kindly go back&quot;
+                );
+            }
+        );
+    }
+
+    createTargetSavings() {
+        let investment &#x3D; {
+            ...this.investment,
+            frequency: this.investment.contributionFrequency.toUpperCase(),
+            tenor: this.investment.tenor * 30,
+            targetAmount: this.investment.amount * 100,
+        };
+
+        this.investmentService.createTargetSavings(investment).subscribe(
+            (data: any) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.investment._id &#x3D; data.data.id;
+                this.investmentService.saveSmartGoalInvestmentLocally(this.investment);
+            },
+            () &#x3D;&gt; {
+                this.loading &#x3D; true;
+                this.toastr.error(
+                    &quot;Error while creating investment, kindly go back&quot;
+                );
+            }
+        );
+    }
+
+    calculateRemainingBalance(num) {
+        num &#x3D; this.currencyToNumber(this.amountToTransfer);
+        if (num &lt;&#x3D; this.renflexAccount.availableBalance) {
+            this.availableBalance &#x3D; this.renflexAccount.availableBalance - num;
+        } else {
+            this.availableBalance &#x3D; 0;
+        }
+    }
+
+    isNumberKey(evt) {
+        const charCode &#x3D; evt.which ? evt.which : evt.keyCode;
+        if (charCode &gt; 31 &amp;&amp; (charCode &lt; 48 || charCode &gt; 57)) {
+            return false;
+        }
+        return true;
+    }
+
+    numberToCurrencyFormat(amount: number): string {
+        if (!amount) {
+            return &quot;&quot;;
+        }
+        return &#x60;₦${amount.toFixed().replace(/(\d)(?&#x3D;(\d{3})+(?!\d))/g, &quot;$1,&quot;)}&#x60;;
+    }
+
+    currencyToNumber(amount): number {
+        if (typeof amount !&#x3D;&#x3D; &quot;string&quot;) {
+            amount &#x3D; amount.toString();
+        }
+        return +amount.replace(/,|_/g, &quot;&quot;).replace(&quot;₦&quot;, &quot;&quot;);
+    }
+
+    checkIfAmountIsValid() {
+        clearTimeout(this.timeOut);
+        this.tempAmountToTransfer &#x3D; this.currencyToNumber(this.amountToTransfer);
+        this.amountToTransfer &#x3D; this.numberToCurrencyFormat(this.tempAmountToTransfer);
+        const amount &#x3D; this.tempAmountToTransfer;
+        this.amountToTransferDub &#x3D; this.tempAmountToTransfer;
+        this.toastr.clear();
+        this.timeOut &#x3D; setTimeout(() &#x3D;&gt; {
+            if (amount &gt; this.renflexAccount.availableBalance) {
+                this.amountToTransfer &#x3D; this.renflexAccount.availableBalance;
+                // this.notValid &#x3D; false;
+                this.toastr.warning(
+                    &quot;The maximum amount you can withdraw is &quot; +
+                    this.renflexAccount.availableBalance
+                );
+            } else if (this.tempAmountToTransfer &lt; 100) {
+                this.tempAmountToTransfer &#x3D; 100;
+                this.amountToTransfer &#x3D; this.numberToCurrencyFormat(this.tempAmountToTransfer);
+                // this.notValid &#x3D; false;
+                this.availableBalance &#x3D; this.renflexAccount.availableBalance - 100;
+                this.toastr.warning(
+                    &quot;The minimum amount you can withdraw is ₦100&quot;
+                );
+            }
+        }, 1650);
+    }
+
+    checkingForClosedModal() {
+        this.modalService.onHide.subscribe(() &#x3D;&gt; {
+            this.modalRef.hide();
+        });
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;row&quot;&gt;
+    &lt;div class&#x3D;&quot;col-lg-5&quot;&gt;
+        &lt;app-page-description [title]&#x3D;&quot;pageTitle&quot; [description]&#x3D;&quot;description&quot;&gt;
+        &lt;/app-page-description&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-lg-7&quot;&gt;
+        &lt;div class&#x3D;&quot;card&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body position-relative&quot;&gt;
+                &lt;form&gt;
+                    &lt;div class&#x3D;&quot;container&quot;&gt;
+                        &lt;div *ngIf&#x3D;&#x27;cardDetails &amp;&amp; paymentType.toLowerCase()!&#x3D;&#x3D;&quot;loan&quot;&#x27;
+                            class&#x3D;&quot;row border py-2 rounded mb-2 pointer payment-option&quot;
+                            (click)&#x3D;&quot;selectedPaymentOption.type &#x3D; &#x27;recurrent&#x27;;&quot;
+                            [class.active]&#x3D;&quot;selectedPaymentOption.type &#x3D;&#x3D; &#x27;recurrent&#x27;&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-sm-12 d-flex align-items-center mb-sm-0&quot;&gt;
+                                &lt;svg [attr.width]&#x3D;&quot;paymentOptions[0].left.svgWidth&quot;
+                                    [attr.height]&#x3D;&quot;paymentOptions[0].left.svgHeight&quot;
+                                    [attr.viewBox]&#x3D;&quot;paymentOptions[0].left.svgViewBox&quot; class&#x3D;&quot;text-primary mr-2&quot;&gt;
+                                    &lt;use [attr.xlink:href]&#x3D;&quot;&#x27;assets/images/sprite.svg#&#x27;+paymentOptions[0].left.icon&quot;&gt;
+                                    &lt;/use&gt;
+                                &lt;/svg&gt;
+                                &lt;p class&#x3D;&quot;m-0 text-gray-darker&quot;&gt;****{{cardDetails.last4}} - {{cardDetails.bank}} &lt;i
+                                        class&#x3D;&quot;fab fa-cc-{{cardDetails.cardType}}&quot;&gt;&lt;/i&gt;&lt;/p&gt;
+                            &lt;/div&gt;
+
+                        &lt;/div&gt;
+                        &lt;div class&#x3D;&quot;row border py-2 rounded mb-2 pointer payment-option&quot; [hidden]&#x3D;&#x27;paymentOption.hidden&#x27;
+                            *ngFor&#x3D;&quot;let paymentOption of paymentOptions&quot;
+                            (click)&#x3D;&quot;selectedPaymentOption.type &#x3D; paymentOption.type;&quot;
+                            [class.active]&#x3D;&quot;selectedPaymentOption.type &#x3D;&#x3D;&#x3D; paymentOption.type&quot;&gt;
+                            &lt;div class&#x3D;&quot;col-sm-6 d-flex align-items-center mb-sm-0&quot; [class.mb-2]&#x3D;&quot;paymentOption.right&quot;&gt;
+                                &lt;svg [attr.width]&#x3D;&quot;paymentOption.left.svgWidth&quot;
+                                    [attr.height]&#x3D;&quot;paymentOption.left.svgHeight&quot;
+                                    [attr.viewBox]&#x3D;&quot;paymentOption.left.svgViewBox&quot; class&#x3D;&quot;text-primary mr-2&quot;&gt;
+                                    &lt;use [attr.xlink:href]&#x3D;&quot;&#x27;assets/images/sprite.svg#&#x27;+paymentOption.left.icon&quot;&gt;&lt;/use&gt;
+                                &lt;/svg&gt;
+                                &lt;p class&#x3D;&quot;m-0 text-gray-darker&quot;&gt;{{ paymentOption.left.title }}&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div class&#x3D;&quot;col-sm-6 text-sm-right text-left my-auto&quot; *ngIf&#x3D;&quot;paymentOption.right&quot;&gt;
+                                &lt;p class&#x3D;&quot;m-0 font-14&quot;&gt;
+                                    &lt;span class&#x3D;&quot;text-muted&quot;&gt;{{ paymentOption.right.title }}: &lt;/span&gt;
+                                    &lt;span&gt;{{ paymentOption.right.description.value || paymentOption.right.description.default }}&lt;/span&gt;
+                                &lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;form-group mt-4&quot;&gt;
+                        &lt;button type&#x3D;&quot;submit&quot; id&#x3D;&quot;payment-next-button&quot; [disabled]&#x3D;&quot;!selectedPaymentOption.type&quot;
+                            (click)&#x3D;&#x27;optionSelected()&#x27; class&#x3D;&quot;btn bg-ren-primary btn-block&quot;&gt;
+                            Next
+                        &lt;/button&gt;
+                        &lt;!-- &lt;button type&#x3D;&quot;submit&quot; id&#x3D;&quot;payment-next-button&quot; [disabled]&#x3D;&quot;!selectedPaymentOption.type&quot;
+                            (click)&#x3D;&#x27;optionSelected(fullWithdrawalPassword)&#x27; class&#x3D;&quot;btn bg-ren-primary btn-block&quot;&gt;
+                            Next
+                        &lt;/button&gt; --&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+                &lt;app-loader [loading]&#x3D;&quot;loading&quot;&gt;&lt;/app-loader&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;app-payment-handler (closed)&#x3D;&#x27;paymentModalClosed()&#x27;
+    *ngIf&#x3D;&#x27;investment.paymentOption &#x3D;&#x3D;&#x3D; &quot;debitCard&quot; || investment.paymentOption &#x3D;&#x3D;&#x3D; &quot;recurrent&quot;&#x27;
+    [billingType]&#x3D;&#x27;investment.paymentOption&#x27; [client]&#x3D;&#x27;client&#x27; [paymentType]&#x3D;&#x27;paymentType&#x27; [account]&#x3D;&#x27;investment&#x27;
+    [amount]&#x3D;&#x27;investment.useContributionAmount ? investment.contributionAmount : investment.amount&#x27;
+    (success)&#x3D;&#x27;paymentSuccess()&#x27; (failed)&#x3D;&#x27;paymentFailed()&#x27;&gt;
+&lt;/app-payment-handler&gt;
+
+
+
+&lt;!-- &lt;ng-template #fullWithdrawalPassword&gt;
+    &lt;div class&#x3D;&quot;modal__container position-relative py-5 px-3&quot;&gt;
+        &lt;div class&#x3D;&quot;modal__header position-relative&quot;&gt;
+            &lt;p class&#x3D;&quot;big-title text-center font-20 weight-bold&quot;&gt;How much will you like to fund your plan from your
+                pocket?&lt;/p&gt;
+            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close position-absolute pull-right&quot; aria-label&#x3D;&quot;Close&quot;
+                (click)&#x3D;&quot;modalRef.hide()&quot;&gt;
+                &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+            &lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;modal-body&quot;&gt;
+            &lt;div class&#x3D;&quot;amount-row d-flex justify-content-between align-items-center w-100&quot;&gt;
+                &lt;p class&#x3D;&quot;amount weight-normal font-14&quot;&gt;Amount&lt;/p&gt;
+                &lt;span class&#x3D;&quot;d-flex align-items-center justify-content-center&quot;&gt;
+                    &lt;svg fill&#x3D;&quot;none&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; class&#x3D;&quot;info-circle-svg&quot;&gt;
+                        &lt;use href&#x3D;&quot;assets/images/sprite.svg#info-circle&quot;&gt;&lt;/use&gt;
+                    &lt;/svg&gt;
+                    &lt;p class&#x3D;&quot;text weight-normal text-right d-flex align-items-center font-10&quot;&gt;Min:₦100&lt;/p&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;form&gt;
+                &lt;input required type&#x3D;&quot;text&quot; min&#x3D;&quot;100&quot; [max]&#x3D;&quot;investment.availableBalance&quot; [(ngModel)]&#x3D;&quot;amountToTransfer&quot;
+                    name&#x3D;&quot;amountToTransfer&quot; class&#x3D;&quot;form-control&quot; (keypress)&#x3D;&#x27;isNumberKey($event)&#x27;
+                    (ngModelChange)&#x3D;&quot;checkIfAmountIsValid(); calculateRemainingBalance(amountToTransfer); currencyToNumber(amountToTransfer);&quot; /&gt;
+
+                &lt;div class&#x3D;&quot;balance-row mt-3 mb-3 d-flex justify-content-between align-items-center w-100&quot;&gt;
+                    &lt;div class&#x3D;&quot;balance-row-left d-flex align-items-center&quot;&gt;
+                        &lt;svg fill&#x3D;&quot;#4A5568&quot; xmlns&#x3D;&quot;http://www.w3.org/2000/svg&quot; class&#x3D;&quot;renflex-svg&quot;&gt;
+                            &lt;use href&#x3D;&quot;assets/images/sprite.svg#renflex&quot;&gt;&lt;/use&gt;
+                        &lt;/svg&gt;
+                        &lt;p class&#x3D;&quot;balance-row-left-text weight-normal font-12 ml-2&quot;&gt;available balance&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;p class&#x3D;&quot;balance-row-right weight-bold font-14 text-right&quot;&gt;
+                        {{availableBalance | currency:&#x27;₦&#x27; || &#x27;xx&#x27;}}&lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-block bg-ren-primary&quot; (click)&#x3D;&quot;transfer()&quot;&gt;Next&lt;/button&gt;
+
+            &lt;/form&gt;
+            &lt;app-loader [loading]&#x3D;&quot;loadingP&quot;&gt;&lt;/app-loader&gt;
+
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/ng-template&gt; --&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>../../withdraw/withdraw.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <p class="comment">
+                    <code>../../single-view/partial-withdrawal/partial-withdrawal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss"></code></pre>
+                <p class="comment">
+                    <code>../plan-name/plan-name.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.card {
+    border: 1px solid #e2e8f0;
+    box-shadow: 0px 36px 32px rgba(0, 0, 0, 0.0238443),
+        0px 100px 141px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    width: 100%;
+    .card-body {
+        padding: 2.7rem 3rem 1.5rem;
+    }
+}
+
+@media (max-width: 587px) {
+    .card-body {
+        padding: 2.7rem 1.2rem 1.5rem !important;
+    }
+}
+</code></pre>
+                <p class="comment">
+                    <code>./plan-fund.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">.payment-option {
+    &amp;.active,
+    &amp;:hover {
+        background-color: #ebf8ff;
+        border: 1px solid var(--color-dark-blue) !important;
+        svg {
+            fill: var(--color-dark-blue) !important;
+        }
+        p {
+            color: var(--color-dark-blue) !important;
+        }
+    }
+}
+
+.info-circle-svg {
+    height: 12px;
+    width: 12px;
+}
+
+.renflex-svg {
+    height: 18px;
+    width: 18px;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+.amount-row {
+    height: max-content;
+
+    .amount {
+        line-height: 1.5;
+        color: var(--color-text-dark-grey);
+    }
+    span {
+        .text {
+            line-height: 1.39;
+            color: #5f738c;
+            margin-left: 5px;
+        }
+    }
+}
+
+.balance-row {
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+
+    &amp;-left {
+        &amp;-text {
+            line-height: 24px;
+            letter-spacing: 0.15px;
+            color: var(--color-text-dark-grey);
+            text-transform: capitalize;
+        }
+    }
+
+    &amp;-right {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: var(--color-gray-800);
+    }
+}
+
+.close {
+    right: 10px;
+    top: -32px;
+}
+#loading-overlay {
+    min-height: 100%;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="row">    <div class="col-lg-5">        <app-page-description [title]="pageTitle" [description]="description">        </app-page-description>    </div>    <div class="col-lg-7">        <div class="card">            <div class="card-body position-relative">                <form>                    <div class="container">                        <div *ngIf=\'cardDetails && paymentType.toLowerCase()!=="loan"\'                            class="row border py-2 rounded mb-2 pointer payment-option"                            (click)="selectedPaymentOption.type = \'recurrent\';"                            [class.active]="selectedPaymentOption.type == \'recurrent\'">                            <div class="col-sm-12 d-flex align-items-center mb-sm-0">                                <svg [attr.width]="paymentOptions[0].left.svgWidth"                                    [attr.height]="paymentOptions[0].left.svgHeight"                                    [attr.viewBox]="paymentOptions[0].left.svgViewBox" class="text-primary mr-2">                                    <use [attr.xlink:href]="\'assets/images/sprite.svg#\'+paymentOptions[0].left.icon">                                    </use>                                </svg>                                <p class="m-0 text-gray-darker">****{{cardDetails.last4}} - {{cardDetails.bank}} <i                                        class="fab fa-cc-{{cardDetails.cardType}}"></i></p>                            </div>                        </div>                        <div class="row border py-2 rounded mb-2 pointer payment-option" [hidden]=\'paymentOption.hidden\'                            *ngFor="let paymentOption of paymentOptions"                            (click)="selectedPaymentOption.type = paymentOption.type;"                            [class.active]="selectedPaymentOption.type === paymentOption.type">                            <div class="col-sm-6 d-flex align-items-center mb-sm-0" [class.mb-2]="paymentOption.right">                                <svg [attr.width]="paymentOption.left.svgWidth"                                    [attr.height]="paymentOption.left.svgHeight"                                    [attr.viewBox]="paymentOption.left.svgViewBox" class="text-primary mr-2">                                    <use [attr.xlink:href]="\'assets/images/sprite.svg#\'+paymentOption.left.icon"></use>                                </svg>                                <p class="m-0 text-gray-darker">{{ paymentOption.left.title }}</p>                            </div>                            <div class="col-sm-6 text-sm-right text-left my-auto" *ngIf="paymentOption.right">                                <p class="m-0 font-14">                                    <span class="text-muted">{{ paymentOption.right.title }}: </span>                                    <span>{{ paymentOption.right.description.value || paymentOption.right.description.default }}</span>                                </p>                            </div>                        </div>                    </div>                    <div class="form-group mt-4">                        <button type="submit" id="payment-next-button" [disabled]="!selectedPaymentOption.type"                            (click)=\'optionSelected()\' class="btn bg-ren-primary btn-block">                            Next                        </button>                        <!-- <button type="submit" id="payment-next-button" [disabled]="!selectedPaymentOption.type"                            (click)=\'optionSelected(fullWithdrawalPassword)\' class="btn bg-ren-primary btn-block">                            Next                        </button> -->                    </div>                </form>                <app-loader [loading]="loading"></app-loader>            </div>        </div>    </div></div><app-payment-handler (closed)=\'paymentModalClosed()\'    *ngIf=\'investment.paymentOption === "debitCard" || investment.paymentOption === "recurrent"\'    [billingType]=\'investment.paymentOption\' [client]=\'client\' [paymentType]=\'paymentType\' [account]=\'investment\'    [amount]=\'investment.useContributionAmount ? investment.contributionAmount : investment.amount\'    (success)=\'paymentSuccess()\' (failed)=\'paymentFailed()\'></app-payment-handler><!-- <ng-template #fullWithdrawalPassword>    <div class="modal__container position-relative py-5 px-3">        <div class="modal__header position-relative">            <p class="big-title text-center font-20 weight-bold">How much will you like to fund your plan from your                pocket?</p>            <button type="button" class="close position-absolute pull-right" aria-label="Close"                (click)="modalRef.hide()">                <span aria-hidden="true">&times;</span>            </button>        </div>        <div class="modal-body">            <div class="amount-row d-flex justify-content-between align-items-center w-100">                <p class="amount weight-normal font-14">Amount</p>                <span class="d-flex align-items-center justify-content-center">                    <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="info-circle-svg">                        <use href="assets/images/sprite.svg#info-circle"></use>                    </svg>                    <p class="text weight-normal text-right d-flex align-items-center font-10">Min:₦100</p>                </span>            </div>            <form>                <input required type="text" min="100" [max]="investment.availableBalance" [(ngModel)]="amountToTransfer"                    name="amountToTransfer" class="form-control" (keypress)=\'isNumberKey($event)\'                    (ngModelChange)="checkIfAmountIsValid(); calculateRemainingBalance(amountToTransfer); currencyToNumber(amountToTransfer);" />                <div class="balance-row mt-3 mb-3 d-flex justify-content-between align-items-center w-100">                    <div class="balance-row-left d-flex align-items-center">                        <svg fill="#4A5568" xmlns="http://www.w3.org/2000/svg" class="renflex-svg">                            <use href="assets/images/sprite.svg#renflex"></use>                        </svg>                        <p class="balance-row-left-text weight-normal font-12 ml-2">available balance</p>                    </div>                    <p class="balance-row-right weight-bold font-14 text-right">                        {{availableBalance | currency:\'₦\' || \'xx\'}}</p>                </div>                <button type="submit" class="btn btn-block bg-ren-primary" (click)="transfer()">Next</button>            </form>            <app-loader [loading]="loadingP"></app-loader>        </div>    </div></ng-template> --></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'PlanFundComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlanFundComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

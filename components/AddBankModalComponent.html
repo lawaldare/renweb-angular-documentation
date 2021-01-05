@@ -1,0 +1,1751 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>AddBankModalComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-add-bank-modal</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./add-bank-modal.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./add-bank-modal.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accountName">accountName</a>
+                            </li>
+                            <li>
+                                <a href="#accountNameFetched">accountNameFetched</a>
+                            </li>
+                            <li>
+                                <a href="#accountNumber">accountNumber</a>
+                            </li>
+                            <li>
+                                <a href="#bank">bank</a>
+                            </li>
+                            <li>
+                                <a href="#bankCode">bankCode</a>
+                            </li>
+                            <li>
+                                <a href="#banks">banks</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#bsModalRef">bsModalRef</a>
+                            </li>
+                            <li>
+                                <a href="#client">client</a>
+                            </li>
+                            <li>
+                                <a href="#id">id</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#loan">loan</a>
+                            </li>
+                            <li>
+                                <a href="#loanType">loanType</a>
+                            </li>
+                            <li>
+                                <a href="#status">status</a>
+                            </li>
+                            <li>
+                                <a href="#statusMessage">statusMessage</a>
+                            </li>
+                            <li>
+                                <a href="#teamList">teamList</a>
+                            </li>
+                            <li>
+                                <a href="#timeout">timeout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeBank">changeBank</a>
+                            </li>
+                            <li>
+                                <a href="#getAccountName">getAccountName</a>
+                            </li>
+                            <li>
+                                <a href="#getBankAccountName">getBankAccountName</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#update">update</a>
+                            </li>
+                            <li>
+                                <a href="#updateBankData">updateBankData</a>
+                            </li>
+                            <li>
+                                <a href="#updateLoanAccount">updateLoanAccount</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#accountDetails">accountDetails</a>
+                            </li>
+                            <li>
+                                <a href="#isInPage">isInPage</a>
+                            </li>
+                            <li>
+                                <a href="#loanDetail">loanDetail</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#done">done</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(bsModalRef: BsModalRef, clientService: <a href="../injectables/ClientService.html">ClientService</a>, investmentService: <a href="../injectables/InvestmentService.html">InvestmentService</a>, toastr: ToastrService, generalService: <a href="../injectables/GeneralService.html">GeneralService</a>, loanService: <a href="../injectables/LoanService.html">LoanService</a>, dashboardService: <a href="../injectables/DashboardService.html">DashboardService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>bsModalRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>BsModalRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>clientService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ClientService.html" target="_self" >ClientService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>investmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/InvestmentService.html" target="_self" >InvestmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastr</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastrService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>generalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/GeneralService.html" target="_self" >GeneralService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loanService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoanService.html" target="_self" >LoanService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dashboardService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DashboardService.html" target="_self" >DashboardService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accountDetails"></a>
+                        <b>accountDetails</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isInPage"></a>
+                        <b>isInPage</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loanDetail"></a>
+                        <b>loanDetail</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/LoanInterface.html" target="_self" >LoanInterface</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="done"></a>
+                        <b>done</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="changeBank"></a>
+                    <span class="name">
+                        <b>
+                            changeBank
+                        </b>
+                        <a href="#changeBank"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>changeBank(bankCode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="147"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:147</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAccountName"></a>
+                    <span class="name">
+                        <b>
+                            getAccountName
+                        </b>
+                        <a href="#getAccountName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAccountName(bankCode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBankAccountName"></a>
+                    <span class="name">
+                        <b>
+                            getBankAccountName
+                        </b>
+                        <a href="#getBankAccountName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBankAccountName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
+                            update
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>update()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:82</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateBankData"></a>
+                    <span class="name">
+                        <b>
+                            updateBankData
+                        </b>
+                        <a href="#updateBankData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateBankData(bankName, accountNumber, client)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>accountNumber</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>client</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateLoanAccount"></a>
+                    <span class="name">
+                        <b>
+                            updateLoanAccount
+                        </b>
+                        <a href="#updateLoanAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateLoanAccount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accountName"></a>
+                        <span class="name">
+                            <b>
+                            accountName</b>
+                            <a href="#accountName"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accountNameFetched"></a>
+                        <span class="name">
+                            <b>
+                            accountNameFetched</b>
+                            <a href="#accountNameFetched"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="accountNumber"></a>
+                        <span class="name">
+                            <b>
+                            accountNumber</b>
+                            <a href="#accountNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bank"></a>
+                        <span class="name">
+                            <b>
+                            bank</b>
+                            <a href="#bank"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bankCode"></a>
+                        <span class="name">
+                            <b>
+                            bankCode</b>
+                            <a href="#bankCode"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="banks"></a>
+                        <span class="name">
+                            <b>
+                            banks</b>
+                            <a href="#banks"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>BankData</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="bsModalRef"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            bsModalRef</b>
+                            <a href="#bsModalRef"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>BsModalRef</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="client"></a>
+                        <span class="name">
+                            <b>
+                            client</b>
+                            <a href="#client"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Client.html" target="_self" >Client</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="id"></a>
+                        <span class="name">
+                            <b>
+                            id</b>
+                            <a href="#id"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loan"></a>
+                        <span class="name">
+                            <b>
+                            loan</b>
+                            <a href="#loan"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loanType"></a>
+                        <span class="name">
+                            <b>
+                            loanType</b>
+                            <a href="#loanType"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="status"></a>
+                        <span class="name">
+                            <b>
+                            status</b>
+                            <a href="#status"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="statusMessage"></a>
+                        <span class="name">
+                            <b>
+                            statusMessage</b>
+                            <a href="#statusMessage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="teamList"></a>
+                        <span class="name">
+                            <b>
+                            teamList</b>
+                            <a href="#teamList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="timeout"></a>
+                        <span class="name">
+                            <b>
+                            timeout</b>
+                            <a href="#timeout"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/@page/modals/add-bank-modal/add-bank-modal.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { LoanService } from &#x27;src/app/@core/loan.service&#x27;;
+import { Component, OnInit, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { BankData } from &#x27;../../single-view/banks&#x27;;
+import { BsModalRef, BsModalService } from &#x27;ngx-bootstrap/modal&#x27;;
+import { ClientService } from &#x27;src/app/@core/client.service&#x27;;
+import { InvestmentService } from &#x27;src/app/@core/investment.service&#x27;;
+import { ToastrService } from &#x27;ngx-toastr&#x27;;
+import { GeneralService } from &#x27;src/app/@core/general.service&#x27;;
+import { Client } from &#x27;src/app/@model/client&#x27;;
+import { DashboardService } from &#x27;src/app/@core/dashboard.service&#x27;;
+import { LoanInterface } from &#x27;../../create/loan/create-loan.component&#x27;;
+import { environment } from &#x27;src/environments/environment&#x27;;
+
+@Component({
+    selector: &#x27;app-add-bank-modal&#x27;,
+    templateUrl: &#x27;./add-bank-modal.component.html&#x27;,
+    styleUrls: [&#x27;./add-bank-modal.component.scss&#x27;],
+
+})
+export class AddBankModalComponent implements OnInit {
+
+    @Input() isInPage &#x3D; false;
+    @Output() done &#x3D; new EventEmitter&lt;any&gt;();
+    @Input() loanDetail: LoanInterface;
+
+
+
+    @Input() accountDetails: {
+        bank?: string,
+        accountNumber?: string,
+        bankCode?: string;
+        accountName?: string
+    };
+
+    banks &#x3D; BankData;
+    status: boolean &#x3D; false;
+    loading: boolean;
+    statusMessage: string;
+    accountNameFetched: boolean;
+    timeout: any;
+    client: Client;
+    accountName: string;
+    bankCode: string;
+    bank: string;
+    accountNumber: string;
+    id: string;
+    loanType: string;
+    teamList: any;
+    loan: any;
+
+
+    constructor(
+        public bsModalRef: BsModalRef,
+        private clientService: ClientService,
+        private investmentService: InvestmentService,
+        private toastr: ToastrService,
+        private generalService: GeneralService,
+        private loanService: LoanService,
+        private dashboardService: DashboardService
+    ) { }
+
+    ngOnInit(): void {
+        this.id &#x3D; &#x27;addBank&#x27;;
+
+        if (this.accountDetails.bank) {
+            debugger;
+            this.bankCode &#x3D; this.banks.find(
+                (x) &#x3D;&gt; x.Name.toLowerCase() &#x3D;&#x3D;&#x3D; this.accountDetails.bank.toLowerCase()
+            ).Code;
+            this.accountNumber &#x3D; this.accountDetails.accountNumber;
+            this.accountName &#x3D; this.accountDetails.accountName;
+        } else {
+            this.accountDetails &#x3D; {};
+        }
+
+        this.teamList &#x3D; this.loanService.getTeamLists();
+
+
+    }
+
+
+    update() {
+        this.loading &#x3D; true;
+        const client: any &#x3D; {};
+        this.client &#x3D; this.clientService.getClientLocally();
+        client.firstName &#x3D; this.client.firstName;
+        client.lastName &#x3D; this.client.lastName;
+        if (this.client.middleName) {
+            client.middleName &#x3D; this.client.middleName;
+        }
+        client.dateOfBirth &#x3D; this.client.dob;
+        if (this.isInPage) {
+            this.client.dateOfBirth &#x3D; this.client.dob;
+        }
+        if (this.client.address) {
+            client.address &#x3D; this.client.address;
+        }
+        if (this.client.sex) {
+            client.gender &#x3D; this.client.sex.toUpperCase();
+        }
+
+
+        client.bvn &#x3D; this.client.bvn;
+        client.id &#x3D; client.bvn;
+        client.documentType &#x3D; &quot;BVN&quot;;
+
+        if (this.accountName.toLowerCase().split(&quot; &quot;).includes(this.client.firstName.toLowerCase().trim()) || this.accountName.toLowerCase().split(&quot; &quot;).includes(this.client.lastName.toLowerCase().trim())) {
+            this.bank &#x3D; this.banks.find((x) &#x3D;&gt; x.Code &#x3D;&#x3D;&#x3D; this.bankCode).Name;
+            if (this.isInPage) {
+                this.client &#x3D; this.loanService.getFormerLoanDetails().client;
+                this.client.bank &#x3D; this.bank;
+                this.client.accountNumber &#x3D; this.accountNumber
+                this.accountDetails.accountName &#x3D; this.accountName;
+                this.accountDetails.bank &#x3D; this.bank;
+                this.accountDetails.accountNumber &#x3D; this.accountNumber;
+                this.accountDetails.bankCode &#x3D; this.bankCode;
+                this.loanService.saveLoanClient(this.client);
+                this.updateLoanAccount();
+            } else {
+                this.updateBankData(this.bank, this.accountNumber, client);
+            }
+        } else {
+            this.loading &#x3D; false;
+            this.statusMessage &#x3D;
+                &quot;Bank details do not match the loan applicant. Please enter your correct bank details &quot;;
+            this.toastr.error(&quot;Bank details do not match the loan applicant. Please enter your correct bank details &quot;);
+        }
+    }
+
+    updateBankData(bankName, accountNumber, client) {
+        client.bank &#x3D; bankName;
+        client.accountNumber &#x3D; accountNumber;
+        this.clientService.updateClient(client).subscribe(
+            (data) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.bsModalRef.hide();
+            },
+            (error) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.toastr.error(
+                    error.error.message || &quot;Error occured while adding to bank&quot;
+                );
+            }
+        );
+    }
+
+    changeBank(bankCode) {
+        this.accountName &#x3D; &quot;&quot;;
+        this.accountNumber &#x3D; &quot;&quot;;
+        this.bankCode &#x3D; bankCode;
+    }
+
+
+
+    getAccountName(bankCode) {
+        delete this.accountName;
+        delete this.statusMessage;
+
+        clearTimeout(this.timeout);
+        delete this.statusMessage;
+        this.timeout &#x3D; setTimeout(() &#x3D;&gt; {
+            if (this.accountNumber.length &#x3D;&#x3D;&#x3D; 10 &amp;&amp; bankCode) {
+                this.loading &#x3D; true;
+                this.investmentService.getAccountName(bankCode, this.accountNumber).subscribe((data: any) &#x3D;&gt; {
+                    this.status &#x3D; true
+                    if (data.message &#x3D;&#x3D;&#x3D; &quot;Invalid Account Number&quot;) {
+                        this.statusMessage &#x3D; &quot;Invalid bank and account number combination&quot;;
+                        this.loading &#x3D; false;
+                        return;
+                    }
+                    this.accountName &#x3D; data.data.account_name;
+                    this.accountNameFetched &#x3D; true;
+                    this.loading &#x3D; false;
+                },
+                    (error) &#x3D;&gt; {
+                        this.loading &#x3D; false;
+                        this.statusMessage &#x3D; &quot;Kindly try again&quot;;
+                        this.toastr.error(
+                            &quot;Error occured during account name enquiry&quot;
+                        );
+                    }
+                );
+            }
+        }, 1000);
+    }
+
+    getBankAccountName() {
+        this.loading &#x3D; true;
+        this.investmentService.getAccountName(this.bankCode, this.accountNumber).subscribe((data: any) &#x3D;&gt; {
+            if (data.message &#x3D;&#x3D;&#x3D; &quot;Invalid Account Number&quot;) {
+                this.statusMessage &#x3D; &quot;Invalid bank and account number combination&quot;;
+                this.loading &#x3D; false;
+                return;
+            }
+            this.accountName &#x3D; data.data.account_name;
+            this.accountNameFetched &#x3D; true;
+            this.loading &#x3D; false;
+        },
+            (error) &#x3D;&gt; {
+                this.loading &#x3D; false;
+                this.statusMessage &#x3D; &quot;Kindly try again&quot;;
+                this.toastr.error(
+                    &quot;Error occured during account name enquiry&quot;
+                );
+            }
+        );
+    }
+
+    updateLoanAccount() {
+        const loanObj &#x3D; {
+            &quot;id&quot;: this.loanDetail.loanId,
+            &quot;type&quot;: &quot;loans&quot;,
+            &quot;fields&quot;: [
+                {
+                    &quot;id&quot;: &quot;Beneficiary_Account_Number_Loan_&quot;,
+                    &quot;value&quot;: this.accountDetails.accountNumber
+                },
+                {
+                    &quot;id&quot;: &quot;bank_name&quot;,
+                    &quot;value&quot;: this.accountDetails.bank
+                },
+                {
+                    &quot;id&quot;: &quot;Repayment_Account_No_Loan_Accoun&quot;,
+                    &quot;value&quot;: this.accountDetails.accountNumber
+                },
+                {
+                    &quot;id&quot;: &quot;Repayment_Bank_Loan_Accounts&quot;,
+                    &quot;value&quot;: this.accountDetails.bank
+                },
+                {
+                    &quot;id&quot;: &quot;accountNameValidated&quot;,
+                    &quot;value&quot;: this.accountDetails.accountName
+                },
+                {
+                    &quot;id&quot;: &quot;accountNumberValidated&quot;,
+                    &quot;value&quot;: this.accountDetails.accountNumber
+                }
+            ]
+        };
+
+
+
+        this.loanService.updateAccount(loanObj).subscribe((data: any) &#x3D;&gt; {
+            this.loading &#x3D; false;
+            this.done.emit(this.accountDetails);
+        }, error &#x3D;&gt; {
+            this.loading &#x3D; false;
+            this.toastr.error(error?.message, &#x27;Oops!&#x27;);
+        });
+    }
+
+
+
+
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;modal-body {{isInPage? &#x27;p-0&#x27;: &#x27;&#x27;}} position-relative&quot;&gt;
+    &lt;div *ngIf&#x3D;&quot;!isInPage&quot; class&#x3D;&quot;modal__header position-relative&quot;&gt;
+        &lt;p class&#x3D;&quot;big-title text-center font-20 weight-bold&quot;&gt;Update bank&lt;/p&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;close position-absolute pull-right&quot; aria-label&#x3D;&quot;Close&quot; (click)&#x3D;&quot;bsModalRef.hide()&quot;&gt;
+            &lt;span aria-hidden&#x3D;&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;modal-body {{isInPage? &#x27;p-0&#x27;: &#x27;&#x27;}}&quot;&gt;
+        &lt;label *ngIf&#x3D;&#x27;statusMessage &amp;&amp; !isInPage&#x27; class&#x3D;&quot;bg-danger p-2 text-white text-center w-100&quot;&gt;
+            {{statusMessage}}
+        &lt;/label&gt;
+        &lt;form (ngSubmit)&#x3D;&quot;update()&quot; #addBankForm&#x3D;&quot;ngForm&quot;&gt;
+            &lt;div class&#x3D;&quot;form-group flex-column text-left position-relative&quot;&gt;
+                &lt;label for&#x3D;&quot;bankAccountForFullWithdrawal&quot;&gt;
+                    &lt;span&gt;Select bank&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;i class&#x3D;&quot;fas fa-chevron-down position-absolute text-alt&quot;&gt;&lt;/i&gt;
+                &lt;select (change)&#x3D;&quot;changeBank(bankCode)&quot; id&#x3D;&quot;bankAccountForFullWithdrawal&quot; required
+                    [(ngModel)]&#x3D;&quot;bankCode&quot; name&#x3D;&quot;bankAccountForFullWithdrawal&quot; class&#x3D;&quot;form-control w-100&quot;&gt;
+                    &lt;option value&#x3D;&quot;&quot;&gt;Select a bank&lt;/option&gt;
+                    &lt;option [value]&#x3D;&quot;bank.Code&quot; *ngFor&#x3D;&quot;let bank of banks&quot;&gt;{{
+                        bank.Name
+                        }}&lt;/option&gt;
+                &lt;/select&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;d-flex flex-column&quot;&gt;
+                &lt;label for&#x3D;&quot;accountNumber&quot;&gt;
+                    &lt;span&gt;
+                        Account Number
+                    &lt;/span&gt; &lt;/label&gt;
+                &lt;input type&#x3D;&quot;text&quot; pattern&#x3D;&#x27;^\d{10,10}$&#x27; required name&#x3D;&quot;accountNumber&quot; [(ngModel)]&#x3D;&quot;accountNumber&quot;
+                    id&#x3D;&quot;accountNumber&quot; maxlength&#x3D;&quot;10&quot; class&#x3D;&quot;form-control&quot; /&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;text-center m-3&quot;&gt;
+                &lt;label for&#x3D;&quot;accountNumber&quot;&gt;
+                    &lt;span&gt;
+                        Account Name
+                    &lt;/span&gt; &lt;/label&gt;
+                &lt;h5&gt;
+                    {{ accountName || &quot;---&quot; }}
+                &lt;/h5&gt;
+            &lt;/div&gt;
+
+
+            &lt;button type&#x3D;&quot;submit&quot; *ngIf&#x3D;&quot;accountName&quot; class&#x3D;&quot;btn bg-ren-primary col-12 mb-3&quot;&gt;
+                Save
+            &lt;/button&gt;
+        &lt;/form&gt;
+        &lt;button *ngIf&#x3D;&quot;!accountName&quot; class&#x3D;&quot;btn bg-ren-primary col-12 mb-3&quot; (click)&#x3D;&quot;getBankAccountName()&quot;&gt;Validate bank
+            name&lt;/button&gt;
+        &lt;div class&#x3D;&quot;info d-flex flex-column justify-content-center align-items-center&quot;&gt;
+            &lt;svg viewBox&#x3D;&quot;0 0 40 40&quot;&gt;
+                &lt;use href&#x3D;&quot;assets/images/sprite.svg#ssl-lock&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+            &lt;span class&#x3D;&quot;font-17 text-center&quot;&gt;Your information is secured, encrypted and securely transmitted
+                using
+                SSL&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;app-loader [loading]&#x3D;&quot;loading&quot;&gt;&lt;/app-loader&gt;
+
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./add-bank-modal.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">#loading-overlay {
+    min-height: auto;
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.close {
+    right: 7px;
+    top: 0;
+}
+
+.fa-chevron-down {
+    right: 7px;
+    top: 50%;
+}
+
+.info {
+    color: #718095;
+}
+
+svg {
+    height: 50px;
+    width: 50px;
+    margin-bottom: -10px;
+    margin-top: 20px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="modal-body {{isInPage? \'p-0\': \'\'}} position-relative">    <div *ngIf="!isInPage" class="modal__header position-relative">        <p class="big-title text-center font-20 weight-bold">Update bank</p>        <button type="button" class="close position-absolute pull-right" aria-label="Close" (click)="bsModalRef.hide()">            <span aria-hidden="true">&times;</span>        </button>    </div>    <div class="modal-body {{isInPage? \'p-0\': \'\'}}">        <label *ngIf=\'statusMessage && !isInPage\' class="bg-danger p-2 text-white text-center w-100">            {{statusMessage}}        </label>        <form (ngSubmit)="update()" #addBankForm="ngForm">            <div class="form-group flex-column text-left position-relative">                <label for="bankAccountForFullWithdrawal">                    <span>Select bank</span>                </label>                <i class="fas fa-chevron-down position-absolute text-alt"></i>                <select (change)="changeBank(bankCode)" id="bankAccountForFullWithdrawal" required                    [(ngModel)]="bankCode" name="bankAccountForFullWithdrawal" class="form-control w-100">                    <option value="">Select a bank</option>                    <option [value]="bank.Code" *ngFor="let bank of banks">{{                        bank.Name                        }}</option>                </select>            </div>            <div class="d-flex flex-column">                <label for="accountNumber">                    <span>                        Account Number                    </span> </label>                <input type="text" pattern=\'^\d{10,10}$\' required name="accountNumber" [(ngModel)]="accountNumber"                    id="accountNumber" maxlength="10" class="form-control" />            </div>            <div class="text-center m-3">                <label for="accountNumber">                    <span>                        Account Name                    </span> </label>                <h5>                    {{ accountName || "---" }}                </h5>            </div>            <button type="submit" *ngIf="accountName" class="btn bg-ren-primary col-12 mb-3">                Save            </button>        </form>        <button *ngIf="!accountName" class="btn bg-ren-primary col-12 mb-3" (click)="getBankAccountName()">Validate bank            name</button>        <div class="info d-flex flex-column justify-content-center align-items-center">            <svg viewBox="0 0 40 40">                <use href="assets/images/sprite.svg#ssl-lock"></use>            </svg>            <span class="font-17 text-center">Your information is secured, encrypted and securely transmitted                using                SSL</span>        </div>    </div>    <app-loader [loading]="loading"></app-loader></div></div>'
+    var COMPONENTS = [{'name': 'AccountComponent', 'selector': 'app-account'},{'name': 'AccountSetUpComponent', 'selector': 'app-account-set-up'},{'name': 'AddBankComponent', 'selector': 'app-add-bank'},{'name': 'AddBankModalComponent', 'selector': 'app-add-bank-modal'},{'name': 'AddFundTargetSavingsComponent', 'selector': 'app-add-fund-target-savings'},{'name': 'AgeKnockoutComponent', 'selector': 'app-age-knockout'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AuthComponent', 'selector': 'app-auth'},{'name': 'BankStatementNoticeComponent', 'selector': 'app-bank-statement-notice'},{'name': 'BankTransferComponent', 'selector': 'app-bank-transfer'},{'name': 'BvnModalComponent', 'selector': 'app-bvn'},{'name': 'CalculatorModalComponent', 'selector': 'app-calculator-modal'},{'name': 'CalenderComponent', 'selector': 'app-calender'},{'name': 'ChangePasswordComponent', 'selector': 'app-change-password'},{'name': 'ChangePasswordModalComponent', 'selector': 'app-change-password-modal'},{'name': 'ChangeSecurityQuestionComponent', 'selector': 'app-change-security-question'},{'name': 'CompleteComponent', 'selector': 'app-complete'},{'name': 'CreateCardComponent', 'selector': 'app-create-card'},{'name': 'CreateComponent', 'selector': 'app-create'},{'name': 'CreateFixedDepositComponent', 'selector': 'app-create-fixed-deposit'},{'name': 'CreateLoanComponent', 'selector': 'app-create-loan'},{'name': 'CreateSaveEasyComponent', 'selector': 'app-create-save-easy'},{'name': 'CreateTargetSavingsComponent', 'selector': 'app-create-target-savings'},{'name': 'DashboardComponent', 'selector': 'app-dashboard'},{'name': 'DetailComponent', 'selector': 'app-detail'},{'name': 'DialogBoxComponent', 'selector': 'app-dialog-box'},{'name': 'EmploymentDetailsComponent', 'selector': 'app-employment-details'},{'name': 'ForgotPasswordComponent', 'selector': 'app-forgot-password'},{'name': 'FundInvestmentModalComponent', 'selector': 'app-fund-investment-modal'},{'name': 'HistoryComponent', 'selector': 'app-history'},{'name': 'HistoryModalComponent', 'selector': 'app-history-modal'},{'name': 'IncomeKnockoutComponent', 'selector': 'app-income-knockout'},{'name': 'InputBvnComponent', 'selector': 'app-input-bvn'},{'name': 'InputBvnModalComponent', 'selector': 'app-input-bvn-modal'},{'name': 'InvestCalculatorComponent', 'selector': 'app-deposit-calculator'},{'name': 'InvestCardComponent', 'selector': 'app-invest-card'},{'name': 'InvestComponent', 'selector': 'app-invest'},{'name': 'InvestmentCalculatorComponent', 'selector': 'app-calculator'},{'name': 'InvestmentCalculatorOnlyComponent', 'selector': 'app-investment-calculator-only'},{'name': 'LiquidationModalComponent', 'selector': 'app-liquidation-modal'},{'name': 'LoaderComponent', 'selector': 'app-loader'},{'name': 'LoanActiveCardComponent', 'selector': 'app-loan-active-card'},{'name': 'LoanCalculatorComponent', 'selector': 'app-loan-calculator'},{'name': 'LoanCalculatorPageComponent', 'selector': 'app-loan-calculator-page'},{'name': 'LoanCalulatorLandingPageComponent', 'selector': 'app-loan-calulator-landing-page'},{'name': 'LoanFinalPageComponent', 'selector': 'app-loan-final-page'},{'name': 'LoanInfoComponent', 'selector': 'app-loan-info'},{'name': 'LoanLandingPageComponent', 'selector': 'app-loan-landing-page'},{'name': 'LoanNokComponent', 'selector': 'app-loan-nok'},{'name': 'LoanRepaymentsModalComponent', 'selector': 'app-loan-repayments-modal'},{'name': 'LoanRequirementsComponent', 'selector': 'app-loan-requirements'},{'name': 'LoanStateComponent', 'selector': 'app-loan-state'},{'name': 'LoanSummaryComponent', 'selector': 'app-loan-summary'},{'name': 'LocationKnockoutComponent', 'selector': 'app-location-knockout'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MobileBankingLoginComponent', 'selector': 'app-mobile-banking-login'},{'name': 'MobileLeftSidebarComponent', 'selector': 'app-mobile-left-sidebar'},{'name': 'MobileSidebarComponent', 'selector': 'app-mobile-sidebar'},{'name': 'MorePersonalDetailsComponent', 'selector': 'app-more-personal-details'},{'name': 'NextOfKinComponent', 'selector': 'app-account-next-of-kin'},{'name': 'NextOfKinModalComponent', 'selector': 'app-next-of-kin-modal'},{'name': 'NoCardstatusIframeComponent', 'selector': 'app-no-cardstatus-iframe'},{'name': 'NoticeCardComponent', 'selector': 'app-notice-card'},{'name': 'OtpVerificationComponent', 'selector': 'app-otp-verification'},{'name': 'PageComponent', 'selector': 'app-page'},{'name': 'PageDescriptionComponent', 'selector': 'app-page-description'},{'name': 'PageNotFoundComponent', 'selector': 'app-page-not-found'},{'name': 'PartialComponent', 'selector': 'app-partial'},{'name': 'PartialWithdrawalComponent', 'selector': 'app-partial-withdrawal'},{'name': 'PaymentComponent', 'selector': 'app-account-payment'},{'name': 'PaymentHandlerComponent', 'selector': 'app-payment-handler'},{'name': 'PepComponent', 'selector': 'app-pep-component'},{'name': 'PepModalComponent', 'selector': 'app-pep-modal'},{'name': 'PersonalDetailsComponent', 'selector': 'app-personal-details'},{'name': 'PlanAmountComponent', 'selector': 'app-plan-amount'},{'name': 'PlanCardComponent', 'selector': 'app-plan-card'},{'name': 'PlanFundComponent', 'selector': 'app-plan-fund'},{'name': 'PlanNameComponent', 'selector': 'app-plan-name'},{'name': 'PlanNameModalComponent', 'selector': 'app-plan-name-modal'},{'name': 'PlanReviewComponent', 'selector': 'app-plan-review'},{'name': 'PlansComponent', 'selector': 'app-plans'},{'name': 'PocketFundComponent', 'selector': 'app-pocket-fund'},{'name': 'PocketWithdrawComponent', 'selector': 'app-pocket-withdraw'},{'name': 'PortfolioComponent', 'selector': 'app-portfolio'},{'name': 'ProfileComponent', 'selector': 'app-account-profile'},{'name': 'RepaymentIframeComponent', 'selector': 'app-repayment-iframe'},{'name': 'RolloverComponent', 'selector': 'app-rollover'},{'name': 'SaveComponent', 'selector': 'app-save'},{'name': 'SavingsCalculatorComponent', 'selector': 'app-savings-calculator'},{'name': 'SavingsOnboardComponent', 'selector': 'app-savings-onboard'},{'name': 'SecurityComponent', 'selector': 'app-account-security'},{'name': 'SelectLoanTypeComponent', 'selector': 'app-select-loan-type'},{'name': 'SidebarComponent', 'selector': 'app-sidebar'},{'name': 'SignOfferComponent', 'selector': 'app-sign-offer'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SingleViewComponent', 'selector': 'app-single-view'},{'name': 'StepperComponent', 'selector': 'app-stepper'},{'name': 'SubPageComponent', 'selector': 'app-sub-page'},{'name': 'TargetSavingsAddCardComponent', 'selector': 'app-target-savings-add-card'},{'name': 'TargetSavingsCalculatorComponent', 'selector': 'app-target-savings-calculator'},{'name': 'TargetSavingsFrequencyComponent', 'selector': 'app-target-savings-frequency'},{'name': 'TargetSavingsPartialWithdrawComponent', 'selector': 'app-target-savings-partial-withdraw'},{'name': 'TargetSavingsWithdrawComponent', 'selector': 'app-target-savings-withdraw'},{'name': 'ThingsToKnowComponent', 'selector': 'app-things-to-know'},{'name': 'TransactionsComponent', 'selector': 'app-transactions'},{'name': 'UnifiedRepaymentComponent', 'selector': 'app-unified-repayment'},{'name': 'UnlockComponent', 'selector': 'app-unlock'},{'name': 'UploadLoanImgComponent', 'selector': 'app-upload-loan-img'},{'name': 'UploadLoanUtiliesComponent', 'selector': 'app-upload-loan-utilies'},{'name': 'UtilityBillComponent', 'selector': 'app-utility-bill'},{'name': 'VerifyIdComponent', 'selector': 'app-verify-id'},{'name': 'VerifyPasswordComponent', 'selector': 'app-verify-password'},{'name': 'ViewFixedDepositsComponent', 'selector': 'app-view-fixed-deposits'},{'name': 'ViewSaveEasyComponent', 'selector': 'app-view-save-easy'},{'name': 'ViewTargetSavingsComponent', 'selector': 'app-view-target-savings'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'},{'name': 'WithdrawComponent', 'selector': 'app-withdraw'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'AddBankModalComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AddBankModalComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,2258 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>renmoney-application documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">renmoney-application documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>InvestmentService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/@core/investment.service.ts</code>
+        </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#investments">investments</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createFixedDeposit">createFixedDeposit</a>
+                            </li>
+                            <li>
+                                <a href="#createInvestment">createInvestment</a>
+                            </li>
+                            <li>
+                                <a href="#createRegularSavings">createRegularSavings</a>
+                            </li>
+                            <li>
+                                <a href="#createTargetSavings">createTargetSavings</a>
+                            </li>
+                            <li>
+                                <a href="#deleteCalcValues">deleteCalcValues</a>
+                            </li>
+                            <li>
+                                <a href="#deletePlan">deletePlan</a>
+                            </li>
+                            <li>
+                                <a href="#editPlanName">editPlanName</a>
+                            </li>
+                            <li>
+                                <a href="#getAccountName">getAccountName</a>
+                            </li>
+                            <li>
+                                <a href="#getBanks">getBanks</a>
+                            </li>
+                            <li>
+                                <a href="#getCalcValues">getCalcValues</a>
+                            </li>
+                            <li>
+                                <a href="#getCalType">getCalType</a>
+                            </li>
+                            <li>
+                                <a href="#getIntrabankTransfer">getIntrabankTransfer</a>
+                            </li>
+                            <li>
+                                <a href="#getInvestmentHistory">getInvestmentHistory</a>
+                            </li>
+                            <li>
+                                <a href="#getInvestments">getInvestments</a>
+                            </li>
+                            <li>
+                                <a href="#getRenflexAccount">getRenflexAccount</a>
+                            </li>
+                            <li>
+                                <a href="#getSingleInvestment">getSingleInvestment</a>
+                            </li>
+                            <li>
+                                <a href="#getSmartGoalInvestmentLocally">getSmartGoalInvestmentLocally</a>
+                            </li>
+                            <li>
+                                <a href="#getTransactionsHistory">getTransactionsHistory</a>
+                            </li>
+                            <li>
+                                <a href="#intrabankTransfer">intrabankTransfer</a>
+                            </li>
+                            <li>
+                                <a href="#maturedTargetSavingsWithdrawal">maturedTargetSavingsWithdrawal</a>
+                            </li>
+                            <li>
+                                <a href="#maturedWithdrawal">maturedWithdrawal</a>
+                            </li>
+                            <li>
+                                <a href="#preMaturedWithdrawal">preMaturedWithdrawal</a>
+                            </li>
+                            <li>
+                                <a href="#saveCalcValues">saveCalcValues</a>
+                            </li>
+                            <li>
+                                <a href="#saveSmartGoalInvestmentLocally">saveSmartGoalInvestmentLocally</a>
+                            </li>
+                            <li>
+                                <a href="#sendStatement">sendStatement</a>
+                            </li>
+                            <li>
+                                <a href="#setCalcType">setCalcType</a>
+                            </li>
+                            <li>
+                                <a href="#setupRecurrentPayment">setupRecurrentPayment</a>
+                            </li>
+                            <li>
+                                <a href="#withdrawRenflexAccount">withdrawRenflexAccount</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(httpClient: <a href="../classes/Client.html">HttpClient</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/@core/investment.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>httpClient</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Client.html" target="_self" >HttpClient</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createFixedDeposit"></a>
+                    <span class="name">
+                        <b>
+                            createFixedDeposit
+                        </b>
+                        <a href="#createFixedDeposit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createFixedDeposit(investment: <a href="../interfaces/InvestmentInterface.html">InvestmentInterface</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/@core/investment.service.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investment</td>
+                                    <td>
+                                                <code><a href="../interfaces/InvestmentInterface.html" target="_self" >InvestmentInterface</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createInvestment"></a>
+                    <span class="name">
+                        <b>
+                            createInvestment
+                        </b>
+                        <a href="#createInvestment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createInvestment(inv: <a href="../classes/Investment.html">Investment</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">src/app/@core/investment.service.ts:18</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>inv</td>
+                                    <td>
+                                                <code><a href="../classes/Investment.html" target="_self" >Investment</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createRegularSavings"></a>
+                    <span class="name">
+                        <b>
+                            createRegularSavings
+                        </b>
+                        <a href="#createRegularSavings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createRegularSavings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/@core/investment.service.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createTargetSavings"></a>
+                    <span class="name">
+                        <b>
+                            createTargetSavings
+                        </b>
+                        <a href="#createTargetSavings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createTargetSavings(investment: <a href="../interfaces/InvestmentInterface.html">InvestmentInterface</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="25"
+                            class="link-to-prism">src/app/@core/investment.service.ts:25</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investment</td>
+                                    <td>
+                                                <code><a href="../interfaces/InvestmentInterface.html" target="_self" >InvestmentInterface</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteCalcValues"></a>
+                    <span class="name">
+                        <b>
+                            deleteCalcValues
+                        </b>
+                        <a href="#deleteCalcValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteCalcValues()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="98"
+                            class="link-to-prism">src/app/@core/investment.service.ts:98</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletePlan"></a>
+                    <span class="name">
+                        <b>
+                            deletePlan
+                        </b>
+                        <a href="#deletePlan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deletePlan(investmentId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/@core/investment.service.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investmentId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editPlanName"></a>
+                    <span class="name">
+                        <b>
+                            editPlanName
+                        </b>
+                        <a href="#editPlanName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>editPlanName(planName: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/@core/investment.service.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>planName</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAccountName"></a>
+                    <span class="name">
+                        <b>
+                            getAccountName
+                        </b>
+                        <a href="#getAccountName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAccountName(bankCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, accountNumber: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/@core/investment.service.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>bankCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>accountNumber</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBanks"></a>
+                    <span class="name">
+                        <b>
+                            getBanks
+                        </b>
+                        <a href="#getBanks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBanks()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="43"
+                            class="link-to-prism">src/app/@core/investment.service.ts:43</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCalcValues"></a>
+                    <span class="name">
+                        <b>
+                            getCalcValues
+                        </b>
+                        <a href="#getCalcValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCalcValues()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/@core/investment.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>: any; tenure: any; amountToBeEarned: any } if fixed-deposit</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCalType"></a>
+                    <span class="name">
+                        <b>
+                            getCalType
+                        </b>
+                        <a href="#getCalType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCalType()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/@core/investment.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getIntrabankTransfer"></a>
+                    <span class="name">
+                        <b>
+                            getIntrabankTransfer
+                        </b>
+                        <a href="#getIntrabankTransfer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getIntrabankTransfer(details)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/app/@core/investment.service.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>details</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInvestmentHistory"></a>
+                    <span class="name">
+                        <b>
+                            getInvestmentHistory
+                        </b>
+                        <a href="#getInvestmentHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInvestmentHistory(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/@core/investment.service.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getInvestments"></a>
+                    <span class="name">
+                        <b>
+                            getInvestments
+                        </b>
+                        <a href="#getInvestments"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getInvestments()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/@core/investment.service.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getRenflexAccount"></a>
+                    <span class="name">
+                        <b>
+                            getRenflexAccount
+                        </b>
+                        <a href="#getRenflexAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getRenflexAccount()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/@core/investment.service.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSingleInvestment"></a>
+                    <span class="name">
+                        <b>
+                            getSingleInvestment
+                        </b>
+                        <a href="#getSingleInvestment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSingleInvestment(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">src/app/@core/investment.service.ts:53</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSmartGoalInvestmentLocally"></a>
+                    <span class="name">
+                        <b>
+                            getSmartGoalInvestmentLocally
+                        </b>
+                        <a href="#getSmartGoalInvestmentLocally"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSmartGoalInvestmentLocally()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/@core/investment.service.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTransactionsHistory"></a>
+                    <span class="name">
+                        <b>
+                            getTransactionsHistory
+                        </b>
+                        <a href="#getTransactionsHistory"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTransactionsHistory(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/@core/investment.service.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="intrabankTransfer"></a>
+                    <span class="name">
+                        <b>
+                            intrabankTransfer
+                        </b>
+                        <a href="#intrabankTransfer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>intrabankTransfer(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/@core/investment.service.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maturedTargetSavingsWithdrawal"></a>
+                    <span class="name">
+                        <b>
+                            maturedTargetSavingsWithdrawal
+                        </b>
+                        <a href="#maturedTargetSavingsWithdrawal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>maturedTargetSavingsWithdrawal(details: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="187"
+                            class="link-to-prism">src/app/@core/investment.service.ts:187</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>details</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maturedWithdrawal"></a>
+                    <span class="name">
+                        <b>
+                            maturedWithdrawal
+                        </b>
+                        <a href="#maturedWithdrawal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>maturedWithdrawal(details: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/@core/investment.service.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>details</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preMaturedWithdrawal"></a>
+                    <span class="name">
+                        <b>
+                            preMaturedWithdrawal
+                        </b>
+                        <a href="#preMaturedWithdrawal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>preMaturedWithdrawal(details: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="177"
+                            class="link-to-prism">src/app/@core/investment.service.ts:177</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>details</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveCalcValues"></a>
+                    <span class="name">
+                        <b>
+                            saveCalcValues
+                        </b>
+                        <a href="#saveCalcValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveCalcValues(calcDet: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/@core/investment.service.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Save details gotten from calculator</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>calcDet</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>if fixed-deposit - { amount: any; tenure: any; amountToBeEarned: any }</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="saveSmartGoalInvestmentLocally"></a>
+                    <span class="name">
+                        <b>
+                            saveSmartGoalInvestmentLocally
+                        </b>
+                        <a href="#saveSmartGoalInvestmentLocally"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>saveSmartGoalInvestmentLocally(investment)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">src/app/@core/investment.service.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investment</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sendStatement"></a>
+                    <span class="name">
+                        <b>
+                            sendStatement
+                        </b>
+                        <a href="#sendStatement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sendStatement(investmentId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/@core/investment.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investmentId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCalcType"></a>
+                    <span class="name">
+                        <b>
+                            setCalcType
+                        </b>
+                        <a href="#setCalcType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setCalcType(calcType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/@core/investment.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>calcType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setupRecurrentPayment"></a>
+                    <span class="name">
+                        <b>
+                            setupRecurrentPayment
+                        </b>
+                        <a href="#setupRecurrentPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setupRecurrentPayment(investment)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="196"
+                            class="link-to-prism">src/app/@core/investment.service.ts:196</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>investment</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="withdrawRenflexAccount"></a>
+                    <span class="name">
+                        <b>
+                            withdrawRenflexAccount
+                        </b>
+                        <a href="#withdrawRenflexAccount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>withdrawRenflexAccount(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="139"
+                            class="link-to-prism">src/app/@core/investment.service.ts:139</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/GeneralAPIResponse.html" target="_self" >Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="investments"></a>
+                        <span class="name">
+                            <b>
+                            investments</b>
+                            <a href="#investments"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>getInvestmentsSuccessfullResponse.data.clientDeposits</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/@core/investment.service.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { BankData } from &quot;./../@page/single-view/banks&quot;;
+import { Injectable } from &quot;@angular/core&quot;;
+import { HttpClient, HttpHeaders } from &quot;@angular/common/http&quot;;
+import { Investment } from &quot;../@model/investment&quot;;
+import { environment } from &quot;src/environments/environment&quot;;
+import { GeneralAPIResponse } from &quot;../@model/responses/general-api-response&quot;;
+import { Observable } from &quot;rxjs&quot;;
+import { getInvestmentsSuccessfullResponse } from &quot;../@page/invest/invest/investment.mockdata&quot;;
+import { heLocale } from &quot;ngx-bootstrap/chronos/i18n/he&quot;;
+import { InvestmentInterface } from &quot;../@model/interfaces&quot;;
+
+@Injectable({ providedIn: &quot;root&quot; })
+export class InvestmentService {
+    investments &#x3D; getInvestmentsSuccessfullResponse.data.clientDeposits;
+
+    constructor(private httpClient: HttpClient) { }
+
+    createInvestment(inv: Investment): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}client/createInvestment&#x60;,
+            inv
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    createTargetSavings(
+        investment: InvestmentInterface
+    ): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}client/createTargetSavings&#x60;,
+            investment
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    createFixedDeposit(
+        investment: InvestmentInterface
+    ): Observable&lt;GeneralAPIResponse&lt;string&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}client/createFixedDeposit&#x60;,
+            investment
+        ) as Observable&lt;GeneralAPIResponse&lt;string&gt;&gt;;
+    }
+
+    getBanks() {
+        return BankData;
+    }
+
+    getInvestments(): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}client/investments&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getSingleInvestment(id: string): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}client/investments/${id}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getTransactionsHistory(id: string): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}client/investments/${id}/transactions&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getInvestmentHistory(id: string): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}client/investments/${id}/history&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    /**
+     * Save details gotten from calculator
+     * @param calcDet if fixed-deposit - { amount: any; tenure: any; amountToBeEarned: any }
+     */
+    saveCalcValues(calcDet: any) {
+        localStorage.setItem(&quot;_ren_calc_det&quot;, JSON.stringify(calcDet));
+    }
+    /**
+     * @returns { amount: any; tenure: any; amountToBeEarned: any } if fixed-deposit
+     */
+    getCalcValues(): any {
+        return JSON.parse(localStorage.getItem(&quot;_ren_calc_det&quot;)) as {
+            amount: any;
+            tenure: any;
+            interest: any;
+            amountToBeEarned: any;
+        };
+    }
+
+    getCalType() {
+        return localStorage.getItem(&quot;_ren_calc_type&quot;);
+    }
+
+    setCalcType(calcType: string) {
+        localStorage.setItem(&quot;_ren_calc_type&quot;, calcType);
+    }
+
+    deleteCalcValues() {
+        localStorage.removeItem(&quot;_ren_calc_det&quot;);
+    }
+
+    getAccountName(bankCode: string, accountNumber: string) {
+        const httpOptions &#x3D; {
+            headers: new HttpHeaders({
+                &quot;Content-Type&quot;: &quot;application/json&quot;,
+                sourceAppID: environment.mbs2sourceAppID,
+            }),
+        };
+        return this.httpClient.get(
+            &#x60;${environment.rencoreBaseURL}account-number-validation/${accountNumber}/${bankCode}&#x60;
+        );
+    }
+
+    editPlanName(planName: any): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}editPlanName&#x60;,
+            planName
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    deletePlan(investmentId): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.delete(
+            &#x60;${environment.investmentBaseURL}deletePlan/${investmentId}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    sendStatement(investmentId): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}sendStatement/${investmentId}&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getRenflexAccount(): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.get(
+            &#x60;${environment.investmentBaseURL}renflexAccount&#x60;
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    withdrawRenflexAccount(data): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}withdraw/renflex&#x60;,
+            Object.assign(data, { transactionRef: &quot;Web&quot; })
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    getIntrabankTransfer(details): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}intrabankTransfer&#x60;,
+            details
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    createRegularSavings(): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}client/createRegularSavings&#x60;,
+            {}
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    intrabankTransfer(data): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}transfer/intrabank&#x60;,
+            Object.assign(data, { transactionRef: &quot;Web&quot; })
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    maturedWithdrawal(details: any): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        // let headers &#x3D; new HttpHeaders();
+        // headers &#x3D; headers.append(&quot;RENMONEY-API-KEY&quot;, &#x60;${environment.renmoneyAPIKey}&#x60;);
+
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}withdraw/maturity&#x60;,
+            Object.assign(details, { transactionRef: &quot;Web&quot; })
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    preMaturedWithdrawal(details: any): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        // let headers &#x3D; new HttpHeaders();
+        // headers &#x3D; headers.append(&quot;RENMONEY-API-KEY&quot;, &#x60;${environment.renmoneyAPIKey}&#x60;);
+
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}withdraw/pre-maturity/fd&#x60;,
+            Object.assign(details, { transactionRef: &quot;Web&quot; })
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    maturedTargetSavingsWithdrawal(
+        details: any
+    ): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.investmentBaseURL}withdraw/targetSavings&#x60;,
+            details
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+
+    setupRecurrentPayment(investment): Observable&lt;GeneralAPIResponse&lt;any&gt;&gt; {
+        return this.httpClient.post(
+            &#x60;${environment.apiBaseURLSudo}payment/recurrent&#x60;,
+            investment
+        ) as Observable&lt;GeneralAPIResponse&lt;any&gt;&gt;;
+    }
+    saveSmartGoalInvestmentLocally(investment) {
+        localStorage.setItem(&#x27;sg_inv&#x27;, JSON.stringify(investment));
+    }
+
+    getSmartGoalInvestmentLocally() {
+        return JSON.parse(localStorage.getItem(&#x27;sg_inv&#x27;));
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'InvestmentService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
